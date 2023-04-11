@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: '"HelveticaNeueLTStd-Lt"';
+  src: url("../public/fonts/HelveticaNeueLTStd-Lt.otf");
+}
