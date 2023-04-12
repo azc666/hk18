@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" href="{{ url('favicon.jpg') }}">
+    <link rel="stylesheet" href="https://use.typekit.net/tza8nhy.css">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ $title ?? 'HK Order Portal' }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -16,6 +18,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" rel="stylesheet">
 
     @livewireStyles
 
@@ -24,14 +27,21 @@
 <body class="font-sans antialiased">
     <x-banner />
 
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen bg-hkcolor">
         @livewire('navigation-menu')
 
         <!-- Page Heading -->
         @if (isset($header))
-        <header class="bg-white shadow">
-            <div class="px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                {{ $header }}
+        <header class="shadow">
+            <div class="flex justify-between px-4 py-2 mx-auto bg-[#55b2fe] max-w sm:px-6 lg:px-24">
+                <div>
+                    {{ $header }}
+                </div>
+
+                <div class="mt-2">
+                    <img src="/assets/HKheader2.png" alt="" class="flex-1 h-8">
+                </div>
+
             </div>
         </header>
         @endif
@@ -43,6 +53,7 @@
     </div>
 
     @stack('modals')
+    <x-footer />
 
     @livewireScripts
 </body>

@@ -66,8 +66,8 @@
                             <x-slot name="trigger">
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
-                                        class="inline-flex items-center px-4 py-2 leading-4 uppercase text-gray-800 transition duration-150 ease-in-out bg-[#55b2fe] opacity-95 helmd border border-transparent rounded-md text-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
-                                        Your Cart
+                                        class="inline-flex items-center px-4 py-2 leading-4 uppercase text-gray-800 transition duration-150 ease-in-out bg-[#55b2fe] opacity-95 font-helmd border border-transparent rounded-md text-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
+                                        <span class="mt-2">Your Cart</span>
                                         {{-- @if (Cart::content()->count() < 10) <img class="w-8"
                                             src="/assets/carticon/ShoppingCart{{ Cart::content()->count() }}.gif"
                                             alt="Shopping Cart">
@@ -89,11 +89,11 @@
                             <x-slot name="content">
                                 <div class="w-60">
                                     <!-- Cart Management -->
-                                    <div class="block px-4 py-2 text-lg text-gray-400 helmd">
+                                    <div class="block px-4 py-2 text-xl text-gray-600 font-helmd">
                                         {{ __('Manage Cart') }}
                                     </div>
 
-                                    <div class="border-t border-gray-100"></div>
+                                    <div class="border-t border-gray-200"></div>
 
                                     <!-- Cart Settings -->
                                     <x-dropdown-link href="{{ route('viewCart') }}">
@@ -102,7 +102,7 @@
                                         {{-- @dd(session('saveCart')) --}}
                                     </x-dropdown-link>
 
-                                    <div class="border-t border-gray-100"></div>
+                                    <div class="border-t border-gray-200"></div>
 
                                     <x-dropdown-link href="{{ route('storecart') }}">
                                         {{ __('Save the Cart') }}
@@ -111,11 +111,13 @@
                                         {{-- @dd(session('saveCart')) --}}
                                     </x-dropdown-link>
 
+                                    <div class="border-t border-gray-200"></div>
+
                                     <x-dropdown-link href="{{ route('restorecart') }}">
                                         {{ __('Restore the Cart') }}
                                     </x-dropdown-link>
 
-                                    <div class="border-t border-gray-100"></div>
+                                    <div class="border-t border-gray-200"></div>
 
                                     <x-dropdown-link href="{{ route('destroycart') }}">
                                         {{ __('Clear the Cart') }}
@@ -140,10 +142,11 @@
                                 @else
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
-                                        class="inline-flex items-center px-3 py-2 font-medium leading-4 text-gray-500 transition duration-150 ease-in-out bg-white border border-transparent rounded-md text-md hover:text-gray-700 focus:outline-none">
-                                        {{ Auth::user()->loc_name }}
+                                        class="inline-flex items-center px-4 py-2 leading-4 uppercase text-gray-800 transition duration-150 ease-in-out bg-[#55b2fe] opacity-95 font-helmd border border-transparent rounded-md text-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
+                                        <span class="mt-2">{{ Auth::user()->loc_name }}</span>
 
-                                        <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+
+                                        <svg class=" ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 20 20" fill="currentColor">
                                             <path fill-rule="evenodd"
                                                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -156,9 +159,11 @@
 
                             <x-slot name="content">
                                 <!-- Account Management -->
-                                <div class="block px-4 py-2 text-xs text-gray-400">
+                                <div class="block px-4 py-2 text-xl text-gray-600 font-helmd">
                                     {{ __('Manage Account') }}
                                 </div>
+
+                                <div class="border-t border-gray-200"></div>
 
                                 <x-dropdown-link href="{{ route('profile.show') }}">
                                     {{ __('Profile') }}
@@ -170,7 +175,7 @@
                                 </x-dropdown-link>
                                 @endif
 
-                                <div class="border-t border-gray-100"></div>
+                                <div class="border-t border-gray-200"></div>
 
                                 <!-- Authentication -->
                                 <form method="POST" action="{{ route('logout') }}">
