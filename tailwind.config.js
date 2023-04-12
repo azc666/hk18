@@ -13,7 +13,9 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                hellt: ["HelveticaNeueLTStd-Lt", "cursive"],
+                hellt: ["HelveticaNeueLTStd-LT", "cursive"],
+                helmd: ["HelveticaNeueLTStd-MD", "cursive"],
+                start: ['Start', 'cursive']
             },
         },
     },

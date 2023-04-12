@@ -7,8 +7,10 @@
 
     <div class="py-12">
 
-        <div class="p-20 text-3xl font-hellt">
-            ABCDEFabcdef
+        <div class="p-20 text-3xl">
+            <p class="font-hellt">ABCDEFabcdef</p>
+            <p class="font-helmd">ABCDEFabcdef</p>
+            <p class="font-start">ABCDEFabcdef</p>
         </div>
 
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
