@@ -1,0 +1,63 @@
+    @font-face {
+      font-family: "Helvetica Neue LT Std 45 Light";
+      src: url("/fonts/HelveticaNeueLTStd-Lt.otf"), format('otf');
+    }
+
+
+    @font-face {
+      font-family: "HelveticaNeueLTStd-Md";
+      src: url("https://azc99.me/fonts/HelveticaNeueLTStd-Md.otf"), format('otf');
+    }
+
+    @font-face {
+      font-family: "Comic Sans MS Bold";
+      src: url("https://azc99.me/fonts/Comic Sans MS Bold.ttf"), format('ttf');
+    }
+
+    @font-face {
+      font-family: "Herculanum";
+      src: url("https://azc99.me/fonts/Herculanum.ttf"), format('ttf');
+    }
+
+    .hellt {
+      font-family:  "HelveticaNeueLTStd-Lt", serif;
+      /* color: green; */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .helmd {
+      font-family: "HelveticaNeueLTStd-Md", serif;
+      /* color: red; */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .MyriadSB {
+      font-family: "myriad-pro",
+        sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .MyriadSBI {
+      font-family: "myriad-pro",
+        sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      /* color: red; */
+    }
+
+    .MyriadB {
+      font-family: "myriad-pro",
+        sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .Herc {
+      font-family: "Herculanum",
+        monospace;
+      font-weight: normal;
+      font-style: normal;
+    }
