@@ -185,7 +185,8 @@ return [
         /*
          * Package Service Providers...
          */
-
+        'EricMakesStuff\DisplayName\DisplayNameServiceProvider',
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -212,6 +213,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'DisplayName' => EricMakesStuff\DisplayName\Facades\DisplayName::class,
+        'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
+
     ])->toArray(),
 
 ];

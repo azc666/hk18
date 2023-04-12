@@ -1,0 +1,13 @@
+{
+    "nunito": {
+        "normal": "\/Users\/allen\/Desktop\/Code\/sites\/hk17\/storage\/fonts\/nunito_normal_f8ce9593f0c56e52776379aa29b2d690",
+        "600": "\/Users\/allen\/Desktop\/Code\/sites\/hk17\/storage\/fonts\/nunito_600_0275befc5ca0fc822c590fc63a6c14d5",
+        "bold": "nunito_bold_8dc3583b65bede23262ac4c563179f23"
+    },
+    "helveticaneueltstd-lt": {
+        "normal": "helveticaneueltstd_lt_normal_c1ad5d3f542efd0345edec0fec8f21bb"
+    },
+    "helveticaneueltstd-md": {
+        "normal": "helveticaneueltstd_md_normal_a2760c954c9fb477425519fbba12941e"
+    }
+}

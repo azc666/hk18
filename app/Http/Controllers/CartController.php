@@ -32,7 +32,7 @@ class CartController extends Controller
         if (Cart::content()->count() > 0) {
             Cart::store($username);
             // Session::put('saveCart', true);
-return view('cart.cart', compact('product'));
+        return view('cart.cart', compact('product'));
         }
 
     }
@@ -55,7 +55,7 @@ return view('cart.cart', compact('product'));
         $username = Auth::user()->username;
 
         Cart::destroy();
-Session::put('clearCart', true);
+        Session::put('clearCart', true);
         return view('categories');
     }
 
