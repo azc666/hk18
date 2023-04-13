@@ -5,6 +5,7 @@
 /public/storage
 /public/assets/proofs/
 /storage/*.key
+/storage/
 /vendor
 .env
 .env.backup
