@@ -63,7 +63,7 @@
 							Stationery Items</h3>
 					</a>
 
-					<a href="/category/nametag" class="group">
+					<a href="/product/112" class="group">
 						<div
 							class="w-full overflow-hidden bg-white rounded-lg aspect-h-1 aspect-w-1 sm:aspect-h-7 sm:aspect-w-7 xl:aspect-h-8">
 							<img src="assets/nametag/ntag_display.jpg"
