@@ -44,7 +44,7 @@
 							Stationery Items</h3>
 					</a>
 
-					<a href="#" class="group">
+					<a href="/category/associate" class="group">
 						<div class="w-full overflow-hidden rounded-lg h-80 bg-gray-50">
 							<img src="assets/associate/abcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 						</div>
@@ -54,7 +54,7 @@
 
 					</a>
 
-					<a href="#" class="group">
+					<a href="/category/staff" class="group">
 						<div class="w-full overflow-hidden rounded-lg h-80 bg-gray-50">
 							<img src="assets/staff/sbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 						</div>
@@ -63,7 +63,7 @@
 							Stationery Items</h3>
 					</a>
 
-					<a href="#" class="group">
+					<a href="/category/nametag" class="group">
 						<div
 							class="w-full overflow-hidden bg-white rounded-lg aspect-h-1 aspect-w-1 sm:aspect-h-7 sm:aspect-w-7 xl:aspect-h-8">
 							<img src="assets/nametag/ntag_display.jpg"
