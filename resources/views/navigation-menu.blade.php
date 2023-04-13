@@ -1,294 +1,283 @@
 <nav x-data="{ open: false }" class="bg-[#004990] border-b border-slate-100">
-    <!-- Primary Navigation Menu -->
-    {{-- <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"> --}}
-        <div class="px-4 mx-auto sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <!-- Logo -->
-                    <div class="flex items-center flex-shrink-0">
-                        <a href="{{ route('categories') }}">
-                            <x-application-mark class="block w-auto h-9" />
-                        </a>
-                    </div>
+	<!-- Primary Navigation Menu -->
+	{{-- <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"> --}}
+		<div class="px-4 mx-auto sm:px-6 lg:px-8">
+			<div class="flex justify-between h-16">
+				<div class="flex">
+					<!-- Logo -->
+					<div class="flex items-center flex-shrink-0">
+						<a href="{{ route('categories') }}">
+							<x-application-mark class="block w-auto h-9" />
+						</a>
+					</div>
 
-                    <!-- Navigation Links -->
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link class="text-white hellt" href=" {{ route('categories') }}"
-                            :active="request()->routeIs('categories')">
-                            {{ __('Categories') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link class="text-white hellt" href="{{ route('partner') }}"
-                            :active="request()->routeIs('partner')">
-                            {{ __('Partner') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link class="text-white hellt" href="{{ route('associate') }}"
-                            :active="request()->routeIs('associate')">
-                            {{ __('Associate') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link class="text-white hellt" href="{{ route('staff') }}"
-                            :active="request()->routeIs('staff')">
-                            {{ __('Staff') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link class="text-white hellt" href="{{ route('contact') }}"
-                            :active="request()->routeIs('contact')">
-                            {{ __('Contact') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link class="text-white hellt" href="{{ route('orders') }}"
-                            :active="request()->routeIs('orders')">
-                            {{ __('Orders') }}
-                        </x-nav-link>
-                    </div>
-                    @if (Auth::user()->admin === 1)
-                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link class="text-white hellt" href="{{ route('titles') }}"
-                            :active="request()->routeIs('titles')">
-                            {{ __('Titles') }}
-                        </x-nav-link>
-                    </div>
-                    @endif
-                </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6">
+					<!-- Navigation Links -->
+					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+						<x-nav-link class="text-white hellt" href=" {{ route('categories') }}"
+							:active="request()->routeIs('categories')">
+							{{ __('Categories') }}
+						</x-nav-link>
+					</div>
+					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+						<x-nav-link class="text-white hellt" href="{{ route('partner') }}" :active="request()->routeIs('partner')">
+							{{ __('Partner') }}
+						</x-nav-link>
+					</div>
+					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+						<x-nav-link class="text-white hellt" href="{{ route('associate') }}"
+							:active="request()->routeIs('associate')">
+							{{ __('Associate') }}
+						</x-nav-link>
+					</div>
+					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+						<x-nav-link class="text-white hellt" href="{{ route('staff') }}" :active="request()->routeIs('staff')">
+							{{ __('Staff') }}
+						</x-nav-link>
+					</div>
+					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+						<x-nav-link class="text-white hellt" href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+							{{ __('Contact') }}
+						</x-nav-link>
+					</div>
+					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+						<x-nav-link class="text-white hellt" href="{{ route('orders') }}" :active="request()->routeIs('orders')">
+							{{ __('Orders') }}
+						</x-nav-link>
+					</div>
+					@if (Auth::user()->admin === 1)
+					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+						<x-nav-link class="text-white hellt" href="{{ route('titles') }}" :active="request()->routeIs('titles')">
+							{{ __('Titles') }}
+						</x-nav-link>
+					</div>
+					@endif
+				</div>
+				<div class="hidden sm:flex sm:items-center sm:ml-6">
 
-                    <!-- Cart Dropdown -->
-                    <div class="relative ml-3">
-                        <x-dropdown align="right" width="60">
+					<!-- Cart Dropdown -->
+					<div class="relative ml-3">
+						<x-dropdown align="right" width="60">
 
-                            <x-slot name="trigger">
-                                <span class="inline-flex rounded-md">
-                                    <button type="button"
-                                        class="inline-flex items-center px-4 py-2 leading-4 uppercase text-gray-800 transition duration-150 ease-in-out bg-[#55b2fe] opacity-95 font-helmd border border-transparent rounded-md text-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
-                                        <span class="mt-2">Your Cart</span>
-                                        {{-- @if (Cart::content()->count() < 10) <img class="w-8"
-                                            src="/assets/carticon/ShoppingCart{{ Cart::content()->count() }}.gif"
-                                            alt="Shopping Cart">
-                                            @else
-                                            <img class="w-8" src="/assets/carticon/ShoppingCart+.gif"
-                                                alt="Shopping Cart">
-                                            @endif --}}
+							<x-slot name="trigger">
+								<span class="inline-flex rounded-md">
+									<button type="button"
+										class="inline-flex items-center px-4 py-2 leading-4 uppercase text-gray-800 transition duration-150 ease-in-out bg-[#55b2fe] opacity-95 font-helmd border border-transparent rounded-md text-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
+										<span class="mt-2">Your Cart</span>
+										@if (Cart::content()->count() < 10) <img class="w-8"
+											src="/assets/carticon/ShoppingCart{{ Cart::content()->count() }}.gif" alt="Shopping Cart">
+											@else
+											<img class="w-8" src="/assets/carticon/ShoppingCart+.gif" alt="Shopping Cart">
+											@endif
 
-                                            <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path fill-rule="evenodd"
-                                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                    </button>
-                                </span>
-                            </x-slot>
+											<svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+												fill="currentColor">
+												<path fill-rule="evenodd"
+													d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+													clip-rule="evenodd" />
+											</svg>
+									</button>
+								</span>
+							</x-slot>
 
-                            <x-slot name="content">
-                                <div class="w-60">
-                                    <!-- Cart Management -->
-                                    <div class="block px-4 py-2 text-xl text-gray-600 font-helmd">
-                                        {{ __('Manage Cart') }}
-                                    </div>
+							<x-slot name="content">
+								<div class="w-60">
+									<!-- Cart Management -->
+									<div class="block px-4 py-2 text-xl text-gray-600 font-helmd">
+										{{ __('Manage Cart') }}
+									</div>
 
-                                    <div class="border-t border-gray-200"></div>
+									<div class="border-t border-gray-200"></div>
 
-                                    <!-- Cart Settings -->
-                                    <x-dropdown-link href="{{ route('viewCart') }}">
-                                        {{ __('Show the Cart') }}
-                                        {{ Session::put('saveCart', false) }}
-                                        {{-- @dd(session('saveCart')) --}}
-                                    </x-dropdown-link>
+									<!-- Cart Settings -->
+									<x-dropdown-link href="{{ route('viewCart') }}">
+										{{ __('Show the Cart') }}
+										{{ Session::put('saveCart', false) }}
+										{{-- @dd(session('saveCart')) --}}
+									</x-dropdown-link>
 
-                                    <div class="border-t border-gray-200"></div>
+									<div class="border-t border-gray-200"></div>
 
-                                    <x-dropdown-link href="{{ route('storecart') }}">
-                                        {{ __('Save the Cart') }}
-                                        {{-- {{ $saveCart = true }} --}}
-                                        {{ Session::put('saveCart', true) }}
-                                        {{-- @dd(session('saveCart')) --}}
-                                    </x-dropdown-link>
+									<x-dropdown-link href="{{ route('storecart') }}">
+										{{ __('Save the Cart') }}
+										{{-- {{ $saveCart = true }} --}}
+										{{ Session::put('saveCart', true) }}
+										{{-- @dd(session('saveCart')) --}}
+									</x-dropdown-link>
 
-                                    <div class="border-t border-gray-200"></div>
+									<div class="border-t border-gray-200"></div>
 
-                                    <x-dropdown-link href="{{ route('restorecart') }}">
-                                        {{ __('Restore the Cart') }}
-                                    </x-dropdown-link>
+									<x-dropdown-link href="{{ route('restorecart') }}">
+										{{ __('Restore the Cart') }}
+									</x-dropdown-link>
 
-                                    <div class="border-t border-gray-200"></div>
+									<div class="border-t border-gray-200"></div>
 
-                                    <x-dropdown-link href="{{ route('destroycart') }}">
-                                        {{ __('Clear the Cart') }}
-                                    </x-dropdown-link>
+									<x-dropdown-link href="{{ route('destroycart') }}">
+										{{ __('Clear the Cart') }}
+									</x-dropdown-link>
 
-                                </div>
-                            </x-slot>
-                        </x-dropdown>
-                    </div>
-                    {{-- @endif --}}
+								</div>
+							</x-slot>
+						</x-dropdown>
+					</div>
+					{{-- @endif --}}
 
-                    <!-- Settings Dropdown -->
-                    <div class="relative ml-3">
-                        <x-dropdown align="right" width="48">
-                            <x-slot name="trigger">
-                                @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                                <button
-                                    class="flex text-sm transition duration-150 ease-in-out border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300">
-                                    <img class="object-cover w-8 h-8 rounded-full"
-                                        src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
-                                </button>
-                                @else
-                                <span class="inline-flex rounded-md">
-                                    <button type="button"
-                                        class="inline-flex items-center px-4 py-2 leading-4 uppercase text-gray-800 transition duration-150 ease-in-out bg-[#55b2fe] opacity-95 font-helmd border border-transparent rounded-md text-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
-                                        <span class="mt-2">{{ Auth::user()->loc_name }}</span>
+					<!-- Settings Dropdown -->
+					<div class="relative ml-3">
+						<x-dropdown align="right" width="48">
+							<x-slot name="trigger">
+								@if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+								<button
+									class="flex text-sm transition duration-150 ease-in-out border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300">
+									<img class="object-cover w-8 h-8 rounded-full" src="{{ Auth::user()->profile_photo_url }}"
+										alt="{{ Auth::user()->name }}" />
+								</button>
+								@else
+								<span class="inline-flex rounded-md">
+									<button type="button"
+										class="inline-flex items-center px-4 py-2 leading-4 uppercase text-gray-800 transition duration-150 ease-in-out bg-[#55b2fe] opacity-95 font-helmd border border-transparent rounded-md text-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
+										<span class="mt-2">{{ Auth::user()->loc_name }}</span>
 
 
-                                        <svg class=" ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </span>
-                                @endif
-                            </x-slot>
+										<svg class=" ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+											fill="currentColor">
+											<path fill-rule="evenodd"
+												d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+												clip-rule="evenodd" />
+										</svg>
+									</button>
+								</span>
+								@endif
+							</x-slot>
 
-                            <x-slot name="content">
-                                <!-- Account Management -->
-                                <div class="block px-4 py-2 text-xl text-gray-600 font-helmd">
-                                    {{ __('Manage Account') }}
-                                </div>
+							<x-slot name="content">
+								<!-- Account Management -->
+								<div class="block px-4 py-2 text-xl text-gray-600 font-helmd">
+									{{ __('Manage Account') }}
+								</div>
 
-                                <div class="border-t border-gray-200"></div>
+								<div class="border-t border-gray-200"></div>
 
-                                <x-dropdown-link href="{{ route('profile.show') }}">
-                                    {{ __('Profile') }}
-                                </x-dropdown-link>
+								<x-dropdown-link href="{{ route('profile.show') }}">
+									{{ __('Profile') }}
+								</x-dropdown-link>
 
-                                @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                                <x-dropdown-link href="{{ route('api-tokens.index') }}">
-                                    {{ __('API Tokens') }}
-                                </x-dropdown-link>
-                                @endif
+								@if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+								<x-dropdown-link href="{{ route('api-tokens.index') }}">
+									{{ __('API Tokens') }}
+								</x-dropdown-link>
+								@endif
 
-                                <div class="border-t border-gray-200"></div>
+								<div class="border-t border-gray-200"></div>
 
-                                <!-- Authentication -->
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
+								<!-- Authentication -->
+								<form method="POST" action="{{ route('logout') }}">
+									@csrf
 
-                                    <x-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
+									<x-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault();
                       this.closest('form').submit();">
-                                        {{ __('Logout') }}
-                                    </x-dropdown-link>
-                                </form>
-                            </x-slot>
-                        </x-dropdown>
-                    </div>
-                </div>
+										{{ __('Logout') }}
+									</x-dropdown-link>
+								</form>
+							</x-slot>
+						</x-dropdown>
+					</div>
+				</div>
 
-                <!-- Hamburger -->
-                <div class="flex items-center -mr-2 sm:hidden">
-                    <button @click="open = ! open"
-                        class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
-                        <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                            <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
+				<!-- Hamburger -->
+				<div class="flex items-center -mr-2 sm:hidden">
+					<button @click="open = ! open"
+						class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500">
+						<svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+							<path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
+								stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							<path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+								stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
 
-        <!-- Responsive Navigation Menu -->
-        <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
-            <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link href="{{ route('categories') }}" :active="request()->routeIs('categories')">
-                    {{ __('Categories') }}
-                </x-responsive-nav-link>
-            </div>
+		<!-- Responsive Navigation Menu -->
+		<div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
+			<div class="pt-2 pb-3 space-y-1">
+				<x-responsive-nav-link href="{{ route('categories') }}" :active="request()->routeIs('categories')">
+					{{ __('Categories') }}
+				</x-responsive-nav-link>
+			</div>
 
-            <!-- Responsive Settings Options -->
-            <div class="pt-4 pb-1 border-t border-gray-200">
-                <div class="flex items-center px-4">
-                    @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                    <div class="flex-shrink-0 mr-3">
-                        <img class="object-cover w-10 h-10 rounded-full" src="{{ Auth::user()->profile_photo_url }}"
-                            alt="{{ Auth::user()->name }}" />
-                    </div>
-                    @endif
+			<!-- Responsive Settings Options -->
+			<div class="pt-4 pb-1 border-t border-gray-200">
+				<div class="flex items-center px-4">
+					@if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+					<div class="flex-shrink-0 mr-3">
+						<img class="object-cover w-10 h-10 rounded-full" src="{{ Auth::user()->profile_photo_url }}"
+							alt="{{ Auth::user()->name }}" />
+					</div>
+					@endif
 
-                    <div>
-                        <div class="text-base font-medium text-gray-800">{{ Auth::user()->name }}</div>
-                        <div class="text-sm font-medium text-gray-500">{{ Auth::user()->email }}</div>
-                    </div>
-                </div>
+					<div>
+						<div class="text-base font-medium text-gray-800">{{ Auth::user()->name }}</div>
+						<div class="text-sm font-medium text-gray-500">{{ Auth::user()->email }}</div>
+					</div>
+				</div>
 
-                <div class="mt-3 space-y-1">
-                    <!-- Account Management -->
-                    <x-responsive-nav-link href="{{ route('profile.show') }}"
-                        :active="request()->routeIs('profile.show')">
-                        {{ __('Profile') }}
-                    </x-responsive-nav-link>
+				<div class="mt-3 space-y-1">
+					<!-- Account Management -->
+					<x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
+						{{ __('Profile') }}
+					</x-responsive-nav-link>
 
-                    @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                    <x-responsive-nav-link href="{{ route('api-tokens.index') }}"
-                        :active="request()->routeIs('api-tokens.index')">
-                        {{ __('API Tokens') }}
-                    </x-responsive-nav-link>
-                    @endif
+					@if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+					<x-responsive-nav-link href="{{ route('api-tokens.index') }}"
+						:active="request()->routeIs('api-tokens.index')">
+						{{ __('API Tokens') }}
+					</x-responsive-nav-link>
+					@endif
 
-                    <!-- Authentication -->
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
+					<!-- Authentication -->
+					<form method="POST" action="{{ route('logout') }}">
+						@csrf
 
-                        <x-responsive-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
+						<x-responsive-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
                                     this.closest('form').submit();">
-                            {{ __('Logout') }}
-                        </x-responsive-nav-link>
-                    </form>
+							{{ __('Logout') }}
+						</x-responsive-nav-link>
+					</form>
 
-                    <!-- Team Management -->
-                    @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
-                    <div class="border-t border-gray-200"></div>
+					<!-- Team Management -->
+					@if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
+					<div class="border-t border-gray-200"></div>
 
-                    <div class="block px-4 py-2 text-xs text-gray-400">
-                        {{ __('Manage Team') }}
-                    </div>
+					<div class="block px-4 py-2 text-xs text-gray-400">
+						{{ __('Manage Team') }}
+					</div>
 
-                    <!-- Team Settings -->
-                    <x-responsive-nav-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}"
-                        :active="request()->routeIs('teams.show')">
-                        {{ __('Team Settings') }}
-                    </x-responsive-nav-link>
+					<!-- Team Settings -->
+					<x-responsive-nav-link href="{{ route('teams.show', Auth::user()->currentTeam->id) }}"
+						:active="request()->routeIs('teams.show')">
+						{{ __('Team Settings') }}
+					</x-responsive-nav-link>
 
-                    @can('create', Laravel\Jetstream\Jetstream::newTeamModel())
-                    <x-responsive-nav-link href="{{ route('teams.create') }}"
-                        :active="request()->routeIs('teams.create')">
-                        {{ __('Create New Team') }}
-                    </x-responsive-nav-link>
-                    @endcan
+					@can('create', Laravel\Jetstream\Jetstream::newTeamModel())
+					<x-responsive-nav-link href="{{ route('teams.create') }}" :active="request()->routeIs('teams.create')">
+						{{ __('Create New Team') }}
+					</x-responsive-nav-link>
+					@endcan
 
-                    <div class="border-t border-gray-200"></div>
+					<div class="border-t border-gray-200"></div>
 
-                    <!-- Team Switcher -->
-                    <div class="block px-4 py-2 text-xs text-gray-400">
-                        {{ __('Switch Teams') }}
-                    </div>
+					<!-- Team Switcher -->
+					<div class="block px-4 py-2 text-xs text-gray-400">
+						{{ __('Switch Teams') }}
+					</div>
 
-                    @foreach (Auth::user()->allTeams() as $team)
-                    <x-switchable-team :team="$team" component="responsive-nav-link" />
-                    @endforeach
-                    @endif
-                </div>
-            </div>
-        </div>
+					@foreach (Auth::user()->allTeams() as $team)
+					<x-switchable-team :team="$team" component="responsive-nav-link" />
+					@endforeach
+					@endif
+				</div>
+			</div>
+		</div>
 </nav>

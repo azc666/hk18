@@ -1,6 +1,6 @@
 <div id="bc_name" name="bc_name" class="relative">
     <div
-        class="absolute top-[154px] left-[49.5px] -ml-2 tracking-[-.045em] text-left text-[1.8rem] text-red-500 bc-helmd z-20">
+        class="absolute top-[156.5px] left-[49.5px] -ml-2 tracking-[-.035em] text-left text-[1.8rem] text-red-500 font-helmd z-20">
         {{ $bc_name }}
     </div>
 </div>
@@ -16,21 +16,21 @@
 <div class="absolute">
     <div
         class="absolute top-[226.5px] -right-[526.5px] -mr-2 w-100 font-hellt tracking-[0.01em] text-right text-[1.1rem] text-red-500 z-20">
-        {{ session('HKName') }}
+        {{ $bc_address2 ? session('HKName') : ""}}
     </div>
 </div>
 
 <div class="absolute">
     <div
         class="absolute top-[247.5px] -right-[526.5px] -mr-2 w-100 font-hellt tracking-[-0.010em] text-right text-[1.15rem] text-red-500 z-20">
-        {{ $bc_address1 }}
+        {{ $bc_address2 ? $bc_address1 : session('HKName')}}
     </div>
 </div>
 
 <div class="absolute">
     <div
         class="absolute top-[270px] -right-[526.5px] -mr-2 w-100 font-hellt tracking-[-0.010em] text-right text-[1.15rem] text-red-500 z-20">
-        {{ $bc_address2 }}
+        {{ $bc_address2 ? $bc_address2 : $bc_address1}}
     </div>
 </div>
 
