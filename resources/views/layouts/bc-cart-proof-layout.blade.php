@@ -129,19 +129,20 @@
 
 <div>
 
-	<div id="bc_name" name="bc_name" class="absolute">
+	{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
 		<div class="name-bc">
 			{{ session('bc_name') }}
-			Hola
 		</div>
-	</div>
+		{{--
+	</div> --}}
 
-	<div id="bc_title" name="bc_title" class="absolute">
+	{{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
 		<div class="title-bc">
 			{{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
 			session('bc_title') }}
 		</div>
-	</div>
+		{{--
+	</div> --}}
 
 	<div class="email-bc">
 		{{ session('bc_email') }}
