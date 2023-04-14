@@ -126,61 +126,62 @@
 		right: 109px;
 	}
 </style>
-
+{{-- @dd(session('bc_name')) --}}
 <div>
 
 	{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-		<div class="name-bc">
-			{{ session('bc_name') }}
+		{{-- <div class="name-bc"> --}}
+			<div>
+				{{ session('bc_name') }}
+			</div>
+			{{--
+		</div> --}}
+
+		{{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
+			<div class="title-bc">
+				{{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
+				session('bc_title') }}
+			</div>
+			{{--
+		</div> --}}
+
+		<div class="email-bc">
+			{{ session('bc_email') }}
 		</div>
-		{{--
-	</div> --}}
 
-	{{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
-		<div class="title-bc">
-			{{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
-			session('bc_title') }}
+		<div class="phone-bc">
+			@if (session('bc_phone'))
+			{{ 'T ' . session('bc_phone') }}
+			@endif
+			@if (session('bc_cell'))
+			{{ ' | M ' . session('bc_cell') }}
+			@endif
+			@if (session('bc_fax'))
+			{{ ' | F ' . session('bc_fax') }}
+			@endif
 		</div>
-		{{--
-	</div> --}}
 
-	<div class="email-bc">
-		{{ session('bc_email') }}
-	</div>
-
-	<div class="phone-bc">
-		@if (session('bc_phone'))
-		{{ 'T ' . session('bc_phone') }}
-		@endif
-		@if (session('bc_cell'))
-		{{ ' | M ' . session('bc_cell') }}
-		@endif
-		@if (session('bc_fax'))
-		{{ ' | F ' . session('bc_fax') }}
-		@endif
-	</div>
-
-	<div class="citystatezip-bc">
-		{{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
-	</div>
-
-	<div class="address2-bc">
-		{{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
-	</div>
-
-	<div class="address1-bc">
-		{{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
-	</div>
-
-	{{-- <div class="absolute">
-		<div
-			class="absolute top-[248px] -right-[526.5px] -mr-2 w-100 font-hellt tracking-[-0.037em] text-right text-[1.24rem] text-red-500 z-20">
-			{{ session('bc_address1') }}
+		<div class="citystatezip-bc">
+			{{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
 		</div>
-	</div> --}}
 
-	<div class="HKName-bc">
-		{{ session('bc_address2') ? session('HKName') : '' }}
+		<div class="address2-bc">
+			{{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
+		</div>
+
+		<div class="address1-bc">
+			{{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
+		</div>
+
+		{{-- <div class="absolute">
+			<div
+				class="absolute top-[248px] -right-[526.5px] -mr-2 w-100 font-hellt tracking-[-0.037em] text-right text-[1.24rem] text-red-500 z-20">
+				{{ session('bc_address1') }}
+			</div>
+		</div> --}}
+
+		<div class="HKName-bc">
+			{{ session('bc_address2') ? session('HKName') : '' }}
+		</div>
+
 	</div>
-
-</div>
