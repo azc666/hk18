@@ -17,7 +17,7 @@
 		src: url("public/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
 	}
 
-	.name-bc {
+	.name-xbc {
 		/* color: red; */
 		color: #0b0b0b;
 		position: absolute;
@@ -30,6 +30,20 @@
 		letter-spacing: -2.5px;
 		top: 260px;
 		left: 112.5px;
+	}
+
+	.name-bc {
+		/* color: red; */
+		color: #0b0b0b;
+		position: absolute;
+		font-size: 83px;
+		/* font-weight: 700; */
+		/* font-family: Helvetica, sans-serif; */
+		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
+		letter-spacing: 1.5px;
+		top: 448px;
+		/* bottom: 980px; */
+		left: 238px;
 	}
 
 	.title-bc {
@@ -130,8 +144,8 @@
 <div>
 
 	{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-		{{-- <div class="name-bc"> --}}
-			<div>
+		<div class="name-bc">
+			{{-- <div> --}}
 				{{ session('bc_name') }}
 			</div>
 			{{--

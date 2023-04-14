@@ -15,8 +15,9 @@
         color: #0b0b0b;
         position: absolute;
         font-size: 83px;
-        font-weight: 700;
-        font-family: Helvetica, sans-serif;
+        /* font-weight: 700; */
+        /* font-family: Helvetica, sans-serif; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: 1.5px;
         top: 448px;
         /* bottom: 980px; */
