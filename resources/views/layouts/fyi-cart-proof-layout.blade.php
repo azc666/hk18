@@ -1,11 +1,22 @@
 <style>
+    @font-face {
+        font-family: "HelveticaNeueLTStd-LT";
+        src: url("public/fonts/HelveticaNeueLTStd-Lt.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Lt.woff2") format('woff2');
+    }
+
+    @font-face {
+        font-family: "HelveticaNeueLTStd-MD";
+        src: url("public/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
+    }
+
     .name-fyi {
         /* color: red; */
         color: #0b0b0b;
         position: absolute;
         font-size: 87.5px;
-        font-weight: 700;
-        font-family: Helvetica, sans-serif;
+        /* font-weight: 700; */
+        /* font-family: Helvetica, sans-serif; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: 1.5px;
         /* top: 900px; */
         bottom: 980px;
@@ -17,9 +28,10 @@
         color: #00478F;
         position: absolute;
         font-family: Helvetica;
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         letter-spacing: -.5px;
         font-size: 47.5px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         top: 370px;
         left: 112px;
     }
@@ -77,29 +89,29 @@
     }
 
     .address1-fyi {
-    /* color: red; */
-    color: #00478F;
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 64.5px;
-    font-weight: lighter;
-    letter-spacing: -0.4px;
-    /* top: 510px; */
-    bottom: 610px;
-    right: 244.5px;
+        /* color: red; */
+        color: #00478F;
+        position: absolute;
+        font-family: Helvetica;
+        font-size: 64.5px;
+        font-weight: lighter;
+        letter-spacing: -0.4px;
+        /* top: 510px; */
+        bottom: 610px;
+        right: 244.5px;
     }
 
     .HKName-fyi {
-    /* color: red; */
-    color: #00478F;
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 64.5px;
-    font-weight: lighter;
-    letter-spacing: -0.6px;
-    /* top: 450px; */
-    Bottom: 690px;
-    right: 244.5px;
+        /* color: red; */
+        color: #00478F;
+        position: absolute;
+        font-family: Helvetica;
+        font-size: 64.5px;
+        font-weight: lighter;
+        letter-spacing: -0.6px;
+        /* top: 450px; */
+        Bottom: 690px;
+        right: 244.5px;
     }
 </style>
 
@@ -133,7 +145,7 @@
 </div>
 
 <div class="citystatezip-fyi">
-    {{ session('bc_city')  }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
+    {{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
 </div>
 
 <div class="address2-fyi">
@@ -147,4 +159,3 @@
 <div class="HKName-fyi">
     {{ session('bc_address2') ? session('HKName') : '' }}
 </div>
-
