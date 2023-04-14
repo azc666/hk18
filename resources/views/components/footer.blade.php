@@ -38,14 +38,21 @@
           Speed of Business</span>
       </div>
     </a>
+    <div class="py-6 -mb-2 text-sm text-center font-hellt text-gray-50">
+      Copyright © {!! \Carbon\Carbon::now()->format('Y')!!} All Rights Reserved
+    </div>
     <div class="pt-2 mr-12 text-base text-center font-MyriadSB">
       <span class="tracking-tighter">1111</span> &nbsp;West Cass Street, Tampa, FL 33606<br>
       P 813.254.9444 • <a href="https://g-d.com">https://g-d.com</a> • <a
         href="mailto:output@g-d.com">output@g-d.com</a>
     </div>
   </div>
-  <hr class="mt-2 border-hkcolor border-opacity-40" />
-  <div class="py-4 -mb-2 text-sm text-center font-hellt text-gray-50">
+  {{--
+  <hr class="mt-2 border-hkcolor border-opacity-40" /> --}}
+  {{-- <div class="py-4 -mb-2 text-sm text-center font-hellt text-gray-50">
     Copyright © {!! \Carbon\Carbon::now()->format('Y')!!} All Rights Reserved
+  </div> --}}
+  <div>
+    &nbsp;
   </div>
 </div>
