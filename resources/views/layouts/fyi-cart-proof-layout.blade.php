@@ -27,7 +27,7 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         letter-spacing: -.5px;
         font-size: 47.5px;
@@ -41,8 +41,9 @@
         color: #00478F;
         position: absolute;
         font-size: 61.5px;
-        font-weight: 700;
-        font-family: Helvetica;
+        /* font-weight: 700; */
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: 1.15px;
         /* top: 745px; */
         bottom: 291px;
@@ -53,9 +54,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 64.5px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: .55px;
         /* top: 682.5px; */
         bottom: 372px;
@@ -66,9 +68,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 64.5px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: .45px;
         /* top: 628px; */
         bottom: 450px;
@@ -79,9 +82,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 64.5px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: .45px;
         /* top: 570px; */
         bottom: 532px;
@@ -92,9 +96,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 64.5px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -0.4px;
         /* top: 510px; */
         bottom: 610px;
@@ -105,9 +110,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 64.5px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -0.6px;
         /* top: 450px; */
         Bottom: 690px;
