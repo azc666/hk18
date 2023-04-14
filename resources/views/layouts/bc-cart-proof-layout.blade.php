@@ -132,6 +132,7 @@
 	<div id="bc_name" name="bc_name" class="absolute">
 		<div class="name-bc">
 			{{ session('bc_name') }}
+			Hola
 		</div>
 	</div>
 
