@@ -448,7 +448,7 @@ class BusinessCard extends Component
 
         if ($product->id === 101 || $product->id === 102 || $product->id === 103) {
             $pdf = '';
-            $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadview('pdf-view', $data)->setPaper([0, 0, 770, 1220], 'landscape');
+            $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadview('pdf-view', $data)->setPaper([0, 0, 1220, 770]);
         }
 
         if ($product->id === 104 || $product->id === 105 || $product->id === 106) {
