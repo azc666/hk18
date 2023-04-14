@@ -9,7 +9,7 @@
 
 	@font-face {
 		font-family: "HelveticaNeueLTStd-LT";
-		src: url("public/fonts/HelveticaNeueLTStd-Lt.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Lt.woff2") format('woff2');
+		src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Lt.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Lt.woff2") format('woff2');
 	}
 
 	@font-face {
