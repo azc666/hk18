@@ -14,12 +14,12 @@
 
 	@font-face {
 		font-family: "HelveticaNeueLTStd-MD";
-		src: url("public/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
+		src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
 	}
 
 	.name-bc {
-		/* color: red; */
-		color: #0b0b0b;
+		color: red;
+		/* color: #0b0b0b; */
 		position: absolute;
 		font-size: 70px;
 		/* font-weight: 700; */
@@ -28,8 +28,10 @@
 		/* font-weight: 600; */
 		/* font-style: normal; */
 		letter-spacing: -2.5px;
-		top: 260px;
-		left: 112.5px;
+		/* top: 260px; */
+		top: 400px;
+		/* left: 112.5px; */
+		left: 240px;
 	}
 
 	.title-bc {
@@ -48,8 +50,8 @@
 	}
 
 	.email-bc {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		font-size: 47.5px;
 		/* font-weight: 700; */
