@@ -10,8 +10,8 @@
 	}
 
 	.name-fyi {
-		/* color: red; */
-		color: #0b0b0b;
+		color: red;
+		/* color: #0b0b0b; */
 		position: absolute;
 		font-size: 87.5px;
 		/* font-weight: 700; */
@@ -19,13 +19,14 @@
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
 		letter-spacing: 1.5px;
 		/* top: 900px; */
-		bottom: 980px;
+		/* bottom: 980px; */
+		top: 500px;
 		left: 240px;
 	}
 
 	.title-fyi {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -37,8 +38,8 @@
 	}
 
 	.email-fyi {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		font-size: 61.5px;
 		/* font-weight: 700; */
@@ -51,8 +52,8 @@
 	}
 
 	.phone-fyi {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -65,8 +66,8 @@
 	}
 
 	.citystatezip-fyi {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -79,8 +80,8 @@
 	}
 
 	.address2-fyi {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -93,8 +94,8 @@
 	}
 
 	.address1-fyi {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -107,8 +108,8 @@
 	}
 
 	.HKName-fyi {
-		/* color: red; */
-		color: #00478F;
+		color: red;
+		/* color: #00478F; */
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -116,7 +117,8 @@
 		/* font-weight: lighter; */
 		letter-spacing: -0.6px;
 		/* top: 450px; */
-		Bottom: 690px;
+		/* Bottom: 690px; */
+		top: 500px;
 		right: 244.5px;
 	}
 </style>
