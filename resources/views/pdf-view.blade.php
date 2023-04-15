@@ -26,7 +26,7 @@
         session('prod_layout') === 'ABC' ||
         session('prod_layout') === 'PBC')
         <img src="https://azc666.com/assets/mpdf/bc_template_withText.jpg" style="width:100%; box-shadow: 0px 0px 10px;"
-            class="absolute top-20" style="width:100%">
+            class="pt-[80px]" style="width:100%">
         @include('layouts/bc-cart-proof-layout')
         @endif
 
