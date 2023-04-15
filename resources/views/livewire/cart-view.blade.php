@@ -58,7 +58,7 @@
           <div class="pt-[12px]">
             <a href="{{ $row->options->proof_path }}" target="_blank">
               <div>
-                <img style="max-width: 85%; margin-left: 20px;" class="object-cover rounded-md"
+                <img style="max-width: 85%; margin-left: 20px; object-fit: cover; border-radius: 0.375rem" class=""
                   src="{{ $row->options->proof_path }}">
             </a>
           </div>
