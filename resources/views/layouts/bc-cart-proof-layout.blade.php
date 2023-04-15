@@ -128,12 +128,12 @@
 	}
 </style>
 
-{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
+<div class="absolute">
 	<div class="name-bc">
 		{{ session('bc_name') }}
 	</div>
-	{{--
-</div> --}}
+
+</div>
 
 {{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
 	<div class="title-bc">
