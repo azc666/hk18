@@ -33,8 +33,8 @@
 		letter-spacing: -.5px;
 		font-size: 47.5px;
 		/* font-weight: lighter; */
-		top: 370px;
-		left: 112px;
+		top: 520px;
+		left: 240px;
 	}
 
 	.email-fyi {
@@ -47,7 +47,8 @@
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
 		letter-spacing: 1.15px;
 		/* top: 745px; */
-		bottom: 291px;
+		/* bottom: 291px; */
+		top: 750px;
 		right: 244.5px;
 	}
 
@@ -61,7 +62,8 @@
 		/* font-weight: lighter; */
 		letter-spacing: .55px;
 		/* top: 682.5px; */
-		bottom: 372px;
+		/* bottom: 372px; */
+		top: 680px;
 		right: 244.5px;
 	}
 
@@ -75,7 +77,8 @@
 		/* font-weight: lighter; */
 		letter-spacing: .45px;
 		/* top: 628px; */
-		bottom: 450px;
+		/* bottom: 450px; */
+		top: 650px;
 		right: 244.5px;
 	}
 
@@ -89,7 +92,8 @@
 		/* font-weight: lighter; */
 		letter-spacing: .45px;
 		/* top: 570px; */
-		bottom: 532px;
+		/* bottom: 532px; */
+		top: 550px;
 		right: 244.5px;
 	}
 
@@ -103,7 +107,8 @@
 		/* font-weight: lighter; */
 		letter-spacing: -0.4px;
 		/* top: 510px; */
-		bottom: 610px;
+		/* bottom: 610px; */
+		top: 600px;
 		right: 244.5px;
 	}
 
@@ -118,7 +123,7 @@
 		letter-spacing: -0.6px;
 		/* top: 450px; */
 		/* Bottom: 690px; */
-		top: 500px;
+		top: 530%;
 		right: 244.5px;
 	}
 </style>
