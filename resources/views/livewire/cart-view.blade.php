@@ -57,8 +57,8 @@
         <td>
           <a href="{{ $row->options->proof_path }}" target="_blank">
             <div>
-              <img style="max-width: 85%; margin-left: 20px; margin-top: 10px;"
-                class="object-cover rounded-md shadow-xl" src="{{ $row->options->proof_path }}">
+              <img style="max-width: 85%; margin-left: 20px; margin-top: 10px;" class="object-cover rounded-md"
+                src="{{ $row->options->proof_path }}">
           </a>
 </div>
 
