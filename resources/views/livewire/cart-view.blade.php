@@ -40,7 +40,7 @@
   </div>
   @endif
 
-  <table class="mt-6">
+  <table style="margin-top: 24px;">
     <thead>
       <tr class="text-base text-left text-gray-600 uppercase border-b-2 border-gray-300">
         <th style="padding-bottom: 10px; width: 25%"></th>
@@ -56,8 +56,8 @@
       <tr class="z-20 border-b-2 border-gray-300">
         <td>
           <a href="{{ $row->options->proof_path }}" target="_blank"> <img
-              style="max-width: 85%; height: auto; margin-left: 20px; margin-top: 10px;"
-              class="object-cover rounded-md shadow-xl" src="{{ $row->options->proof_path }}"></a>
+              style="max-width: 85%; margin-left: 20px; margin-top: 10px;" class="object-cover rounded-md shadow-xl"
+              src="{{ $row->options->proof_path }}"></a>
           <div class="mb-4"></div>
         </td>
 
