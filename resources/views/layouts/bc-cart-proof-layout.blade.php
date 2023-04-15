@@ -9,35 +9,35 @@
 		src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
 	}
 
-	.name-fyi {
+	.name-bc {
 		color: red;
 		/* color: #0b0b0b; */
 		position: absolute;
-		font-size: 87.5px;
+		font-size: 130px;
 		/* font-weight: 700; */
 		/* font-family: Helvetica, sans-serif; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-		letter-spacing: 1.5px;
+		letter-spacing: -5px;
 		/* top: 900px; */
 		/* bottom: 980px; */
-		top: 500px;
-		left: 240px;
+		top: 416.5px;
+		left: 187px;
 	}
 
-	.title-fyi {
+	.title-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		letter-spacing: -.5px;
-		font-size: 47.5px;
+		letter-spacing: .6px;
+		font-size: 82.5px;
 		/* font-weight: lighter; */
-		top: 520px;
-		left: 240px;
+		top: 595px;
+		left: 187px;
 	}
 
-	.email-fyi {
+	.email-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
@@ -48,11 +48,11 @@
 		letter-spacing: 1.15px;
 		/* top: 745px; */
 		/* bottom: 291px; */
-		top: 750px;
+		top: 850px;
 		right: 244.5px;
 	}
 
-	.phone-fyi {
+	.phone-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
@@ -67,7 +67,7 @@
 		right: 244.5px;
 	}
 
-	.citystatezip-fyi {
+	.citystatezip-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
@@ -82,7 +82,7 @@
 		right: 244.5px;
 	}
 
-	.address2-fyi {
+	.address2-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
@@ -97,7 +97,7 @@
 		right: 244.5px;
 	}
 
-	.address1-fyi {
+	.address1-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
@@ -112,7 +112,7 @@
 		right: 244.5px;
 	}
 
-	.HKName-fyi {
+	.HKName-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
@@ -123,30 +123,31 @@
 		letter-spacing: -0.6px;
 		/* top: 450px; */
 		/* Bottom: 690px; */
-		top: 530%;
+		top: 500px;
 		right: 244.5px;
 	}
 </style>
 
 {{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-	<div class="name-fyi">
+	<div class="name-bc">
 		{{ session('bc_name') }}
 	</div>
 	{{--
 </div> --}}
 
-{{-- <div id="bc_title" name="bc_title" class="absolute">
-	<div class="title">
+{{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
+	<div class="title-bc">
 		{{ session('bc_title') }}
 	</div>
+	{{--
 </div> --}}
 
 
-<div class="email-fyi">
+<div class="email-bc">
 	{{ session('bc_email') }}
 </div>
 
-<div class="phone-fyi">
+<div class="phone-bc">
 	@if (session('bc_phone'))
 	{{ 'T ' . session('bc_phone') }}
 	@endif
@@ -158,18 +159,18 @@
 	@endif
 </div>
 
-<div class="citystatezip-fyi">
+<div class="citystatezip-bc">
 	{{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
 </div>
 
-<div class="address2-fyi">
+<div class="address2-bc">
 	{{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
 </div>
 
-<div class="address1-fyi">
+<div class="address1-bc">
 	{{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
 </div>
 
-<div class="HKName-fyi">
+<div class="HKName-bc">
 	{{ session('bc_address2') ? session('HKName') : '' }}
 </div>

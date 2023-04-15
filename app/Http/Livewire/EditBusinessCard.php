@@ -474,7 +474,8 @@ class EditBusinessCard extends Component
         view()->share('product', $data);
 
         if (session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 || session('prod_layout') === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC') {
-            $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 770, 1220], 'landscape');
+            // $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 770, 1220], 'landscape');
+            $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadview('pdf-view', $data)->setPaper([0, 0, 2000, 1200]);
         }
         if (session('prod_id') === 107 || session('prod_id') === 108 || session('prod_id') === 109 || session('prod_layout') === 'SFYI' || session('prod_layout') === 'AFYI' || session('prod_layout') === 'PFYI') {
             $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 2000, 2585]);
