@@ -43,7 +43,7 @@
   <table class="mt-6">
     <thead>
       <tr class="text-base text-left text-gray-600 uppercase border-b-2 border-gray-300">
-        <th style="padding-bottom: 10px;" width="25%"></th>
+        <th style="padding-bottom: 10px; width: 25%"></th>
         <th class="pl-20">Product</th>
         <th>Detail</th>
         <th>Quantity</th>
@@ -168,7 +168,7 @@
         @endif
 
         <td class="">
-          <div class="flex-col items-center">
+          <div class="flex-col items-center w-24">
 
             <div class="z-20 content-center pb-2">
               <a href="{{ route('emailrow', ['rowId' => $row->rowId]) }}">
