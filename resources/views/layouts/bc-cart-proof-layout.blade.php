@@ -1,13 +1,5 @@
 <style>
 	@font-face {
-		font-family: 'Herculanum';
-		src: url('/fonts/Herculanum.ttf') format('ttf');
-		font-weight: normal;
-		font-style: normal;
-
-	}
-
-	@font-face {
 		font-family: "HelveticaNeueLTStd-LT";
 		src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Lt.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Lt.woff2") format('woff2');
 	}
@@ -17,173 +9,160 @@
 		src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
 	}
 
-	.name-bc {
-		color: red;
-		/* color: #0b0b0b; */
+	.name-fyi {
+		/* color: red; */
+		color: #0b0b0b;
 		position: absolute;
-		font-size: 70px;
+		font-size: 87.5px;
 		/* font-weight: 700; */
-		/* font-family: HelveticaNeueLtStd-Md, sans-serif; */
+		/* font-family: Helvetica, sans-serif; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-		/* font-weight: 600; */
-		/* font-style: normal; */
-		letter-spacing: -2.5px;
-		/* top: 260px; */
-		top: 400px;
-		/* left: 112.5px; */
+		letter-spacing: 1.5px;
+		/* top: 900px; */
+		bottom: 980px;
 		left: 240px;
 	}
 
-	.title-bc {
+	.title-fyi {
 		/* color: red; */
 		color: #00478F;
 		position: absolute;
-		/* font-family: "HelveticaNeueLtStd Md"; */
+		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		/* font-weight: normal;
-		font-style: normal; */
-		letter-spacing: .075px;
+		letter-spacing: -.5px;
 		font-size: 47.5px;
 		/* font-weight: lighter; */
 		top: 370px;
 		left: 112px;
 	}
 
-	.email-bc {
-		color: red;
-		/* color: #00478F; */
+	.email-fyi {
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
-		font-size: 47.5px;
+		font-size: 61.5px;
 		/* font-weight: 700; */
-		/* font-family: Helvetica, sans-serif; */
+		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-		/* font-weight: 700; */
-		/* font-style: normal; */
-		letter-spacing: -.45px;
-		top: 740px;
-		right: 108.5px;
+		letter-spacing: 1.15px;
+		/* top: 745px; */
+		bottom: 291px;
+		right: 244.5px;
 	}
 
-	.phone-bc {
+	.phone-fyi {
 		/* color: red; */
 		color: #00478F;
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 48.5px;
+		font-size: 64.5px;
 		/* font-weight: lighter; */
-		letter-spacing: -0.15px;
-		top: 690px;
-		right: 109px;
+		letter-spacing: .55px;
+		/* top: 682.5px; */
+		bottom: 372px;
+		right: 244.5px;
 	}
 
-	.citystatezip-bc {
+	.citystatezip-fyi {
 		/* color: red; */
 		color: #00478F;
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 48.5px;
+		font-size: 64.5px;
 		/* font-weight: lighter; */
-		letter-spacing: -0.3px;
-		top: 628px;
-		right: 109px;
+		letter-spacing: .45px;
+		/* top: 628px; */
+		bottom: 450px;
+		right: 244.5px;
 	}
 
-	.address2-bc {
+	.address2-fyi {
 		/* color: red; */
 		color: #00478F;
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 48px;
+		font-size: 64.5px;
 		/* font-weight: lighter; */
-		letter-spacing: -.2px;
-		top: 570px;
-		right: 109px;
+		letter-spacing: .45px;
+		/* top: 570px; */
+		bottom: 532px;
+		right: 244.5px;
 	}
 
-	.address1-bc {
+	.address1-fyi {
 		/* color: red; */
 		color: #00478F;
 		position: absolute;
 		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 48px;
+		font-size: 64.5px;
 		/* font-weight: lighter; */
-		letter-spacing: -0.5px;
-		top: 510px;
-		right: 109px;
+		letter-spacing: -0.4px;
+		/* top: 510px; */
+		bottom: 610px;
+		right: 244.5px;
 	}
 
-	.HKName-bc {
+	.HKName-fyi {
 		/* color: red; */
 		color: #00478F;
 		position: absolute;
+		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 49.5px;
+		font-size: 64.5px;
 		/* font-weight: lighter; */
-		letter-spacing: -1px;
-		top: 450px;
-		right: 109px;
+		letter-spacing: -0.6px;
+		/* top: 450px; */
+		Bottom: 690px;
+		right: 244.5px;
 	}
 </style>
-{{-- @dd(session('bc_name')) --}}
-<div>
 
-	{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-		<div class="name-bc">
-			{{-- <div> --}}
-				{{ session('bc_name') }}
-			</div>
-			{{--
-		</div> --}}
-
-		{{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
-			<div class="title-bc">
-				{{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
-				session('bc_title') }}
-			</div>
-			{{--
-		</div> --}}
-
-		<div class="email-bc">
-			{{ session('bc_email') }}
-		</div>
-
-		<div class="phone-bc">
-			@if (session('bc_phone'))
-			{{ 'T ' . session('bc_phone') }}
-			@endif
-			@if (session('bc_cell'))
-			{{ ' | M ' . session('bc_cell') }}
-			@endif
-			@if (session('bc_fax'))
-			{{ ' | F ' . session('bc_fax') }}
-			@endif
-		</div>
-
-		<div class="citystatezip-bc">
-			{{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
-		</div>
-
-		<div class="address2-bc">
-			{{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
-		</div>
-
-		<div class="address1-bc">
-			{{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
-		</div>
-
-		{{-- <div class="absolute">
-			<div
-				class="absolute top-[248px] -right-[526.5px] -mr-2 w-100 font-hellt tracking-[-0.037em] text-right text-[1.24rem] text-red-500 z-20">
-				{{ session('bc_address1') }}
-			</div>
-		</div> --}}
-
-		<div class="HKName-bc">
-			{{ session('bc_address2') ? session('HKName') : '' }}
-		</div>
-
+{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
+	<div class="name-fyi">
+		{{ session('bc_name') }}
 	</div>
+	{{--
+</div> --}}
+
+{{-- <div id="bc_title" name="bc_title" class="absolute">
+	<div class="title">
+		{{ session('bc_title') }}
+	</div>
+</div> --}}
+
+
+<div class="email-fyi">
+	{{ session('bc_email') }}
+</div>
+
+<div class="phone-fyi">
+	@if (session('bc_phone'))
+	{{ 'T ' . session('bc_phone') }}
+	@endif
+	@if (session('bc_cell'))
+	{{ ' | M ' . session('bc_cell') }}
+	@endif
+	@if (session('bc_fax'))
+	{{ ' | F ' . session('bc_fax') }}
+	@endif
+</div>
+
+<div class="citystatezip-fyi">
+	{{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
+</div>
+
+<div class="address2-fyi">
+	{{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
+</div>
+
+<div class="address1-fyi">
+	{{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
+</div>
+
+<div class="HKName-fyi">
+	{{ session('bc_address2') ? session('HKName') : '' }}
+</div>
