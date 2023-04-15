@@ -128,7 +128,7 @@
 	}
 </style>
 
-<div class="absolute">
+<div class="relative">
 	<div class="name-bc">
 		{{ session('bc_name') }}
 	</div>
