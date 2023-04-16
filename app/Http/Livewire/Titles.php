@@ -84,6 +84,7 @@ class Titles extends Component
 
     public function createShowModal()
     {
+        // dd('hola');
         $this->resetValidation();
         $this->resetVars();
         $this->modalFormVisible = true;
@@ -92,12 +93,14 @@ class Titles extends Component
 
     public function updateShowModal($id)
     {
+        //
         $this->resetValidation();
         $this->resetVars();
         $this->modelId = $id;
         Session::put('modelId', $id);
         $this->modalFormVisible = true;
         $this->loadModel();
+        // dd('hola');
     }
 
     public function deleteShowModal($id)
@@ -125,7 +128,7 @@ class Titles extends Component
         // }
         $this->active = $data->active;
 
-        // dd($this->active);
+        // dd('hola');
     }
 
     public function modelData()
