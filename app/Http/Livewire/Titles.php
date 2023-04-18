@@ -84,23 +84,20 @@ class Titles extends Component
 
     public function createShowModal()
     {
-        // dd('hola');
         $this->resetValidation();
         $this->resetVars();
         $this->modalFormVisible = true;
-        $this->checkbox = true;
+        // $this->checkbox = true;
     }
 
     public function updateShowModal($id)
     {
-        //
         $this->resetValidation();
         $this->resetVars();
         $this->modelId = $id;
         Session::put('modelId', $id);
         $this->modalFormVisible = true;
         $this->loadModel();
-        // dd('hola');
     }
 
     public function deleteShowModal($id)

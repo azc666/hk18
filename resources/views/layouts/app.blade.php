@@ -55,6 +55,7 @@
     @stack('modals')
     <x-footer />
 
+    @livewire('livewire-ui-modal')
     @livewireScripts
 </body>
 
