@@ -162,7 +162,7 @@
 							@endif --}}
 						</td>
 						<td class="px-2 py-1 text-right whitespace-nowrap">
-							<button wire:click="updateShowModal({{ $title->id }})"
+							<button wire:click="$emit('openModal', 'edit-title')"
 								class="inline-flex items-center px-4 py-1 text-xs font-bold tracking-widest text-white uppercase transition duration-150 ease-in-out border border-transparent rounded-full bg-hkcolor hover:bg-indigo-400 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25">
 								<span class=""> {{ __('Edit') }}</span>
 							</button>

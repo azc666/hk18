@@ -7,17 +7,17 @@ use Carbon\Carbon;
 use App\Models\Title;
 use Livewire\Component;
 use Illuminate\Http\Request;
-use Livewire\WithPagination;
-use Illuminate\Pagination\Paginator;
+// use Livewire\WithPagination;
+// use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Session;
 
 class CreateTitle extends ModalComponent
 {
-    public $search;
-    public $sortField;
-    public $sortAsc = true;
-    public $pages = 10;
-    protected $queryString = ['search', 'active', 'sortAsc'];
+    // public $search;
+    // public $sortField;
+    // public $sortAsc = true;
+    // public $pages = 10;
+    // protected $queryString = ['search', 'active', 'sortAsc'];
 
     public $modelId;
     public $type;
