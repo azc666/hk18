@@ -25,7 +25,7 @@
         session('prod_layout') === 'SBC' ||
         session('prod_layout') === 'ABC' ||
         session('prod_layout') === 'PBC')
-        <img src="https://hk17.test/assets/mpdf/bc2_template_withText.jpg" style="width:100%;" class="">
+        <img src="assets/mpdf/bc2_template_withText.jpg" style="width:100%;" class="">
         @include('layouts/bc-cart-proof-layout')
         @endif
 
