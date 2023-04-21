@@ -41,15 +41,11 @@
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
-		font-size: 61.5px;
-		/* font-weight: 700; */
-		/* font-family: Helvetica; */
+		font-size: 80.7px;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-		letter-spacing: 1.15px;
-		/* top: 745px; */
-		/* bottom: 291px; */
-		top: 850px;
-		right: 244.5px;
+		letter-spacing: 0.49px;
+		top: 1222px;
+		right: 187px;
 	}
 
 	.phone-bc {
