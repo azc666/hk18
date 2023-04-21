@@ -118,10 +118,10 @@
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
-		letter-spacing: .2px;
+		letter-spacing: -.2px;
 		/* top: 450px; */
 		/* Bottom: 690px; */
-		top: 725px;
+		top: 724px;
 		right: 194px;
 	}
 </style>
