@@ -117,8 +117,8 @@
 		/* color: #00478F; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 80px;
-		letter-spacing: 1px;
+		font-size: 81px;
+		letter-spacing: .8px;
 		/* top: 450px; */
 		/* Bottom: 690px; */
 		top: 725px;
