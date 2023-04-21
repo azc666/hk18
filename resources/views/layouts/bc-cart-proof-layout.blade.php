@@ -14,14 +14,12 @@
 		/* color: #0b0b0b; */
 		position: absolute;
 		font-size: 115px;
-		/* font-weight: 700; */
-		/* font-family: Helvetica, sans-serif; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-		letter-spacing: -2.2px;
-		/* top: 900px; */
-		/* bottom: 980px; */
-		top: 425px;
+		letter-spacing: -2.1px;
+		top: 423px;
 		left: 186.9px;
+		/* top was 425 */
+		/* letter spacing was -2.2 */
 	}
 
 	.title-bc {
