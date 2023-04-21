@@ -1,13 +1,13 @@
 <div id="bc_name" name="bc_name" class="relative">
     <div
-        class="absolute top-[156.5px] left-[49.5px] -ml-2 tracking-[-.035em] text-left text-[1.8rem] text-red-500 font-helmd z-20">
+        class="absolute top-[165px] left-[49.5px] -ml-2 tracking-[-.05em] text-left text-[1.7rem] text-red-500 font-helmd z-20">
         {{ $bc_name }}
     </div>
 </div>
 
 <div id="bc_title" name="bc_title" class="absolute">
     <div
-        class="relative top-[192px] left-[48.5px] -ml-1.5 bc-hellt tracking-[-.04em] text-left text-lg text-red-500 z-20">
+        class="relative top-[198px] left-[48.25px] -ml-1.5 bc-hellt tracking-[-.035em] text-left text-[1.15rem] text-red-500 z-20">
         {{ $bc_title == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' : $bc_title }}
         {{-- Attorney --}}
     </div>
