@@ -31,13 +31,12 @@
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
-		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		letter-spacing: .6px;
+		letter-spacing: .3px;
 		font-size: 82.5px;
-		/* font-weight: lighter; */
 		top: 595px;
-		left: 187px;
+		left: 186.9px;
+		/* letter spacing was .6 */
 	}
 
 	.email-bc {
