@@ -44,8 +44,10 @@
 		font-size: 80.7px;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
 		letter-spacing: 0.49px;
-		top: 1220px;
-		right: 196px;
+		top: 1218px;
+		right: 194px;
+		/* top was 1222 */
+		/* right was 196 */
 	}
 
 	.phone-bc {
