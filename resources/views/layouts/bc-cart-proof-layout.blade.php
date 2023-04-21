@@ -61,7 +61,7 @@
 		letter-spacing: -0.4px;
 		/* top: 682.5px; */
 		/* bottom: 372px; */
-		top: 1120px;
+		top: 1119px;
 		right: 194px;
 	}
 
@@ -100,7 +100,7 @@
 		letter-spacing: -0.4px;
 		/* top: 510px; */
 		/* bottom: 610px; */
-		top: 819px;
+		top: 820px;
 		right: 194px;
 	}
 
