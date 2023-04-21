@@ -116,15 +116,13 @@
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
-		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 64.5px;
-		/* font-weight: lighter; */
-		letter-spacing: -0.6px;
+		font-size: 80px;
+		letter-spacing: 1px;
 		/* top: 450px; */
 		/* Bottom: 690px; */
-		top: 500px;
-		right: 244.5px;
+		top: 725px;
+		right: 194px;
 	}
 </style>
 
