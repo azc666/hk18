@@ -118,7 +118,7 @@
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
-		letter-spacing: -.2px;
+		letter-spacing: 0px;
 		/* top: 450px; */
 		/* Bottom: 690px; */
 		top: 724px;
