@@ -71,45 +71,39 @@
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
-		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 64.5px;
-		/* font-weight: lighter; */
-		letter-spacing: .45px;
+		font-size: 82px;
+		letter-spacing: -0.4px;
 		/* top: 628px; */
 		/* bottom: 450px; */
-		top: 650px;
-		right: 244.5px;
+		top: 1020px;
+		right: 194px;
 	}
 
 	.address2-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
-		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 64.5px;
-		/* font-weight: lighter; */
-		letter-spacing: .45px;
+		font-size: 82px;
+		letter-spacing: -0.4px;
 		/* top: 570px; */
 		/* bottom: 532px; */
-		top: 550px;
-		right: 244.5px;
+		top: 918px;
+		right: 194px;
 	}
 
 	.address1-bc {
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
-		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 64.5px;
-		/* font-weight: lighter; */
+		font-size: 82px;
 		letter-spacing: -0.4px;
 		/* top: 510px; */
 		/* bottom: 610px; */
-		top: 600px;
-		right: 244.5px;
+		top: 818px;
+		right: 194px;
 	}
 
 	.HKName-bc {
