@@ -100,7 +100,7 @@
 		letter-spacing: -0.4px;
 		/* top: 510px; */
 		/* bottom: 610px; */
-		top: 820px;
+		top: 821px;
 		right: 194px;
 	}
 
