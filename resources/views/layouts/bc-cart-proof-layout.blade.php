@@ -56,15 +56,13 @@
 		color: red;
 		/* color: #00478F; */
 		position: absolute;
-		/* font-family: Helvetica; */
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		font-size: 64.5px;
-		/* font-weight: lighter; */
-		letter-spacing: .55px;
+		font-size: 83px;
+		letter-spacing: -0.4px;
 		/* top: 682.5px; */
 		/* bottom: 372px; */
-		top: 680px;
-		right: 244.5px;
+		top: 1120px;
+		right: 194px;
 	}
 
 	.citystatezip-bc {
@@ -102,7 +100,7 @@
 		letter-spacing: -0.4px;
 		/* top: 510px; */
 		/* bottom: 610px; */
-		top: 818px;
+		top: 819px;
 		right: 194px;
 	}
 
