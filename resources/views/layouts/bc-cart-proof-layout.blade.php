@@ -15,7 +15,7 @@
 		position: absolute;
 		font-size: 115px;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-		letter-spacing: -1.6px;
+		letter-spacing: -1.3px;
 		top: 422px;
 		left: 186.9px;
 		/* top was 425 */
@@ -24,6 +24,7 @@
 		/* letter spacing was -2.1 */
 		/* letter spacing was -2.0 */
 		/* letter spacing was -1.8 */
+		/* letter spacing was -1.6 */
 	}
 
 	.title-bc {
