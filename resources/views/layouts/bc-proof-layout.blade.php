@@ -58,7 +58,7 @@
 
 <div class="absolute">
     <div
-        class="absolute top-[334px] -right-[526.5px] -mr-2 w-100 font-helmd tracking-[-0.045em] text-right text-[1.24rem] text-red-500 z-20">
+        class="absolute top-[339.5px] -right-[527.75px] -mr-[4.9px] w-100 font-helmd tracking-[0.013em] text-right text-[17.95px] text-red-500 z-20">
         {{ $bc_email }}
     </div>
 </div>
