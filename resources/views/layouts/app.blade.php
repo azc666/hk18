@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" href="{{ url('favicon.jpg') }}">
+    {{--
+    <link rel="shortcut icon" href="{{ asset('/asset/hk2.png') }}"> --}}
+    {{--
+    <link rel="shortcut icon" href="{{ asset('assets/HK2.ico') }}"> --}}
+    <link rel="icon" type="image/png" href="{{ asset('assets/HK2.png') }}">
     <link rel="stylesheet" href="https://use.typekit.net/tza8nhy.css">
 
     <title>{{ $title ?? 'HK Order Portal' }}</title>
