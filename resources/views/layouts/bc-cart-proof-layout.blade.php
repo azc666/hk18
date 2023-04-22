@@ -10,8 +10,8 @@
 	}
 
 	.name-bc {
-		color: red;
-		/* color: #0b0b0b; */
+		/* color: red; */
+		color: #0b0b0b;
 		position: absolute;
 		font-size: 115px;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -28,8 +28,8 @@
 	}
 
 	.title-bc {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		letter-spacing: .3px;
@@ -40,79 +40,67 @@
 	}
 
 	.email-bc {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
 		font-size: 80.7px;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
 		letter-spacing: 0.49px;
 		top: 1218px;
 		right: 194px;
-		/* top was 1222 */
-		/* right was 196 */
 	}
 
 	.phone-bc {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 83px;
 		letter-spacing: -0.5px;
-		/* top: 682.5px; */
-		/* bottom: 372px; */
 		top: 1119px;
 		right: 194px;
 	}
 
 	.citystatezip-bc {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
 		letter-spacing: -0.4px;
-		/* top: 628px; */
-		/* bottom: 450px; */
 		top: 1020px;
 		right: 194px;
 	}
 
 	.address2-bc {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
 		letter-spacing: -0.4px;
-		/* top: 570px; */
-		/* bottom: 532px; */
 		top: 918px;
 		right: 194px;
 	}
 
 	.address1-bc {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
 		letter-spacing: -0.4px;
-		/* top: 510px; */
-		/* bottom: 610px; */
 		top: 821px;
 		right: 194px;
 	}
 
 	.HKName-bc {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
 		letter-spacing: 0px;
-		/* top: 450px; */
-		/* Bottom: 690px; */
 		top: 724px;
 		right: 194px;
 	}
