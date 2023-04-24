@@ -51,7 +51,7 @@
         session('prod_layout') === 'SFYI' ||
         session('prod_layout') === 'AFYI' ||
         session('prod_layout') === 'PFYI')
-        <img src="assets/mpdf/fyi_template.jpg" class="mt-2 ml-2" style="width:100%" />
+        <img src="assets/mpdf/fyi_template_withText.jpg" class="mt-2 ml-2" style="width:100%" />
         @include('layouts/fyi-cart-proof-layout')
         @endif
 

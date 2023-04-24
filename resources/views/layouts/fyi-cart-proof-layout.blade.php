@@ -10,114 +10,102 @@
     }
 
     .name-fyi {
-        /* color: red; */
-        color: #0b0b0b;
+        color: red;
+        /* color: #0b0b0b; */
         position: absolute;
-        font-size: 87.5px;
-        /* font-weight: 700; */
-        /* font-family: Helvetica, sans-serif; */
+        font-size: 106.5px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-        letter-spacing: 1.5px;
-        /* top: 900px; */
-        bottom: 980px;
-        left: 240px;
+        letter-spacing: -3.5px;
+        top: 2252.5px;
+        /* bottom: 980px; */
+        left: 169.5px;
     }
 
-    .title-fyi {
+    /* .title-fyi {
         /* color: red; */
-        color: #00478F;
-        position: absolute;
-        /* font-family: Helvetica; */
-        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        letter-spacing: -.5px;
-        font-size: 47.5px;
-        /* font-weight: lighter; */
-        top: 370px;
-        left: 112px;
+    color: #00478F;
+    position: absolute;
+    /* font-family: Helvetica; */
+    font-family: 'CustomFont',
+    '"HelveticaNeueLTStd-LT"',
+    sans-serif;
+    letter-spacing: -.5px;
+    font-size: 47.5px;
+    /* font-weight: lighter; */
+    top: 370px;
+    left: 112px;
     }
 
-    .email-fyi {
-        /* color: red; */
-        color: #00478F;
+    */ .email-fyi {
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        font-size: 61.5px;
-        /* font-weight: 700; */
-        /* font-family: Helvetica; */
+        font-size: 67px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-        letter-spacing: 1.15px;
+        letter-spacing: 2.75px;
         /* top: 745px; */
-        bottom: 291px;
-        right: 244.5px;
+        bottom: 196.5px;
+        right: 162.5px;
     }
 
     .phone-fyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: .55px;
+        font-size: 68.5px;
+        letter-spacing: 1.85px;
         /* top: 682.5px; */
-        bottom: 372px;
-        right: 244.5px;
+        bottom: 275px;
+        right: 162.5px;
     }
 
     .citystatezip-fyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: .45px;
+        font-size: 67.95px;
+        letter-spacing: 1.63px;
         /* top: 628px; */
-        bottom: 450px;
-        right: 244.5px;
+        bottom: 356.5px;
+        right: 162.5px;
     }
 
     .address2-fyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: .45px;
+        font-size: 67.95px;
+        letter-spacing: 1.9px;
         /* top: 570px; */
-        bottom: 532px;
-        right: 244.5px;
+        bottom: 438.5px;
+        right: 162.5px;
     }
 
     .address1-fyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -0.4px;
+        font-size: 69px;
+        letter-spacing: 1.55px;
         /* top: 510px; */
-        bottom: 610px;
-        right: 244.5px;
+        bottom: 518px;
+        right: 162.5px;
     }
 
     .HKName-fyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -0.6px;
+        font-size: 68.5px;
+        letter-spacing: 1.85px;
         /* top: 450px; */
-        Bottom: 690px;
-        right: 244.5px;
+        Bottom: 600px;
+        right: 162.5px;
     }
 </style>
 

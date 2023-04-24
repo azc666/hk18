@@ -1,4 +1,4 @@
-<div class="flex flex-wrap m-16 border-0 rounded-xl bg-slate-50">
+<div class="flex flex-wrap m-16 border-0 opacity-90 rounded-xl bg-slate-100">
 
   @if (session('saveCart') === true)
   <div class="w-2/3 mx-auto mt-4 mb-4">
@@ -42,7 +42,7 @@
 
   <table style="margin-top: 24px;">
     <thead>
-      <tr class="text-base text-left text-gray-600 uppercase border-b-2 border-gray-300">
+      <tr class="text-base tracking-wide text-left uppercase border-b-2 border-gray-300 text-hkcolor font-helmd">
         <th style="padding-bottom: 10px; width: 25%"></th>
         <th class="pl-20">Product</th>
         <th>Detail</th>
@@ -69,7 +69,7 @@
 </td>
 
 <td>
-  <p class="mb-1 text-lg font-bold uppercase text-hkcolor">{{ $row->name }}</p>
+  <p class="mb-1 text-lg uppercase font-helmd text-hkcolor">{{ $row->name }}</p>
 
   @if (strpos($row->name, '+') && str_contains($row->name, 'Partner'))
   <p class="mb-2">{!! nl2br(App\Models\Product::find(103)->description) !!}</p>
@@ -87,48 +87,49 @@
 <td>
   @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'ADSBC' ||
   $row->options->prod_layout === 'PDSBC')
-  <div class="w-24 pt-2 mt-1 text-xs text-gray-400 uppercase border-b-2">Engraved Side</div>
+  <div class="w-24 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor">Engraved Side</div>
   @endif
 
   @if ($row->options->bc_name)
-  <div class="mt-1 text-xs text-gray-400 uppercase">Name</div>
+  <div class="mt-1 text-sm uppercase text-hkcolor">Name</div>
   {{ $row->options->bc_name }}<br>
   @endif
   @if ($row->options->bc_title)
-  <div class="pt-2 text-xs text-gray-400 uppercase">Title</div>
+  <div class="pt-2 text-sm uppercase text-hkcolor">Title</div>
   {{ $row->options->bc_title == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
   $row->options->bc_title }}
   {{-- {{ $row->options->bc_title }}<br> --}}
   @endif
   @if ($row->options->bc_email)
-  <div class="pt-2 text-xs text-gray-400 uppercase">Email</div>
+  <div class="pt-2 text-sm uppercase text-hkcolor">Email</div>
   {{ $row->options->bc_email }}<br>
   @endif
 
   @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'ADSBC' ||
   $row->options->prod_layout === 'PDSBC')
-  <div class="w-24 pt-2 mt-1 text-xs text-gray-400 uppercase border-b-2">Reverse Side</div>
+  <div class="w-24 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor">Reverse Side</div>
   @if ($row->options->bc_name2)
-  <div class="mt-1 text-xs text-gray-400 uppercase">Name</div>
+  <div class="mt-1 text-sm uppercase text-hkcolor">Name</div>
   {{ $row->options->bc_name2 }}<br>
   @endif
   @if ($row->options->bc_title2)
-  <div class="pt-2 text-xs text-gray-400 uppercase">Title</div>
+  <div class="pt-2 text-sm uppercase text-hkcolor">Title</div>
   {{ $row->options->bc_title2 == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
   $row->options->bc_title2 }}
   {{-- {{ $row->options->bc_title2 }}<br> --}}
   @endif
   @if ($row->options->bc_email2)
-  <div class="pt-2 text-xs text-gray-400 uppercase">Email</div>
+  <div class="pt-2 text-sm uppercase text-hkcolor">Email</div>
   {{ $row->options->bc_email2 }}<br>
   @endif
   @endif
 
 
   @if ( $row->options->sp_instr )
-  <div style="width: 325px;" class="pb-1 mt-2 mb-1 text-xs text-gray-400 uppercase border border-gray-200">
+  <div style="width: 325px;"
+    class="p-2 pb-1 mt-2 mb-1 text-sm uppercase border border-gray-300 rounded-md text-hkcolor">
     Special Instructions: <br>
-    <p class="p-1 text-sm text-gray-800 normal-case">{!! nl2br($row->options->sp_instr) !!}
+    <p class="p-2 text-sm text-gray-800 normal-case">{!! nl2br($row->options->sp_instr) !!}
     </p>
   </div>
   @endif
