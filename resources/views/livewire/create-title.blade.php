@@ -1,4 +1,4 @@
-<x-modal form-action="create">
+<x-modal-we form-action="create">
     <x-slot name="title">
         <span class="uppercase text-hkcolor font-helmd">Add a New Title</span>
     </x-slot>
@@ -47,4 +47,4 @@
         </div>
 
     </x-slot>
-</x-modal>
+</x-modal-we>

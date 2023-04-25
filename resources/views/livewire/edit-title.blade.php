@@ -1,6 +1,6 @@
-<x-modal form-action="update">
+<x-modal-we form-action="update">
     <x-slot name="title">
-        <span class="uppercase text-hkcolor font-helmd">Edit Title {{ $titleId->id->get() }}</span>
+        <span class="uppercase text-hkcolor font-helmd">Edit Title {{ session('modelId') }}</span>
     </x-slot>
 
     <x-slot name="content">
@@ -48,4 +48,4 @@
         </div>
 
     </x-slot>
-</x-modal>
+</x-modal-we>
