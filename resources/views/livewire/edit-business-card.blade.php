@@ -79,7 +79,7 @@
 
         {{-- //////////////////// Form for BC FYI Data //////////////////// --}}
         <form wire:submit.prevent="submitForm" autocomplete="off"
-          class="p-2 space-y-4 border rounded-md bg-bluegray-100 border-bluegray-500">
+          class="p-2 pl-3 pr-3 space-y-4 bg-white border rounded-md border-hkcolor">
           @csrf
 
           @if (session('prod_id') === 110 || session('prod_id') === 111 || session('prod_layout') === 'ADSBC' ||
@@ -496,7 +496,7 @@
               @endphp
 
               <select wire:model="bc_qty" id="bc_qty" name="bc_qty" type="text"
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $row->options->bc_qty ? 'text-gray-800' : 'text-gray-400'}}">
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $row->options->bc_qty ? 'text-gray-800' : 'text-gray-400'}}">
                 <option>
                   {{-- {{ $row->options->bc_qty ? $row->options->bc_qty . ' mea' : 'Quantity for ' . 'me' }} --}}
                   {{ $row->options->bc_qty ? $row->options->bc_qty : 'Quantity for ' . session('prod_name') }}
@@ -546,7 +546,7 @@
             <div class="-mt-1">
               <input wire:model="bc_name" id="bc_name" name="bc_name" type="text"
                 placeholder="Name for {{ session('prod_name') }}"
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_name') ? "
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_name') ? "
                 border-2 border-red-500" : '' }}">
 
               {{-- <br>{{ session('name_o') }} --}}
@@ -565,7 +565,7 @@
             === 'PBCFYI')
             <div class="mt-1.5">
               <select wire:model="bc_title"
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ session('bc_title') ? 'text-gray-800' : 'text-gray-400'}}">
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ session('bc_title') ? 'text-gray-800' : 'text-gray-400'}}">
                 <option>Title for {{ session('prod_name') }}
                   {{ session('prod_id') === 103 || session('prod_id') === 106 ||
                   session('prod_layout') === 'PBC' ||
@@ -597,7 +597,7 @@
             <div class="mt-1.5">
               <input wire:model="bc_email" id="bc_email" name="bc_email" type="text"
                 placeholder="Email (firstname.lastname@hklaw.com)"
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_email') ? "
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_email') ? "
                 border-2 border-red-500" : '' }}">
             </div>
             @error('bc_email')
@@ -623,7 +623,7 @@
                 @endif
 
                 {{-- placeholder="123.555.5555" --}}
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm
                 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{
                 $errors->has('bc_phone') ? "border-2 border-red-500" : '' }}">
               </div>
@@ -647,7 +647,7 @@
                 @endif
 
                 {{-- placeholder="123.555.5555" --}}
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm
                 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{
                 $errors->has('bc_mobile') ? "border-2 border-red-500" : '' }}">
               </div>
@@ -670,7 +670,7 @@
                 @endif
 
                 {{-- placeholder="123.555.5555" --}}
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm
                 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{
                 $errors->has('bc_fax') ? "border-2 border-red-500" : '' }}">
               </div>
@@ -684,7 +684,7 @@
             <div class="mt-1.5">
               <input wire:model="bc_address1" id="bc_address1" name="bc_address1" type="text"
                 placeholder="Address Line 1 for {{ session('prod_name') }}"
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_address1') ? "
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_address1') ? "
                 border-2 border-red-500" : '' }}">
             </div>
             @error('bc_address1')
@@ -696,7 +696,7 @@
             <div class="mt-1.5">
               <input wire:model="bc_address2" id="bc_address2" name="bc_address2" type="text"
                 placeholder="Address Line 2 for {{session('prod_name') }}"
-                class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_address2') ? "
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_address2') ? "
                 border-2 border-red-500" : '' }}">
             </div>
             @error('bc_address2')
@@ -711,7 +711,7 @@
                 --}}
                 <input wire:model.lazy="bc_city" id="bc_city" name="bc_city" type="text"
                   placeholder="City for {{ session('prod_name') }}"
-                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_city') ? "
+                  class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_city') ? "
                   border-2 border-red-500" : '' }}">
               </div>
               @error('bc_city')
@@ -724,7 +724,7 @@
                 </label> --}}
                 <input wire:model.lazy="bc_state" id="bc_state" name="bc_state" type="text"
                   placeholder="State for {{ session('prod_name') }}"
-                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_state') ? "
+                  class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_state') ? "
                   border-2 border-red-500" : '' }}">
               </div>
               @error('bc_state')
@@ -736,7 +736,7 @@
                 {{-- <label for="bc_zip" class="block ml-2 text-xs font-medium text-gray-500 uppercase"> Zip </label>
                 --}}
                 <input wire:model.lazy="bc_zip" id="bc_zip" name="bc_zip" type="text"
-                  placeholder="Zip for {{ session('prod_name') }}" class=" appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md
+                  placeholder="Zip for {{ session('prod_name') }}" class=" appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md
                 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
                 sm:text-sm {{ $errors->has('bc_zip') ? " border-2 border-red-500" : '' }}">
               </div>
@@ -756,7 +756,7 @@
             <div class="mt-1.5">
               <textarea wire:model="bc_specialInstructions" id="bc_specialInstructions" name="bc_specialInstructions"
                 rows="5"
-                class="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                class="block w-full px-3 py-2 placeholder-gray-400 bg-white border rounded-md shadow-sm appearance-none border-hkcolor focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
             </div>
             @error('bc_specialInstructions')
             <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>

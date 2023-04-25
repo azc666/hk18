@@ -9,7 +9,7 @@
 
   <div class="py-8">
     <div class="pb-0 mx-auto -mt-16 -mb-8 sm:pb-0">
-      <div class="p-6 pb-12 m-16 border-0 bg-slate-100 opacity-90 rounded-xl">
+      <div class="p-6 pb-12 m-16 border-0 bg-slate-100 rounded-xl">
 
         {{-- @if ($product->id === 112)
         <livewire:ntag-form :product="$product">

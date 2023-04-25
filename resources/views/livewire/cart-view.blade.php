@@ -1,4 +1,4 @@
-<div class="flex flex-wrap m-16 border-0 opacity-90 rounded-xl bg-slate-100">
+<div class="flex flex-wrap m-16 border-0 rounded-xl bg-slate-100">
 
   @if (session('saveCart') === true)
   <div class="w-2/3 mx-auto mt-4 mb-4">
