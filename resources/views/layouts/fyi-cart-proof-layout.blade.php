@@ -104,7 +104,7 @@
         font-size: 68.5px;
         letter-spacing: 1.85px;
         /* top: 450px; */
-        Bottom: 600px;
+        Bottom: 595px;
         right: 162.5px;
     }
 </style>

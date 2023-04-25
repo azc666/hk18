@@ -51,7 +51,7 @@
 
       @elseif (session('prod_id') === 107 || session('prod_id') === 108 || session('prod_id') === 109 ||
       session('prod_layout') === 'SFYI' || session('prod_layout') === 'AFYI' || session('prod_layout') === 'PFYI')
-      <img src="{{ '/assets/mpdf/fyi_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
+      <img src="{{ '/assets/mpdf/fyi_template_withCurl.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
         alt="...">
       <div class="text-hkcolor absolute inset-y-[825px] ml-6">
         <p>{!! (session('prod_descr')) !!}</p>
