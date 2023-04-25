@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-  <div class="bg-[url('https://hk17.test/assets/image001.png')] bg-cover h-auto">
+  <div class="bg-[url('https://azc666.com/assets/image001.png')] bg-cover h-auto">
 
     <div class="h-screen bg-gradient-to-l from-transparent to-white">
 
