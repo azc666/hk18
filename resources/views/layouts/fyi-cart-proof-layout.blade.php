@@ -13,30 +13,15 @@
         color: red;
         /* color: #0b0b0b; */
         position: absolute;
-        font-size: 106.5px;
+        font-size: 106px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-        letter-spacing: -3.5px;
-        top: 2252.5px;
-        /* bottom: 980px; */
+        letter-spacing: -3.4px;
+        /* top: 2252.5px; */
+        bottom: 937px;
         left: 169.5px;
     }
 
-    /* .title-fyi {
-        /* color: red; */
-    color: #00478F;
-    position: absolute;
-    /* font-family: Helvetica; */
-    font-family: 'CustomFont',
-    '"HelveticaNeueLTStd-LT"',
-    sans-serif;
-    letter-spacing: -.5px;
-    font-size: 47.5px;
-    /* font-weight: lighter; */
-    top: 370px;
-    left: 112px;
-    }
-
-    */ .email-fyi {
+    .email-fyi {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -104,7 +89,7 @@
         font-size: 68.5px;
         letter-spacing: 1.85px;
         /* top: 450px; */
-        Bottom: 591px;
+        Bottom: 595px;
         right: 162.5px;
     }
 </style>
