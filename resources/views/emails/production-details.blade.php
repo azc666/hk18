@@ -144,7 +144,8 @@
       </tr>
       <tr class="">
         <td>Title_o</td>
-        <td>{{ $order_array[$i]['title_o'] == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' : $order_array[$i]['title_o'] }}</td>
+        <td>{{ $order_array[$i]['title_o'] == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
+          $order_array[$i]['title_o'] }}</td>
         {{-- <td>{{ $order_array[$i]['title_o'] }}</td> --}}
       </tr>
       <tr class="">
@@ -260,8 +261,17 @@
       <tr class="">
         <td>Proof Image</td>
         <td>
-          <a href="{{ env('APP_URL') }}/{{ $order_array[$i]['proof_path'] }}">{{ $order_array[$i]['proof_path'] }}
-          </a>
+          @php
+          $jpgProofPath = $order_array[$i]['proof_path'];
+          $pdfProofPath = substr($jpgProofPath, 0, -3).'pdf';
+          @endphp
+
+          {{-- {{ $jpgProofPath = $order_array[$i]['proof_path'] }} --}}
+          {{-- <a href="{{ env('APP_URL') }}/{{ $order_array[$i]['proof_path'] }}">{{ $order_array[$i]['proof_path'] }}
+            --}}
+            <a href="{{ env('APP_URL') }}/{{ $pdfProofPath }}">{{ $pdfProofPath }}
+
+            </a>
         </td>
       </tr>
     </tbody>
@@ -270,4 +280,5 @@
     @endfor
 
 </body>
+
 </html>
