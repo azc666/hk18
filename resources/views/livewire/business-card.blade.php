@@ -36,8 +36,8 @@
       </div>
 
       @elseif ($product->id === 107 || $product->id === 108 || $product->id === 109)
-      <img src="{{ '/assets/mpdf/fyi_template_withText_withCurl.jpg' }}"
-        class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14" alt="...">
+      <img src="{{ '/assets/mpdf/fyi_template_withCurl.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
+        alt="...">
       <div class="text-hkcolor absolute inset-y-[825px] ml-6">
         <p>{!! nl2br($product->description) !!}</p>
       </div>

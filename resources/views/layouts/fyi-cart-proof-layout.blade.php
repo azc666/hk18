@@ -10,8 +10,8 @@
     }
 
     .name-fyi {
-        color: red;
-        /* color: #0b0b0b; */
+        /* color: red; */
+        color: #0b0b0b;
         position: absolute;
         font-size: 106px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -22,8 +22,8 @@
     }
 
     .email-fyi {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-size: 67px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -34,8 +34,8 @@
     }
 
     .phone-fyi {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68.5px;
@@ -46,8 +46,8 @@
     }
 
     .citystatezip-fyi {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 67.95px;
@@ -58,8 +58,8 @@
     }
 
     .address2-fyi {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 67.95px;
@@ -70,8 +70,8 @@
     }
 
     .address1-fyi {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 69px;
@@ -82,8 +82,8 @@
     }
 
     .HKName-fyi {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68.5px;
