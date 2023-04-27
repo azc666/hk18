@@ -30,9 +30,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" rel="stylesheet">
-
     @livewireStyles
+    @stack('styles')
 
 </head>
 
@@ -69,6 +68,8 @@
 
     @livewire('livewire-ui-modal')
     @livewireScripts
+    @stack('scripts')
+
 </body>
 
 </html>
