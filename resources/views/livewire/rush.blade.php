@@ -17,14 +17,16 @@
       </div>
 
       <div class="{{ $this->rush === false ? " hidden" : '' }}">
-        <label class="block text-sm font-medium text-gray-700" for="date">
+        <label class="block pl-2 text-sm font-medium text-gray-700" for="date">
           Requested due date:
         </label>
-        <input wire:model.lazy="date" type="text" id="date" name="date"
-          class="mt-.5 text-sm sm:text-base pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
-          placeholder="MM/DD/YYYY" autocomplete="off" />
+        <div class="relative flex items-center justify-end w-100">
+          <input wire:model.lazy="date" type="text" id="date" name="date"
+            class="mt-.5 text-sm sm:text-base pl-2 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+            placeholder="MM/DD/YYYY" autocomplete="off" />
+          <img src="assets/calendar.svg" class="absolute w-10 mr-2" />
+        </div>
       </div>
-
     </div>
 
     <div class="pt-6 pb-6 text-center">

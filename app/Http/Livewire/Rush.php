@@ -34,8 +34,9 @@ class Rush extends Component
 
     public function render()
     {
+        $cal = '';
         $date = $this->date;
         $date = Session::put('date', $date);
-        return view('livewire.rush');
+        return view('livewire.rush', compact('cal'));
     }
 }
