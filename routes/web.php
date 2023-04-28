@@ -16,6 +16,7 @@ use App\Http\Controllers\TitlesController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\AuthLocationController;
 // use App\Http\Controllers\PDFController;
 
 Route::get('/', function () {
@@ -78,5 +79,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('titles', [TitlesController::class, 'index'])->name('titles');
     Route::get('orders', [OrdersController::class, 'index'])->name('orders');
 
+    Route::get('/auth-location', [AuthLocationController::class, 'index'])->name('auth-location');
 
 });

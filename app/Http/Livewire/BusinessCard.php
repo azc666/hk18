@@ -61,6 +61,7 @@ class BusinessCard extends Component
     public $bc_state2;
     public $bc_zip2;
     public $request;
+    public $bc_disclaimer;
 
     protected function rules()
     {

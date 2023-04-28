@@ -21,7 +21,14 @@
 
       <h2 class="mt-1 ml-6 text-xl tracking-wide font-helmd text-hkcolor">{{ $product->prod_name }} Proof</h2>
 
-      @if ($product->id === 101 || $product->id === 102 || $product->id === 103)
+      @if (($product->id === 101 || $product->id === 102 || $product->id === 103) && (session('authorized')))
+      <img src="{{ '/assets/mpdf/bc_disc_template_withText.jpg' }}"
+        class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14" alt="...">
+      <div class="text-hkcolor absolute inset-y-[425px] ml-6">
+        <p>{!! nl2br($product->description) !!}</p>
+      </div>
+
+      @elseif ($product->id === 101 || $product->id === 102 || $product->id === 103)
       <img src="{{ '/assets/mpdf/bc_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
         alt="...">
       <div class="text-hkcolor absolute inset-y-[425px] ml-6">
@@ -542,6 +549,20 @@
           @enderror
           @endif
         </div>
+
+        @if (session('authorized'))
+        <div>
+          <div class="-mt-1">
+            <input wire:model="bc_disclaimer" id="bc_disclaimer" name="bc_disclaimer" type="text"
+              value="{{ old('bc_disclaimer') }}" placeholder="Disclaimer for {{ $product->prod_name }}"
+              class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer') ? "
+              border-2 border-red-500" : '' }}">
+          </div>
+          @error('bc_disclaimer')
+          <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
+          @enderror
+        </div>
+        @endif
 
         @if ($product->id === 101 || $product->id === 102 || $product->id === 103 || $product->id === 104 ||
         $product->id === 105 || $product->id === 106 || $product->id === 107 || $product->id === 108 || $product->id ===
