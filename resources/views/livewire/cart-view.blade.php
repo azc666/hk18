@@ -72,8 +72,8 @@
   <p class="mb-1 text-lg uppercase font-helmd text-hkcolor">{{ $row->name }}</p>
 
   @if (strpos($row->name, '+') && str_contains($row->name, 'Partner'))
-  <p class="mb-2">{!! nl2br(App\Models\Product::find(103)->description) !!}</p>
-  <p>{!! nl2br(App\Models\Product::find(107)->description) !!}</p>
+  {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(103)->description) !!}</p> --}}
+  <p>{!! nl2br(App\Models\Product::find(106)->description) !!}</p>
   @elseif (strpos($row->name, '+') && (str_contains($row->name, 'Staff') ||
   str_contains($row->name, 'Associate')))
   <p class="mb-2">{!! nl2br(App\Models\Product::find(101)->description) !!}</p>
