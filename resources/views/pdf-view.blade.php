@@ -38,7 +38,7 @@
         session('prod_layout') === 'SBCFYI' ||
         session('prod_layout') === 'ABCFYI' ||
         session('prod_layout') === 'PBCFYI')
-        <img src="assets/mpdf/bcfyi_template.jpg" class="absolute mt-2 ml-2" style="width:100%" />
+        <img src="assets/mpdf/bcfyi_template_withText.jpg" class="absolute mt-2 ml-2" style="width:100%" />
         @include('layouts/bcfyi-cart-proof-layout')
         @endif
 

@@ -36,8 +36,8 @@
       </div>
 
       @elseif ($product->id === 104 || $product->id === 105 || $product->id === 106)
-      <img src="{{ '/assets/mpdf/bcfyi_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-2xl inset-y-14"
-        alt="...">
+      <img src="{{ '/assets/mpdf/bcfyi_template_withText.jpg' }}"
+        class="absolute inset-x-0 max-w-xl shadow-2xl inset-y-14" alt="...">
       <div class="text-hkcolor absolute inset-y-[825px] ml-6">
         <p>{!! nl2br($product->description) !!}</p>
       </div>

@@ -11,206 +11,176 @@
     }
 
     .name-bc-bcfyi {
-        /* color: red; */
-        color: #0b0b0b;
+        color: red;
+        /* color: #0b0b0b; */
         position: absolute;
-        font-size: 83px;
-        /* font-weight: 700; */
-        /* font-family: Helvetica, sans-serif; */
+        font-size: 95px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-        letter-spacing: 1.5px;
-        top: 448px;
+        letter-spacing: -1.2px;
+        top: 566.5px;
         /* bottom: 980px; */
-        left: 238px;
+        left: 309.5px;
     }
 
     .name-fyi-bcfyi {
-        /* color: red; */
-        color: #0b0b0b;
+        color: red;
+        /* color: #0b0b0b; */
         position: absolute;
-        font-size: 87.5px;
-        /* font-weight: 700; */
-        /* font-family: Helvetica, sans-serif; */
+        font-size: 105.5px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-        letter-spacing: 1.5px;
+        letter-spacing: -2px;
         /* top: 900px; */
-        bottom: 980px;
-        left: 240px;
+        bottom: 935.5px;
+        left: 169.5px;
     }
 
     .title-bc-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        letter-spacing: -.5px;
-        font-size: 60px;
-        /* font-weight: lighter; */
-        top: 565px;
-        left: 240px;
+        letter-spacing: -.1px;
+        font-size: 68px;
+        top: 700px;
+        left: 309.5px;
     }
 
     .email-bc-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        font-size: 59.5px;
-        /* font-weight: 700; */
-        /* font-family: Helvetica, sans-serif; */
+        font-size: 70px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-        letter-spacing: -0.5px;
-        top: 1038px;
-        right: 670px;
+        letter-spacing: -1.5px;
+        top: 1210px;
+        right: 463.5px;
     }
 
     .email-fyi-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        font-size: 61.5px;
-        /* font-weight: 700; */
-        /* font-family: Helvetica; */
+        font-size: 68px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
-        letter-spacing: 1.15px;
+        letter-spacing: 2.2px;
         /* top: 745px; */
-        bottom: 291px;
-        right: 244.5px;
+        bottom: 195px;
+        right: 162px;
     }
 
     .phone-bc-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 61.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -0.75px;
-        top: 961px;
-        right: 670px;
+        font-size: 68px;
+        letter-spacing: -0.18px;
+        top: 1132.35px;
+        right: 460.3px;
     }
 
     .phone-fyi-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: .55px;
+        font-size: 68px;
+        letter-spacing: 2.06px;
         /* top: 682.5px; */
-        bottom: 372px;
-        right: 244.5px;
+        bottom: 275.5px;
+        right: 162px;
     }
 
     .citystatezip-bc-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 61.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -0.8px;
-        top: 888px;
-        right: 670px;
+        font-size: 68px;
+        letter-spacing: -0.475px;
+        top: 1050px;
+        right: 460.3px;
     }
 
     .citystatezip-fyi-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: .45px;
+        font-size: 68px;
+        letter-spacing: 1.65px;
         /* top: 628px; */
-        bottom: 450px;
-        right: 244.5px;
+        bottom: 356px;
+        right: 162px;
     }
 
     .address2-bc-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 61.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -.8px;
-        top: 815px;
-        right: 670px;
+        font-size: 68px;
+        letter-spacing: -.25px;
+        top: 968.5px;
+        right: 460.3px;
     }
 
     .address2-fyi-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: .45px;
+        font-size: 68px;
+        letter-spacing: 1.95px;
         /* top: 570px; */
-        bottom: 532px;
-        right: 244.5px;
+        bottom: 438px;
+        right: 162px;
     }
 
     .address1-bc-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 61.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -1.4px;
-        top: 740.5px;
-        right: 670px;
+        font-size: 68px;
+        letter-spacing: -0.25px;
+        top: 889.5px;
+        right: 460.3px;
     }
 
     .address1-fyi-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -0.4px;
+        font-size: 68px;
+        letter-spacing: 1.95px;
         /* top: 510px; */
-        bottom: 610px;
-        right: 244.5px;
+        bottom: 520px;
+        right: 162px;
     }
 
     .HKName-bc-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 61.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -1.35px;
-        top: 667px;
-        right: 670px;
+        font-size: 68px;
+        letter-spacing: -.25px;
+        top: 810px;
+        right: 460.3px;
     }
 
     .HKName-fyi-bcfyi {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
-        /* font-family: Helvetica; */
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-        font-size: 64.5px;
-        /* font-weight: lighter; */
-        letter-spacing: -0.6px;
+        font-size: 68px;
+        letter-spacing: 2.05px;
         /* top: 450px; */
-        Bottom: 690px;
-        right: 244.5px;
+        Bottom: 600px;
+        right: 162px;
     }
 </style>
 
