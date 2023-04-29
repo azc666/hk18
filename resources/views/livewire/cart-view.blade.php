@@ -76,8 +76,8 @@
   <p>{!! nl2br(App\Models\Product::find(106)->description) !!}</p>
   @elseif (strpos($row->name, '+') && (str_contains($row->name, 'Staff') ||
   str_contains($row->name, 'Associate')))
-  <p class="mb-2">{!! nl2br(App\Models\Product::find(101)->description) !!}</p>
-  <p>{!! nl2br(App\Models\Product::find(107)->description) !!}</p>
+  {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(101)->description) !!}</p> --}}
+  <p>{!! nl2br(App\Models\Product::find(104)->description) !!}</p>
   @else
 
   <p>{!! $this->restored ? ($row->options->prod_descr) : ($row->options->prod_descr )!!}</p>
