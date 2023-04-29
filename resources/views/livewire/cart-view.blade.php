@@ -171,7 +171,7 @@ $row->id === 110 || $row->id === 111 || $prod_layout === 'SBC' || $prod_layout =
 {{-- @dd($row->id . ' hola') --}}
 @elseif ($row->id === 112 || $prod_layout === 'NTAG')
 <td>
-  {{ ($row->qty) }} {{ $row->qty > 1 ? ' Name Badgesr' : ' Name Badge' }}
+  {{ ($row->qty) }} {{ $row->qty > 1 ? ' Name Badges' : ' Name Badge' }}
 </td>
 @endif
 
