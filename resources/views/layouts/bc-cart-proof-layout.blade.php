@@ -29,8 +29,8 @@
 
 	.title-bc {
 		/* color: red; */
-		/* color: #00478F; */
-		color: #142667;
+		color: #00478F;
+		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		letter-spacing: .3px;
@@ -42,8 +42,8 @@
 
 	.email-bc {
 		/* color: red; */
-		/* color: #00478F; */
-		color: #142667;
+		color: #00478F;
+		/* color: #142667; */
 		position: absolute;
 		font-size: 80.7px;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -54,8 +54,8 @@
 
 	.phone-bc {
 		/* color: red; */
-		/* color: #00478F; */
-		color: #142667;
+		color: #00478F;
+		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 83px;
@@ -66,8 +66,8 @@
 
 	.citystatezip-bc {
 		/* color: red; */
-		/* color: #00478F; */
-		color: #142667;
+		color: #00478F;
+		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
@@ -78,8 +78,8 @@
 
 	.address2-bc {
 		/* color: red; */
-		/* color: #00478F; */
-		color: #142667;
+		color: #00478F;
+		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
@@ -90,8 +90,8 @@
 
 	.address1-bc {
 		/* color: red; */
-		/* color: #00478F; */
-		color: #142667;
+		color: #00478F;
+		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;
@@ -102,8 +102,8 @@
 
 	.HKName-bc {
 		/* color: red; */
-		/* color: #00478F; */
-		color: #142667;
+		color: #00478F;
+		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		font-size: 82px;

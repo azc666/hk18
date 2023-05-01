@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="{{ public_path('css/app.css') }}">
     {{--
     <link rel="stylesheet" href="https://use.typekit.net/flh5smt.css"> --}}
-    <link rel="stylesheet" href="https://use.typekit.net/tza8nhy.css">
+    {{--
+    <link rel="stylesheet" href="https://use.typekit.net/tza8nhy.css"> --}}
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

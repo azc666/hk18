@@ -1,14 +1,10 @@
-<x-app-layout>
+{{-- <x-app-layout> --}}
   <style>
-    @font-face {
+    /* @font-face {
       font-family: "Helvetica Neue LT Std 45 Light";
       src: url("https://hk16.test/fonts/HelveticaNeueLTStd-Lt.otf");
-    }
-
-    .hellt {
-      font-family: "Helvetica Neue LT Std 45 Light";
-      /* color: red; */
-    }
+    } */
+    @import url("https://use.typekit.net/tza8nhy.css");
 
     .MyriadSB {
       font-family: "myriad-pro",
@@ -39,7 +35,7 @@
     }
 
     .test {
-      color: red;
+      color: green;
       /* position: absolute;
       font-size: 55px;
       top: 800px; */
@@ -79,4 +75,5 @@
     </div>
   </div>
 
-</x-app-layout>
+  {{--
+</x-app-layout> --}}
