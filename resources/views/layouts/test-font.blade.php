@@ -17,5 +17,5 @@
 
 <div class="ball test">
   Georgia Graphics
-  {{ $disclaimer1 }}
+  {{-- {{ $disclaimer1 }} --}}
 </div>
