@@ -18,10 +18,10 @@
     src: url('/public/fonts/HelveticaNeueLTStd-Md.woff') format('woff'), url('/public/fonts/HelveticaNeueLTStd-Md.woff2') format('woff2');
   }
 
-  /* @font-face {
-  font-family: "HelveticaNeueLTStd-MD";
-  src: url('/public/fonts/HelveticaNeueLTStd-Md.otf') format('otf');
-} */
+  @font-face {
+    font-family: "HelveticaNeueLTStd-CN";
+    src: url('/public/fonts/HelveticaNeueLTStd-Cn.woff') format('woff'), url('/public/fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2');
+  }
 }
 
 

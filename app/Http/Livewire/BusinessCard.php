@@ -61,7 +61,8 @@ class BusinessCard extends Component
     public $bc_state2;
     public $bc_zip2;
     public $request;
-    public $bc_disclaimer;
+    public $bc_disclaimer1;
+    public $bc_disclaimer2;
 
     protected function rules()
     {
@@ -174,6 +175,8 @@ class BusinessCard extends Component
                 'bc_city' => 'required|min:3|max:50',
                 'bc_state' => 'required|min:2|max:50',
                 'bc_zip' => 'required|min:5|max:10',
+                'bc_disclaimer1' => 'nullable',
+                'bc_disclaimer2' => 'nullable',
                 'bc_specialInstructions' => 'max:255',
             ];
 
@@ -415,6 +418,8 @@ class BusinessCard extends Component
         Session::put('bc_city', $request->bc_city);
         Session::put('bc_state', $request->bc_state);
         Session::put('bc_zip', $request->bc_zip);
+        Session::put('bc_disclaimer1', $request->bc_disclaimer1);
+        Session::put('bc_disclaimer2', $request->bc_disclaimer2);
         Session::put('bc_name2', $request->bc_name2);
         Session::put('bc_title2', $request->bc_title2);
         Session::put('bc_email2', $request->bc_email2);
@@ -585,6 +590,8 @@ class BusinessCard extends Component
             'bc_city' => $request->bc_city,
             'bc_state' => $request->bc_state,
             'bc_zip' => $request->bc_zip,
+            'bc_disclaimer1' => $request->bc_disclaimer1,
+            'bc_disclaimer2'=> $request->bc_disclaimer2,
             'bc_name2' => $request->bc_name2,
             'bc_title2' => $request->bc_title2,
             'bc_email2' => $request->bc_email2,

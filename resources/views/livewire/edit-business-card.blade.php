@@ -1,5 +1,11 @@
 <div>
-  @if (session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 || session('prod_layout')
+  @if ((session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 ||
+  session('prod_layout')
+  === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC') && session('authorized'))
+  @include('layouts/bcdisc-proof-layout')
+
+  @elseif (session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 ||
+  session('prod_layout')
   === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC')
   @include('layouts/bc-proof-layout')
 
@@ -33,10 +39,18 @@
         <p class="">{!! nl2br($product->description) !!}</p>
       </div>
 
+      @elseif ((session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 ||
+      session('prod_layout') === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC') &&
+      session('authorized'))
+      <img src="{{ '/assets/mpdf/bcdisc_template_withText.jpg' }}"
+        class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14" alt="...">
+
       @elseif (session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 ||
       session('prod_layout') === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC')
       <img src="{{ '/assets/mpdf/bc_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
         alt="...">
+
+
       <div class="text-hkcolor absolute inset-y-[425px] ml-6">
         <p>{!! (session('prod_descr')) !!}</p>
       </div>
@@ -584,6 +598,33 @@
             @enderror
             @endif
           </div>
+
+          @if (session('authorized'))
+          <div>
+            <div class="-mt-1">
+              <input wire:model="bc_disclaimer1" id="bc_disclaimer1" name="bc_disclaimer1" type="text"
+                value="{{ old('bc_disclaimer1') }}" placeholder="Disclaimer Line 1 for {{ $product->prod_name }}"
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer1') ? "
+                border-2 border-red-500" : '' }}">
+            </div>
+            @error('bc_disclaimer1')
+            <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
+            @enderror
+          </div>
+          {{-- @endif --}}
+
+          <div>
+            <div class="-mt-1">
+              <input wire:model="bc_disclaimer2" id="bc_disclaimer2" name="bc_disclaimer2" type="text"
+                value="{{ old('bc_disclaimer2') }}" placeholder="Disclaimer Line 2 for {{ $product->prod_name }}"
+                class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer2') ? "
+                border-2 border-red-500" : '' }}">
+            </div>
+            @error('bc_disclaimer2')
+            <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
+            @enderror
+          </div>
+          @endif
 
           @if (session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 ||
           session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 || session('prod_id')

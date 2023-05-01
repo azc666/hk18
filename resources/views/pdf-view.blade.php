@@ -11,13 +11,26 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ public_path('css/app.css') }}">
-
+    {{--
+    <link rel="stylesheet" href="https://use.typekit.net/flh5smt.css"> --}}
+    <link rel="stylesheet" href="https://use.typekit.net/tza8nhy.css">
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
     <div class="relative top-4">
+        {{-- @dd(session('authorized')) --}}
+        @if ((session('prod_id') === 101 ||
+        session('prod_id') === 102 ||
+        session('prod_id') === 103 ||
+        session('prod_layout') === 'SBC' ||
+        session('prod_layout') === 'ABC' ||
+        session('prod_layout') === 'PBC') && session('authorized'))
+        <img src="assets/mpdf/bcdisc_template_withText.jpg" style="width:100%;" class="">
+        {{-- @include('layouts/bcdisctest-cart-proof-layout') --}}
+        @include('layouts/test-font')
+        @endif
 
         @if (session('prod_id') === 101 ||
         session('prod_id') === 102 ||

@@ -67,6 +67,8 @@ class EditBusinessCard extends Component
     public $pathToCartProofJpgOld;
     public $pathToCartProofPdfOld;
     public $row;
+    public $bc_disclaimer1;
+    public $bc_disclaimer2;
 
     protected function rules()
     {
@@ -307,6 +309,8 @@ class EditBusinessCard extends Component
         $this->bc_city = $row->options->bc_city;
         $this->bc_state = $row->options->bc_state;
         $this->bc_zip = $row->options->bc_zip;
+        $this->bc_disclaimer1 = $row->options->bc_disclaimer1;
+        $this->bc_disclaimer2 = $row->options->bc_disclaimer2;
         $this->bc_name2 = $row->options->bc_name2;
         $this->bc_title2 = $row->options->bc_title2;
         $this->bc_email2 = $row->options->bc_email2;
@@ -412,6 +416,8 @@ class EditBusinessCard extends Component
         $request->bc_city = $this->bc_city;
         $request->bc_state = $this->bc_state;
         $request->bc_zip = $this->bc_zip;
+        $request->bc_disclaimer1 = $this->bc_disclaimer1;
+        $request->bc_disclaimer2 = $this->bc_disclaimer2;
         $request->bc_name2 = $this->bc_name2;
         $request->bc_title2 = $this->bc_title2;
         $request->bc_email2 = $this->bc_email2;
@@ -448,6 +454,8 @@ class EditBusinessCard extends Component
         Session::put('bc_city2', $request->bc_city2);
         Session::put('bc_state2', $request->bc_state2);
         Session::put('bc_zip2', $request->bc_zip2);
+        Session::put('bc_disclaimer1', $request->bc_disclaimer1);
+        Session::put('bc_disclaimer2', $request->bc_disclaimer2);
         Session::put('bc_specialInstructions', $request->bc_specialInstructions);
         $username = auth()->user()->username;
         Session::put('username', $username);
@@ -607,6 +615,8 @@ class EditBusinessCard extends Component
             'bc_city' => $request->bc_city,
             'bc_state' => $request->bc_state,
             'bc_zip' => $request->bc_zip,
+            'bc_disclaimer1' => $request->bc_disclaimer1,
+            'bc_disclaimer2' => $request->bc_disclaimer2,
             'bc_name2' => $request->bc_name2,
             'bc_title2' => $request->bc_title2,
             'bc_email2' => $request->bc_email2,

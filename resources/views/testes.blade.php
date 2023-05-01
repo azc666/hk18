@@ -1,5 +1,5 @@
 <x-app-layout>
-  {{-- <style>
+  <style>
     @font-face {
       font-family: "Helvetica Neue LT Std 45 Light";
       src: url("https://hk16.test/fonts/HelveticaNeueLTStd-Lt.otf");
@@ -31,10 +31,26 @@
       font-weight: 700;
       font-style: normal;
     }
-  </style> --}}
+
+    .ball {
+      font-family: ballinger-condensed, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .test {
+      color: red;
+      /* position: absolute;
+      font-size: 55px;
+      top: 800px; */
+    }
+  </style>
 
 
   <div class="p-12">
+    <div class="pb-4 ball test">
+      Georgia Graphics
+    </div>
     <div class="pb-4 text-2xl text-white font-start">
       font start ... testing....testing
     </div>

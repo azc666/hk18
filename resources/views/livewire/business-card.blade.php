@@ -1,5 +1,9 @@
 <div>
-  @if ($product->id === 101 || $product->id === 102 || $product->id === 103)
+  {{-- @dd(session('authorized')) --}}
+  @if (($product->id === 101 || $product->id === 102 || $product->id === 103) && session('authorized'))
+  @include('layouts/bcdisc-proof-layout')
+
+  @elseif ($product->id === 101 || $product->id === 102 || $product->id === 103)
   @include('layouts/bc-proof-layout')
 
   @elseif ($product->id === 107 || $product->id === 108 || $product->id === 109)
@@ -22,7 +26,7 @@
       <h2 class="mt-1 ml-6 text-xl tracking-wide font-helmd text-hkcolor">{{ $product->prod_name }} Proof</h2>
 
       @if (($product->id === 101 || $product->id === 102 || $product->id === 103) && (session('authorized')))
-      <img src="{{ '/assets/mpdf/bc_disc_template_withText.jpg' }}"
+      <img src="{{ '/assets/mpdf/bcdisc_template_withText.jpg' }}"
         class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14" alt="...">
       <div class="text-hkcolor absolute inset-y-[425px] ml-6">
         <p>{!! nl2br($product->description) !!}</p>
@@ -553,15 +557,28 @@
         @if (session('authorized'))
         <div>
           <div class="-mt-1">
-            <input wire:model="bc_disclaimer" id="bc_disclaimer" name="bc_disclaimer" type="text"
-              value="{{ old('bc_disclaimer') }}" placeholder="Disclaimer for {{ $product->prod_name }}"
-              class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer') ? "
+            <input wire:model="bc_disclaimer1" id="bc_disclaimer1" name="bc_disclaimer1" type="text"
+              value="{{ old('bc_disclaimer1') }}" placeholder="Disclaimer Line 1 for {{ $product->prod_name }}"
+              class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer1') ? "
               border-2 border-red-500" : '' }}">
           </div>
-          @error('bc_disclaimer')
+          @error('bc_disclaimer1')
           <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
           @enderror
         </div>
+        @endif
+
+        @if (session('authorized'))
+        <div class="-mt-1">
+          <input wire:model="bc_disclaimer2" id="bc_disclaimer2" name="bc_disclaimer2" type="text"
+            value="{{ old('bc_disclaimer2') }}" placeholder="Disclaimer Line 2 for {{ $product->prod_name }}"
+            class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer2') ? "
+            border-2 border-red-500" : '' }}">
+        </div>
+        @error('bc_disclaimer2')
+        <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
+        @enderror
+        @endif
         @endif
 
         @if ($product->id === 101 || $product->id === 102 || $product->id === 103 || $product->id === 104 ||
@@ -712,7 +729,7 @@
           </div>
         </div>
         @endif
-        @endif
+
         <div>
           <label for="specialInstructions" class="block ml-2 text-xs font-medium text-gray-500 uppercase">
             Special Instructions <span class="capitalize"></span>

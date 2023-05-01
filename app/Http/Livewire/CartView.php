@@ -64,6 +64,8 @@ class CartView extends Component
     public $bc_city2;
     public $bc_state2;
     public $bc_zip2;
+    public $bc_disclaimer1;
+    public $bc_disclaimer2;
     public $bc_specialInstructions;
     public $submitRush;
     public $date;
@@ -257,6 +259,8 @@ class CartView extends Component
         Session::put('bc_city', $row->options->bc_city);
         Session::put('bc_state', $row->options->bc_state);
         Session::put('bc_zip', $row->options->bc_zip);
+        Session::put('bc_disclaimer1', $row->options->bc_disclaimer1);
+        Session::put('bc_disclaimer2', $row->options->bc_disclaimer2);
         Session::put('bc_name2', $row->options->bc_name2);
         Session::put('bc_title2', $row->options->bc_title2);
         Session::put('bc_email2', $row->options->bc_email2);
@@ -322,6 +326,7 @@ class CartView extends Component
             $city_o = Arr::get($orderArray, $i . '.city_o');
             $state_o = Arr::get($orderArray, $i . '.state_o');
             $zip_o = Arr::get($orderArray, $i . '.zip_o');
+            $disclaimer1 = Arr::get($orderArray, $i . '.disclaimer1');
             $name2 = Arr::get($orderArray, $i . '.name2');
             $email2 = Arr::get($orderArray, $i . '.email2');
             $title2 = Arr::get($orderArray, $i . '.title2');

@@ -70,9 +70,9 @@
     </div>
 </div>
 
-<div class="absolute">
+{{-- <div class="absolute">
     <div
         class="absolute top-[332px] -right-[526px] -mr-2 w-100 font-helveticalt font-normal tracking-tight text-xs text-right text-hkcolor z-20">
         {{ $bc_disclaimer }}
     </div>
-</div>
+</div> --}}
