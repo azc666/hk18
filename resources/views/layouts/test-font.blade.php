@@ -14,8 +14,8 @@
     top: 800px;
   }
 </style>
-@endpush
 
 <div class="ball test">
   Georgia Graphics
+  {{ $disclaimer1 }}
 </div>
