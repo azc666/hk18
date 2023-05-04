@@ -392,6 +392,8 @@ class BusinessCard extends Component
         $request->bc_city = $this->bc_city;
         $request->bc_state = $this->bc_state;
         $request->bc_zip = $this->bc_zip;
+        $request->bc_disclaimer1 = $this->bc_disclaimer1;
+        $request->bc_disclaimer2 = $this->bc_disclaimer2;
         $request->bc_name2 = $this->bc_name2;
         $request->bc_title2 = $this->bc_title2;
         $request->bc_email2 = $this->bc_email2;

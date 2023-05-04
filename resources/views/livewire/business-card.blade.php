@@ -566,20 +566,21 @@
           <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
           @enderror
         </div>
-        @endif
+        {{-- @endif --}}
 
-        @if (session('authorized'))
-        <div class="-mt-1">
-          <input wire:model="bc_disclaimer2" id="bc_disclaimer2" name="bc_disclaimer2" type="text"
-            value="{{ old('bc_disclaimer2') }}" placeholder="Disclaimer Line 2 for {{ $product->prod_name }}"
-            class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer2') ? "
-            border-2 border-red-500" : '' }}">
+        <div>
+          <div class="-mt-1">
+            <input wire:model="bc_disclaimer2" id="bc_disclaimer2" name="bc_disclaimer2" type="text"
+              value="{{ old('bc_disclaimer2') }}" placeholder="Disclaimer Line 2 for {{ $product->prod_name }}"
+              class="appearance-none block w-full px-3 py-2 border border-hkcolor rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm {{ $errors->has('bc_disclaimer2') ? "
+              border-2 border-red-500" : '' }}">
+          </div>
+          @error('bc_disclaimer2')
+          <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
+          @enderror
         </div>
-        @error('bc_disclaimer2')
-        <p class="mt-1 mb-6 text-sm text-red-500">{{ $message }}</p>
-        @enderror
         @endif
-        @endif
+        {{-- @endif --}}
 
         @if ($product->id === 101 || $product->id === 102 || $product->id === 103 || $product->id === 104 ||
         $product->id === 105 || $product->id === 106 || $product->id === 107 || $product->id === 108 || $product->id ===
@@ -728,6 +729,7 @@
             @enderror
           </div>
         </div>
+        @endif
         @endif
 
         <div>
