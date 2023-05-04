@@ -9,5 +9,18 @@
     },
     "helveticaneueltstd-md": {
         "normal": "helveticaneueltstd_md_normal_a2760c954c9fb477425519fbba12941e"
+    },
+    "sigmar": {
+        "normal": "sigmar_normal_555598c96ea2580f990a66a6b39e7c7f"
+    },
+    "roboto condensed": {
+        "normal": "roboto_condensed_normal_0f4b84b34f148b1ab47e419b61ac29ae"
+    },
+    "roboto": {
+        "normal": "roboto_normal_7bc701b343c10631f60048716b96e4f7"
+    },
+    "barlow condensed": {
+        "500": "\/Users\/allen\/Desktop\/Code\/sites\/hk17\/storage\/fonts\/barlow_condensed_500_40ec5688869157c3022fa5695da91177",
+        "normal": "barlow_condensed_normal_4acba7c4ce14fa5a1ca31ae9b4796665"
     }
 }

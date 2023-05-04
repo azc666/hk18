@@ -1,11 +1,10 @@
 <style>
 	@import url("https://use.typekit.net/tza8nhy.css");
+	@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-	.ball {
-		font-family: ballinger-condensed, sans-serif;
-		font-weight: 500;
-		font-style: normal;
-	}
+
 
 	@font-face {
 		font-family: "Start";
@@ -27,6 +26,11 @@
 		src: url('/public/fonts/HelveticaNeueLTStd-Cn.woff') format('woff'), url('/public/fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2');
 	}
 
+	.ball {
+		font-family: ballinger-condensed, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+	}
 
 	.bc-name {
 		color: red;
@@ -46,6 +50,8 @@
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
 		/* font-family: 'CustomFont', "Start", 'cursive'; */
+		/* font-family: 'Roboto', sans-serif; */
+		/* font-family: 'Barlow Condensed', sans-serif; */
 		letter-spacing: .3px;
 		font-size: 82.5px;
 		top: 593px;
@@ -126,15 +132,26 @@
 	}
 
 	.bc-disclaimer1 {
-		color: red;
+		color: green;
 		/* color: #00478F; */
 		/* color: #142667; */
 		position: absolute;
-		font-size: 55px;
-		font-family: 'CustomFont', "Start", sans-serif;
-		/* font-stretch: ultra-condensed; */
-		letter-spacing: 0.0px;
-		top: 1300px;
+		font-size: 63px;
+		font-family: 'Roboto Condensed', sans-serif;
+		letter-spacing: -2.3px;
+		top: 1242px;
+		right: 194px;
+	}
+
+	.bc-disclaimer2 {
+		color: green;
+		/* color: #00478F; */
+		/* color: #142667; */
+		position: absolute;
+		font-size: 63px;
+		font-family: 'Roboto Condensed', sans-serif;
+		letter-spacing: -2.3px;
+		top: 1320px;
 		right: 194px;
 	}
 
@@ -142,7 +159,7 @@
 		color: green;
 		position: absolute;
 		font-size: 55px;
-		/* font-family: 'CustomFont', "Start", monospace; */
+		font-family: 'Barlow Condensed', sans-serif;
 		top: 800px;
 	}
 </style>
@@ -196,6 +213,10 @@
 		{{ session('bc_address2') ? session('HKName') : '' }}
 	</div>
 
-	<div class="ball testes">
+	<div class="bc-disclaimer1">
 		{{ session('bc_disclaimer1') }}
+	</div>
+
+	<div class="bc-disclaimer2">
+		{{ session('bc_disclaimer2') }}
 	</div>
