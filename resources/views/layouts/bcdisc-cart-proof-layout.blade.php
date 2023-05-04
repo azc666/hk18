@@ -138,8 +138,9 @@
 		position: absolute;
 		font-size: 63px;
 		font-family: 'Roboto Condensed', sans-serif;
-		letter-spacing: -2.3px;
-		top: 1242px;
+		letter-spacing: -2.1px;
+		/* top: 1242px; */
+		top: 1225px;
 		right: 194px;
 	}
 
@@ -151,7 +152,8 @@
 		font-size: 63px;
 		font-family: 'Roboto Condensed', sans-serif;
 		letter-spacing: -2.3px;
-		top: 1320px;
+		/* top: 1320px; */
+		top: 1300px;
 		right: 194px;
 	}
 
