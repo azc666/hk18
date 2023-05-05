@@ -76,7 +76,7 @@
         session('prod_layout') === 'SFYI' ||
         session('prod_layout') === 'AFYI' ||
         session('prod_layout') === 'PFYI') && session('authorized'))
-        <img src="assets/mpdf/fyidisc_template_withText_withCurl.jpg" class="mt-2 ml-2" style="width:100%" />
+        <img src="assets/mpdf/fyi_template_withCurl.jpg" class="mt-2 ml-2" style="width:100%" />
         @include('layouts/fyidisc-cart-proof-layout')
         @endif
 

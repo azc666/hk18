@@ -12,8 +12,8 @@
     }
 
     .fyi-name {
-        color: red;
-        /* color: #0b0b0b; */
+        /* color: red; */
+        color: #0b0b0b;
         position: absolute;
         font-size: 106px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -24,8 +24,8 @@
     }
 
     .fyi-email {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-size: 67px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -35,8 +35,8 @@
     }
 
     .fyi-phone {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68.5px;
@@ -46,8 +46,8 @@
     }
 
     .fyi-citystatezip {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 67.95px;
@@ -57,8 +57,8 @@
     }
 
     .fyi-address2 {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 67.95px;
@@ -68,8 +68,8 @@
     }
 
     .fyi-address1 {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 69px;
@@ -80,8 +80,8 @@
     }
 
     .fyi-HKName {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68.5px;
@@ -91,8 +91,8 @@
     }
 
     .fyi-disclaimer1 {
-        color: green;
-        /* color: #00478F; */
+        /* color: green; */
+        color: #00478F;
         /* color: #142667; */
         position: absolute;
         font-size: 53px;
@@ -103,8 +103,8 @@
     }
 
     .fyi-disclaimer2 {
-        color: green;
-        /* color: #00478F; */
+        /* color: green; */
+        color: #00478F;
         /* color: #142667; */
         position: absolute;
         font-size: 53px;
