@@ -9,9 +9,19 @@
   === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC')
   @include('layouts/bc-proof-layout')
 
+  @elseif ((session('prod_id') === 107 || session('prod_id') === 108 || session('prod_id') === 109 ||
+  session('prod_layout') === 'SFYI' || session('prod_layout') === 'AFYI' || session('prod_layout') === 'PFYI') &&
+  session('authorized'))
+  @include('layouts/fyidisc-proof-layout')
+
   @elseif (session('prod_id') === 107 || session('prod_id') === 108 || session('prod_id') === 109 ||
   session('prod_layout') === 'SFYI' || session('prod_layout') === 'AFYI' || session('prod_layout') === 'PFYI')
-  @include('layouts/fyidisc-proof-layout')
+  @include('layouts/fyi-proof-layout')
+
+  @elseif ((session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 ||
+  session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI') &&
+  session('authorized'))
+  @include('layouts/bcfyidisc-proof-layout')
 
   @elseif (session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 ||
   session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI')
@@ -52,6 +62,15 @@
 
 
       <div class="text-hkcolor absolute inset-y-[425px] ml-6">
+        <p>{!! (session('prod_descr')) !!}</p>
+      </div>
+
+      @elseif ((session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 ||
+      session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI')
+      && session('authorized'))
+      <img src="{{ '/assets/mpdf/bcfyidisc_template_withText.jpg' }}"
+        class="absolute inset-x-0 max-w-xl shadow-2xl inset-y-14" alt="...">
+      <div class="text-hkcolor absolute inset-y-[825px] ml-6">
         <p>{!! (session('prod_descr')) !!}</p>
       </div>
 

@@ -9,7 +9,7 @@
         src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
     }
 
-    .name-fyi {
+    .fyi-name {
         /* color: red; */
         color: #0b0b0b;
         position: absolute;
@@ -95,7 +95,7 @@
 </style>
 
 {{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-    <div class="name-fyi">
+    <div class="fyi-name">
         {{ session('bc_name') }}
     </div>
     {{--

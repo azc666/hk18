@@ -21,7 +21,6 @@
 
 <body>
     <div class="relative top-4">
-        {{-- @dd(session('authorized')) --}}
         @if ((session('prod_id') === 101 ||
         session('prod_id') === 102 ||
         session('prod_id') === 103 ||
@@ -30,8 +29,6 @@
         session('prod_layout') === 'PBC') && session('authorized'))
         <img src="assets/mpdf/bcdisc_template_withText.jpg" style="width:100%;" class="">
         @include('layouts/bcdisc-cart-proof-layout')
-        {{-- @include('layouts/test-font') --}}
-        {{-- @include('testes') --}}
         @endif
 
         @if (session('prod_id') === 101 ||
@@ -44,6 +41,19 @@
         @include('layouts/bc-cart-proof-layout')
         @endif
 
+        @if (($product->id === 104 ||
+        $product->id === 105 ||
+        $product->id === 106 ||
+        session('prod_id') === 104 ||
+        session('prod_id') === 105 ||
+        session('prod_id') === 106 ||
+        session('prod_layout') === 'SBCFYI' ||
+        session('prod_layout') === 'ABCFYI' ||
+        session('prod_layout') === 'PBCFYI') && session('authorized'))
+        <img src="assets/mpdf/bcfyidisc_template_withText.jpg" class="absolute mt-2 ml-2" style="width:100%" />
+        @include('layouts/bcfyidisc-cart-proof-layout')
+        @endif
+
         @if ($product->id === 104 ||
         $product->id === 105 ||
         $product->id === 106 ||
@@ -53,7 +63,7 @@
         session('prod_layout') === 'SBCFYI' ||
         session('prod_layout') === 'ABCFYI' ||
         session('prod_layout') === 'PBCFYI')
-        <img src="assets/mpdf/bcfyi_template_withText.jpg" class="absolute mt-2 ml-2" style="width:100%" />
+        <img src="assets/mpdf/bcfyi_template.jpg" class="absolute mt-2 ml-2" style="width:100%" />
         @include('layouts/bcfyi-cart-proof-layout')
         @endif
 

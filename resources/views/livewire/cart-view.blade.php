@@ -10,7 +10,7 @@
   </div>
   @endif
 
-  @if(session('restoreCart') === true)
+  @if (session('restoreCart') === true)
   <div class="w-2/3 mx-auto mt-4 mb-4">
     <x-flash type="success">
       You have successfully restored your cart.
@@ -51,8 +51,7 @@
       </tr>
     <tbody>
 
-      @foreach(Cart::content() as $row)
-
+      @foreach (Cart::content() as $row)
       <tr class="z-20 border-b-2 border-gray-300">
         <td>
           <div class="pt-[12px]">
@@ -74,19 +73,17 @@
   @if (strpos($row->name, '+') && str_contains($row->name, 'Partner'))
   {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(103)->description) !!}</p> --}}
   <p>{!! nl2br(App\Models\Product::find(106)->description) !!}</p>
-  @elseif (strpos($row->name, '+') && (str_contains($row->name, 'Staff') ||
-  str_contains($row->name, 'Associate')))
+  @elseif (strpos($row->name, '+') && (str_contains($row->name, 'Staff') || str_contains($row->name, 'Associate')))
   {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(101)->description) !!}</p> --}}
   <p>{!! nl2br(App\Models\Product::find(104)->description) !!}</p>
   @else
-
-  <p>{!! $this->restored ? ($row->options->prod_descr) : ($row->options->prod_descr )!!}</p>
+  <p>{!! $this->restored ? $row->options->prod_descr : $row->options->prod_descr !!}</p>
   @endif
 </td>
 
 <td>
-  @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'ADSBC' ||
-  $row->options->prod_layout === 'PDSBC')
+  @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'ADSBC' || $row->options->prod_layout ===
+  'PDSBC')
   <div class="w-24 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor">Engraved Side</div>
   @endif
 
@@ -105,8 +102,7 @@
   {{ $row->options->bc_email }}<br>
   @endif
 
-  @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'ADSBC' ||
-  $row->options->prod_layout === 'PDSBC')
+  @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'PDSBC')
   <div class="w-24 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor">Reverse Side</div>
   @if ($row->options->bc_name2)
   <div class="mt-1 text-sm uppercase text-hkcolor">Name</div>
@@ -125,7 +121,7 @@
   @endif
 
 
-  @if ( $row->options->sp_instr )
+  @if ($row->options->sp_instr)
   <div style="width: 325px;"
     class="p-2 pb-1 mt-2 mb-1 text-sm uppercase border border-gray-300 rounded-md text-hkcolor">
     Special Instructions: <br>
@@ -139,24 +135,40 @@
 $prod_layout = $row->options->prod_layout;
 @endphp
 
-@if ($row->id === 101 || $row->id === 102 || $row->id === 103 || $row->prod_id === 101 ||
-$row->id === 110 || $row->id === 111 || $prod_layout === 'SBC' || $prod_layout === 'ABC' || $prod_layout ===
-'PBC'
-|| $prod_layout === 'ADSBC' || $prod_layout === 'PDSBC')
+@if (
+$row->id === 101 ||
+$row->id === 102 ||
+$row->id === 103 ||
+$row->prod_id === 101 ||
+$row->id === 110 ||
+$row->id === 111 ||
+$prod_layout === 'SBC' ||
+$prod_layout === 'ABC' ||
+$prod_layout === 'PBC' ||
+$prod_layout === 'ADSBC' ||
+$prod_layout === 'PDSBC')
 <td>
-  {{ ($row->options->bc_qty) }}
+  {{ $row->options->bc_qty }}
 </td>
 @endif
 
-@if ($row->id === 107 || $row->id === 108 || $row->id === 109 || $prod_layout === 'SFYI' || $prod_layout ===
-'AFYI' || $prod_layout === 'PFYI')
+@if (
+$row->id === 107 ||
+$row->id === 108 ||
+$row->id === 109 ||
+$prod_layout === 'SFYI' ||
+$prod_layout === 'AFYI' ||
+$prod_layout === 'PFYI')
 <td>
-  {{ ($row->qty) . ' FYI Pads'}}
+  {{ $row->qty . ' FYI Pads' }}
 </td>
-
-@elseif ($row->id === 104 || $row->id === 105 || $row->id === 106 || $prod_layout === 'SBCFYI' || $prod_layout
-===
-'ABCFYI' || $prod_layout === 'PBCFYI')
+@elseif (
+$row->id === 104 ||
+$row->id === 105 ||
+$row->id === 106 ||
+$prod_layout === 'SBCFYI' ||
+$prod_layout === 'ABCFYI' ||
+$prod_layout === 'PBCFYI')
 <td>
   @if ($row->qty === 24)
   {{ '250 BCs + 4 FYI Pads' }}
@@ -171,7 +183,7 @@ $row->id === 110 || $row->id === 111 || $prod_layout === 'SBC' || $prod_layout =
 {{-- @dd($row->id . ' hola') --}}
 @elseif ($row->id === 112 || $prod_layout === 'NTAG')
 <td>
-  {{ ($row->qty) }} {{ $row->qty > 1 ? ' Name Badges' : ' Name Badge' }}
+  {{ $row->qty }} {{ $row->qty > 1 ? ' Name Badges' : ' Name Badge' }}
 </td>
 @endif
 
@@ -207,16 +219,14 @@ $row->id === 110 || $row->id === 111 || $prod_layout === 'SBC' || $prod_layout =
 
 </td>
 </tr>
-
 @endforeach
 
 </tbody>
 
 </table>
 
-@if(Request::method() == 'POST')
+@if (Request::method() == 'POST')
 <livewire:cart-confirm />
 @else
-
 <livewire:rush />
 @endif

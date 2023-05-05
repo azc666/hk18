@@ -327,6 +327,7 @@ class CartView extends Component
             $state_o = Arr::get($orderArray, $i . '.state_o');
             $zip_o = Arr::get($orderArray, $i . '.zip_o');
             $disclaimer1 = Arr::get($orderArray, $i . '.disclaimer1');
+            $disclaimer2 = Arr::get($orderArray, $i . '.disclaimer2');
             $name2 = Arr::get($orderArray, $i . '.name2');
             $email2 = Arr::get($orderArray, $i . '.email2');
             $title2 = Arr::get($orderArray, $i . '.title2');
