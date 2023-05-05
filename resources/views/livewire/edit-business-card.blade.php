@@ -11,7 +11,7 @@
 
   @elseif (session('prod_id') === 107 || session('prod_id') === 108 || session('prod_id') === 109 ||
   session('prod_layout') === 'SFYI' || session('prod_layout') === 'AFYI' || session('prod_layout') === 'PFYI')
-  @include('layouts/fyi-proof-layout')
+  @include('layouts/fyidisc-proof-layout')
 
   @elseif (session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 ||
   session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI')
@@ -59,6 +59,15 @@
       session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI')
       <img src="{{ '/assets/mpdf/bcfyi_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-2xl inset-y-14"
         alt="...">
+      <div class="text-hkcolor absolute inset-y-[825px] ml-6">
+        <p>{!! (session('prod_descr')) !!}</p>
+      </div>
+
+      @elseif ((session('prod_id') === 107 || session('prod_id') === 108 || session('prod_id') === 109 ||
+      session('prod_layout') === 'SFYI' || session('prod_layout') === 'AFYI' || session('prod_layout') === 'PFYI') &&
+      session('authorized'))
+      <img src="{{ '/assets/mpdf/fyidisc_template_withText_withCurl.jpg' }}"
+        class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14" alt="...">
       <div class="text-hkcolor absolute inset-y-[825px] ml-6">
         <p>{!! (session('prod_descr')) !!}</p>
       </div>

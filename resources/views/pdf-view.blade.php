@@ -57,6 +57,19 @@
         @include('layouts/bcfyi-cart-proof-layout')
         @endif
 
+        @if (($product->id === 107 ||
+        $product->id === 108 ||
+        $product->id === 109 ||
+        session('prod_id') === 107 ||
+        session('prod_id') === 108 ||
+        session('prod_id') === 109 ||
+        session('prod_layout') === 'SFYI' ||
+        session('prod_layout') === 'AFYI' ||
+        session('prod_layout') === 'PFYI') && session('authorized'))
+        <img src="assets/mpdf/fyidisc_template_withText_withCurl.jpg" class="mt-2 ml-2" style="width:100%" />
+        @include('layouts/fyidisc-cart-proof-layout')
+        @endif
+
         @if ($product->id === 107 ||
         $product->id === 108 ||
         $product->id === 109 ||
