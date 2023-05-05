@@ -52,8 +52,11 @@
       @elseif ((session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 ||
       session('prod_layout') === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC') &&
       session('authorized'))
-      <img src="{{ '/assets/mpdf/bcdisc_template_withText.jpg' }}"
-        class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14" alt="...">
+      <img src="{{ '/assets/mpdf/bc_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
+        alt="...">
+      <div class="text-hkcolor absolute inset-y-[425px] ml-6">
+        <p>{!! (session('prod_descr')) !!}</p>
+      </div>
 
       @elseif (session('prod_id') === 101 || session('prod_id') === 102 || session('prod_id') === 103 ||
       session('prod_layout') === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC')

@@ -31,9 +31,9 @@
 
       <h2 class="mt-1 ml-6 text-xl tracking-wide font-helmd text-hkcolor">{{ $product->prod_name }} Proof</h2>
 
-      @if (($product->id === 101 || $product->id === 102 || $product->id === 103) && (session('authorized')))
-      <img src="{{ '/assets/mpdf/bcdisc_template_withText.jpg' }}"
-        class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14" alt="...">
+      @if (($product->id === 101 || $product->id === 102 || $product->id === 103) && session('authorized'))
+      <img src="{{ '/assets/mpdf/bc_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
+        alt="...">
       <div class="text-hkcolor absolute inset-y-[425px] ml-6">
         <p>{!! nl2br($product->description) !!}</p>
       </div>

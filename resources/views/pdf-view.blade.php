@@ -27,7 +27,7 @@
         session('prod_layout') === 'SBC' ||
         session('prod_layout') === 'ABC' ||
         session('prod_layout') === 'PBC') && session('authorized'))
-        <img src="assets/mpdf/bcdisc_template_withText.jpg" style="width:100%;" class="">
+        <img src="assets/mpdf/bc_template.jpg" style="width:100%;" class="">
         @include('layouts/bcdisc-cart-proof-layout')
         @endif
 

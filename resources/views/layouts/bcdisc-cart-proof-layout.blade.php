@@ -33,8 +33,8 @@
 	}
 
 	.bc-name {
-		color: red;
-		/* color: #0b0b0b; */
+		/* color: red; */
+		color: #0b0b0b;
 		position: absolute;
 		font-size: 115px;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -44,8 +44,8 @@
 	}
 
 	.bc-title {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -60,8 +60,8 @@
 	}
 
 	.bc-email {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-size: 80.7px;
@@ -72,8 +72,8 @@
 	}
 
 	.bc-phone {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -84,8 +84,8 @@
 	}
 
 	.bc-citystatezip {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -96,8 +96,8 @@
 	}
 
 	.bc-address2 {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -108,8 +108,8 @@
 	}
 
 	.bc-address1 {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -120,8 +120,8 @@
 	}
 
 	.bc-HKName {
-		color: red;
-		/* color: #00478F; */
+		/* color: red; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
@@ -132,8 +132,8 @@
 	}
 
 	.bc-disclaimer1 {
-		color: green;
-		/* color: #00478F; */
+		/* color: green; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-size: 63px;
@@ -145,8 +145,8 @@
 	}
 
 	.bc-disclaimer2 {
-		color: green;
-		/* color: #00478F; */
+		/* color: green; */
+		color: #00478F;
 		/* color: #142667; */
 		position: absolute;
 		font-size: 63px;
