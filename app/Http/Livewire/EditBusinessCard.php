@@ -488,9 +488,17 @@ class EditBusinessCard extends Component
         if (session('prod_id') === 107 || session('prod_id') === 108 || session('prod_id') === 109 || session('prod_layout') === 'SFYI' || session('prod_layout') === 'AFYI' || session('prod_layout') === 'PFYI') {
             $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 2000, 2585]);
         }
+        if ((session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 || session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI') && session('authorized')) {
+
+            $authorized = session('authorized');
+            // dd(session('authorized'));
+            Session::put('authorized', $authorized);
+            $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 2000, 2585]);
+        }
         if (session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 || session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI') {
             $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 2000, 2585]);
         }
+
         if (session('prod_id') === 110 || session('prod_id') === 111 || $product->id === 110 || $product->id === 111 || session('prod_layout') === 'ADSBC' || session('prod_layout') === 'PDSBC') {
             $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 2000, 2585]);
         }
