@@ -71,7 +71,7 @@
       @elseif ((session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 ||
       session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI')
       && session('authorized'))
-      <img src="{{ '/assets/mpdf/bcfyidisc_template_withText.jpg' }}"
+      <img src="{{ '/assets/mpdf/bcfyidisc2_template_withText.jpg' }}"
         class="absolute inset-x-0 max-w-xl shadow-2xl inset-y-14" alt="...">
       <div class="text-hkcolor absolute inset-y-[825px] ml-6">
         <p>{!! (session('prod_descr')) !!}</p>
