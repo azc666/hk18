@@ -1,4 +1,6 @@
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
     @font-face {
         font-family: "HelveticaNeueLTStd-LT";
         src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Lt.woff") format('woff'),
@@ -10,7 +12,7 @@
         src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("https://azc666.com//fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
     }
 
-    .name-bc-bcfyi {
+    .bc-bcfyidisc-name {
         color: red;
         /* color: #0b0b0b; */
         position: absolute;
@@ -22,7 +24,7 @@
         left: 309.5px;
     }
 
-    .name-fyi-bcfyi {
+    .fyi-bcfyidisc-name {
         color: red;
         /* color: #0b0b0b; */
         position: absolute;
@@ -34,7 +36,7 @@
         left: 169.5px;
     }
 
-    .title-bc-bcfyi {
+    .bc-bcfyidisc-title {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -45,18 +47,18 @@
         left: 309.5px;
     }
 
-    .email-bc-bcfyi {
+    .bc-bcfyidisc-email {
         color: red;
         /* color: #00478F; */
         position: absolute;
         font-size: 70px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: -1.5px;
-        top: 1210px;
+        top: 1133.75px;
         right: 463.5px;
     }
 
-    .email-fyi-bcfyi {
+    .fyi-bcfyidisc-email {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -68,18 +70,18 @@
         right: 162px;
     }
 
-    .phone-bc-bcfyi {
+    .bc-bcfyidisc-phone {
         color: red;
         /* color: #00478F; */
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
         letter-spacing: -0.18px;
-        top: 1132.35px;
+        top: 1058px;
         right: 460.3px;
     }
 
-    .phone-fyi-bcfyi {
+    .fyi-bcfyidisc-phone {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -91,18 +93,18 @@
         right: 162px;
     }
 
-    .citystatezip-bc-bcfyi {
+    .bc-bcfyidisc-citystatezip {
         color: red;
         /* color: #00478F; */
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
-        letter-spacing: -0.475px;
-        top: 1050px;
+        letter-spacing: -0.7px;
+        top: 975.5px;
         right: 460.3px;
     }
 
-    .citystatezip-fyi-bcfyi {
+    .fyi-bcfyidisc-citystatezip {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -114,18 +116,18 @@
         right: 162px;
     }
 
-    .address2-bc-bcfyi {
+    .bc-bcfyidisc-address2 {
         color: red;
         /* color: #00478F; */
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
-        letter-spacing: -.25px;
-        top: 968.5px;
+        letter-spacing: -.45px;
+        top: 895px;
         right: 460.3px;
     }
 
-    .address2-fyi-bcfyi {
+    .fyi-bcfyidisc-address2 {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -137,18 +139,18 @@
         right: 162px;
     }
 
-    .address1-bc-bcfyi {
+    .bc-bcfyidisc-address1 {
         color: red;
         /* color: #00478F; */
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
-        letter-spacing: -0.25px;
-        top: 889.5px;
+        letter-spacing: -0.43px;
+        top: 811.5px;
         right: 460.3px;
     }
 
-    .address1-fyi-bcfyi {
+    .fyi-bcfyidisc-address1 {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -160,18 +162,18 @@
         right: 162px;
     }
 
-    .HKName-bc-bcfyi {
+    .bc-bcfyidisc-HKName {
         color: red;
         /* color: #00478F; */
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
         letter-spacing: -.25px;
-        top: 810px;
+        top: 730.5px;
         right: 460.3px;
     }
 
-    .HKName-fyi-bcfyi {
+    .fyi-bcfyidisc-HKName {
         color: red;
         /* color: #00478F; */
         position: absolute;
@@ -185,28 +187,28 @@
 </style>
 
 
-<div class="z-20 name-bc-bcfyi">
+<div class="bc-bcfyidisc-name">
     {{ session('bc_name') }}
 </div>
 
-<div class="z-20 name-fyi-bcfyi">
+<div class="fyi-bcfyidisc-name">
     {{ session('bc_name') }}
 </div>
 
-<div class="z-20 title-bc-bcfyi">
+<div class="bc-bcfyidisc-title">
     {{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' : session('bc_title')
     }}
 </div>
 
-<div class="z-20 email-bc-bcfyi">
+<div class="bc-bcfyidisc-email">
     {{ session('bc_email') }}
 </div>
 
-<div class="z-20 email-fyi-bcfyi">
+<div class="fyi-bcfyidisc-email">
     {{ session('bc_email') }}
 </div>
 
-<div class="z-20 phone-bc-bcfyi">
+<div class="bc-bcfyidisc-phone">
     @if (session('bc_phone'))
     {{ 'T ' . session('bc_phone') }}
     @endif
@@ -218,7 +220,7 @@
     @endif
 </div>
 
-<div class="z-20 phone-fyi-bcfyi">
+<div class="fyi-bcfyidisc-phone">
     @if (session('bc_phone'))
     {{ 'T ' . session('bc_phone') }}
     @endif
@@ -230,34 +232,34 @@
     @endif
 </div>
 
-<div class="z-20 citystatezip-bc-bcfyi">
+<div class="bc-bcfyidisc-citystatezip">
     {{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
 </div>
 
-<div class="z-20 citystatezip-fyi-bcfyi">
+<div class="fyi-bcfyidisc-citystatezip">
     {{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
 </div>
 
-<div class="address2-bc-bcfyi">
+<div class="bc-bcfyidisc-address2">
     {{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
 </div>
 
-<div class="address2-fyi-bcfyi">
+<div class="fyi-bcfyidisc-address2">
     {{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
 </div>
 
-<div class="address1-bc-bcfyi">
+<div class="bc-bcfyidisc-address1">
     {{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
 </div>
 
-<div class="address1-fyi-bcfyi">
+<div class="fyi-bcfyidisc-address1">
     {{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
 </div>
 
-<div class="HKName-bc-bcfyi">
+<div class="bc-bcfyidisc-HKName">
     {{ session('bc_address2') ? session('HKName') : '' }}
 </div>
 
-<div class="HKName-fyi-bcfyi">
+<div class="fyi-bcfyidisc-HKName">
     {{ session('bc_address2') ? session('HKName') : '' }}
 </div>
