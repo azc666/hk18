@@ -50,6 +50,8 @@
         session('prod_layout') === 'SBCFYI' ||
         session('prod_layout') === 'ABCFYI' ||
         session('prod_layout') === 'PBCFYI') && session('authorized'))
+        {{-- $authorized = session('authorized'); --}}
+        {{-- Session::put('authorized', session('authorized')); --}}
         <img src="https://azc666.com/assets/mpdf/bcfyidisc2_template_withText.jpg" class="absolute mt-2 ml-2"
             style="width:100%" />
         @include('layouts/bcfyidisc-cart-proof-layout')
