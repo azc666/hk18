@@ -66,6 +66,7 @@
         <p>{!! (session('prod_descr')) !!}</p>
       </div>
 
+
       @elseif ((session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 ||
       session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI')
       && session('authorized'))
