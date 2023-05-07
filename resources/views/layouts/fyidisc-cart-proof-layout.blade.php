@@ -11,9 +11,9 @@
         src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
     }
 
-    .fyi-name {
-        /* color: red; */
-        color: #0b0b0b;
+    .name-fyi {
+        color: red;
+        /* color: #0b0b0b; */
         position: absolute;
         font-size: 106px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -24,8 +24,8 @@
     }
 
     .fyi-email {
-        /* color: red; */
-        color: #00478F;
+        color: red;
+        /* color: #00478F; */
         position: absolute;
         font-size: 67px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -116,7 +116,7 @@
 </style>
 
 {{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-    <div class="fyi-name">
+    <div class="name-fyi">
         {{ session('bc_name') }}
     </div>
     {{--

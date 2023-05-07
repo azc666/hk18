@@ -52,9 +52,9 @@
         session('prod_layout') === 'PBCFYI') && session('authorized'))
         {{-- $authorized = session('authorized'); --}}
         {{-- Session::put('authorized', session('authorized')); --}}
-        <img src="https://azc666.com/assets/mpdf/bcfyidisc2_template_withText.jpg" class="absolute mt-2 ml-2"
-            style="width:100%" />
-        @include('layouts/bcfyidisc-cart-proof-layout')
+        <img src="assets/mpdf/bcfyi_template.jpg" class="absolute mt-2 ml-2" style="width:100%" />
+        {{-- @include('layouts/bcfyidisc-cart-proof-layout') --}}
+        @include('/layouts/test-layout')
         @endif
 
         @if ($product->id === 104 ||
@@ -66,21 +66,19 @@
         session('prod_layout') === 'SBCFYI' ||
         session('prod_layout') === 'ABCFYI' ||
         session('prod_layout') === 'PBCFYI')
-        <img src="assets/mpdf/bcfyi_template.jpg" class="absolute mt-2 ml-2" style="width:100%" />
+<img src="assets/mpdf/bcfyidisc2_template_withText.jpg" class="absolute mt-2 ml-2" style="width:100%" />
         @include('layouts/bcfyi-cart-proof-layout')
         @endif
 
-        @if (($product->id === 107 ||
-        $product->id === 108 ||
-        $product->id === 109 ||
+    @if ((
         session('prod_id') === 107 ||
         session('prod_id') === 108 ||
         session('prod_id') === 109 ||
         session('prod_layout') === 'SFYI' ||
         session('prod_layout') === 'AFYI' ||
         session('prod_layout') === 'PFYI') && session('authorized'))
-        <img src="assets/mpdf/fyi_template_withCurl.jpg" class="mt-2 ml-2" style="width:100%" />
-        @include('layouts/fyidisc-cart-proof-layout')
+    <img src="assets/mpdf/fyi_template.jpg" class="mt-2 ml-2" style="width:100%" />
+    @include('layouts/fyidisc-cart-proof-layout')
         @endif
 
         @if ($product->id === 107 ||

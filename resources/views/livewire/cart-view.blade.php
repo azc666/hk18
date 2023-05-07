@@ -131,44 +131,44 @@
   @endif
 </td>
 
-@php
-$prod_layout = $row->options->prod_layout;
-@endphp
+  @php
+    $prod_layout = $row->options->prod_layout;
+  @endphp
 
-@if (
-$row->id === 101 ||
-$row->id === 102 ||
-$row->id === 103 ||
-$row->prod_id === 101 ||
-$row->id === 110 ||
-$row->id === 111 ||
-$prod_layout === 'SBC' ||
-$prod_layout === 'ABC' ||
-$prod_layout === 'PBC' ||
-$prod_layout === 'ADSBC' ||
-$prod_layout === 'PDSBC')
-<td>
-  {{ $row->options->bc_qty }}
-</td>
-@endif
+  @if (
+    $row->id === 101 ||
+    $row->id === 102 ||
+    $row->id === 103 ||
+    $row->prod_id === 101 ||
+    $row->id === 110 ||
+    $row->id === 111 ||
+    $prod_layout === 'SBC' ||
+    $prod_layout === 'ABC' ||
+    $prod_layout === 'PBC' ||
+    $prod_layout === 'ADSBC' ||
+    $prod_layout === 'PDSBC')
+  <td>
+    {{ $row->options->bc_qty }}
+  </td>
+  @endif
 
-@if (
-$row->id === 107 ||
-$row->id === 108 ||
-$row->id === 109 ||
-$prod_layout === 'SFYI' ||
-$prod_layout === 'AFYI' ||
-$prod_layout === 'PFYI')
-<td>
-  {{ $row->qty . ' FYI Pads' }}
-</td>
-@elseif (
-$row->id === 104 ||
-$row->id === 105 ||
-$row->id === 106 ||
-$prod_layout === 'SBCFYI' ||
-$prod_layout === 'ABCFYI' ||
-$prod_layout === 'PBCFYI')
+  @if (
+    $row->id === 107 ||
+    $row->id === 108 ||
+    $row->id === 109 ||
+    $prod_layout === 'SFYI' ||
+    $prod_layout === 'AFYI' ||
+    $prod_layout === 'PFYI')
+    <td>
+      {{ $row->qty . ' FYI Pads' }}
+    </td>
+  @elseif (
+    $row->id === 104 ||
+    $row->id === 105 ||
+    $row->id === 106 ||
+    $prod_layout === 'SBCFYI' ||
+    $prod_layout === 'ABCFYI' ||
+    $prod_layout === 'PBCFYI')
 <td>
   @if ($row->qty === 24)
   {{ '250 BCs + 4 FYI Pads' }}
@@ -181,11 +181,11 @@ $prod_layout === 'PBCFYI')
   @endif
 </td>
 {{-- @dd($row->id . ' hola') --}}
-@elseif ($row->id === 112 || $prod_layout === 'NTAG')
-<td>
-  {{ $row->qty }} {{ $row->qty > 1 ? ' Name Badges' : ' Name Badge' }}
-</td>
-@endif
+  @elseif ($row->id === 112 || $prod_layout === 'NTAG')
+    <td>
+      {{ $row->qty }} {{ $row->qty > 1 ? ' Name Badges' : ' Name Badge' }}
+    </td>
+  @endif
 
 <td class="">
   <div class="flex-col items-center w-24">
@@ -217,16 +217,16 @@ $prod_layout === 'PBCFYI')
 
   </div>
 
-</td>
-</tr>
-@endforeach
+  </td>
+  </tr>
+  @endforeach
 
 </tbody>
 
 </table>
 
-@if (Request::method() == 'POST')
-<livewire:cart-confirm />
-@else
-<livewire:rush />
-@endif
+  @if (Request::method() == 'POST')
+    <livewire:cart-confirm />
+  @else
+    <livewire:rush />
+  @endif

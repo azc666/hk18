@@ -12,14 +12,17 @@
         src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("https://azc666.com//fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
     }
 
-    .bc-bcfyidisc-name {
-        color: red;
+    /* .bc-name-bcfyidisc { */
+    .bcdisc-name {
+        /* color: green; */
+        color: violet;
         /* color: #0b0b0b; */
         position: absolute;
         font-size: 95px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: -1.2px;
-        top: 566.5px;
+        top: 520px;
+        /* top: 566.5px; */
         /* bottom: 980px; */
         left: 309.5px;
     }
@@ -187,79 +190,81 @@
 </style>
 
 
-<div class="bc-bcfyidisc-name">
-    {{ session('bc_name') }}
-</div>
+{{-- <div class="bc-name-bcfyidisc"> --}}
+    <div class="bcdisc-name">
+        {{ session('bc_name') }}
+    </div>
 
-<div class="fyi-bcfyidisc-name">
-    {{ session('bc_name') }}
-</div>
+    <div class="fyi-bcfyidisc-name">
+        {{ session('bc_name') }}
+    </div>
 
-<div class="bc-bcfyidisc-title">
-    {{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' : session('bc_title')
-    }}
-</div>
+    <div class="bc-bcfyidisc-title">
+        {{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' :
+        session('bc_title')
+        }}
+    </div>
 
-<div class="bc-bcfyidisc-email">
-    {{ session('bc_email') }}
-</div>
+    <div class="bc-bcfyidisc-email">
+        {{ session('bc_email') }}
+    </div>
 
-<div class="fyi-bcfyidisc-email">
-    {{ session('bc_email') }}
-</div>
+    <div class="fyi-bcfyidisc-email">
+        {{ session('bc_email') }}
+    </div>
 
-<div class="bc-bcfyidisc-phone">
-    @if (session('bc_phone'))
-    {{ 'T ' . session('bc_phone') }}
-    @endif
-    @if (session('bc_cell'))
-    {{ ' | M ' . session('bc_cell') }}
-    @endif
-    @if (session('bc_fax'))
-    {{ ' | F ' . session('bc_fax') }}
-    @endif
-</div>
+    <div class="bc-bcfyidisc-phone">
+        @if (session('bc_phone'))
+        {{ 'T ' . session('bc_phone') }}
+        @endif
+        @if (session('bc_cell'))
+        {{ ' | M ' . session('bc_cell') }}
+        @endif
+        @if (session('bc_fax'))
+        {{ ' | F ' . session('bc_fax') }}
+        @endif
+    </div>
 
-<div class="fyi-bcfyidisc-phone">
-    @if (session('bc_phone'))
-    {{ 'T ' . session('bc_phone') }}
-    @endif
-    @if (session('bc_cell'))
-    {{ ' | M ' . session('bc_cell') }}
-    @endif
-    @if (session('bc_fax'))
-    {{ ' | F ' . session('bc_fax') }}
-    @endif
-</div>
+    <div class="fyi-bcfyidisc-phone">
+        @if (session('bc_phone'))
+        {{ 'T ' . session('bc_phone') }}
+        @endif
+        @if (session('bc_cell'))
+        {{ ' | M ' . session('bc_cell') }}
+        @endif
+        @if (session('bc_fax'))
+        {{ ' | F ' . session('bc_fax') }}
+        @endif
+    </div>
 
-<div class="bc-bcfyidisc-citystatezip">
-    {{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
-</div>
+    <div class="bc-bcfyidisc-citystatezip">
+        {{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
+    </div>
 
-<div class="fyi-bcfyidisc-citystatezip">
-    {{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
-</div>
+    <div class="fyi-bcfyidisc-citystatezip">
+        {{ session('bc_city') }}{{ session('bc_city') ? ', ' : '' }} {{ session('bc_state') }} {{ session('bc_zip') }}
+    </div>
 
-<div class="bc-bcfyidisc-address2">
-    {{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
-</div>
+    <div class="bc-bcfyidisc-address2">
+        {{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
+    </div>
 
-<div class="fyi-bcfyidisc-address2">
-    {{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
-</div>
+    <div class="fyi-bcfyidisc-address2">
+        {{ !session('bc_address2') ? session('bc_address1') : session('bc_address2') }}
+    </div>
 
-<div class="bc-bcfyidisc-address1">
-    {{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
-</div>
+    <div class="bc-bcfyidisc-address1">
+        {{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
+    </div>
 
-<div class="fyi-bcfyidisc-address1">
-    {{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
-</div>
+    <div class="fyi-bcfyidisc-address1">
+        {{ session('bc_address2') ? session('bc_address1') : session('HKName') }}
+    </div>
 
-<div class="bc-bcfyidisc-HKName">
-    {{ session('bc_address2') ? session('HKName') : '' }}
-</div>
+    <div class="bc-bcfyidisc-HKName">
+        {{ session('bc_address2') ? session('HKName') : '' }}
+    </div>
 
-<div class="fyi-bcfyidisc-HKName">
-    {{ session('bc_address2') ? session('HKName') : '' }}
-</div>
+    <div class="fyi-bcfyidisc-HKName">
+        {{ session('bc_address2') ? session('HKName') : '' }}
+    </div>

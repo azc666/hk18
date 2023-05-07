@@ -62,8 +62,6 @@
       session('prod_layout') === 'SBC' || session('prod_layout') === 'ABC' || session('prod_layout') === 'PBC')
       <img src="{{ '/assets/mpdf/bc_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-xl inset-y-14"
         alt="...">
-
-
       <div class="text-hkcolor absolute inset-y-[425px] ml-6">
         <p>{!! (session('prod_descr')) !!}</p>
       </div>
@@ -71,7 +69,7 @@
       @elseif ((session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 ||
       session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI')
       && session('authorized'))
-      <img src="{{ '/assets/mpdf/bcfyidisc2_template_withText.jpg' }}"
+      <img src="{{ '/assets/mpdf/bcfyi_template.jpg' }}"
         class="absolute inset-x-0 max-w-xl shadow-2xl inset-y-14" alt="...">
       <div class="text-hkcolor absolute inset-y-[825px] ml-6">
         <p>{!! (session('prod_descr')) !!}</p>
@@ -390,10 +388,11 @@
             </div>
           </div>
 
-          <div class="wrapper">
-            <div class="mt-1 text-xs text-gray-600 uppercase"> Phone:</div>
-            <div class="ml-3 mr-2 -mt-1">
-              <input wire:model.lazy="bc_phone" id="bc_phone" name="bc_phone" type="text" @if (Auth::user()->username ==
+        <div class="wrapper">
+          <div class="mt-1 text-xs text-gray-600 uppercase"> Phone:</div>
+          <div class="ml-3 mr-2 -mt-1">
+            <input wire:model.lazy="bc_phone" id="bc_phone" name="bc_phone" type="text"
+              @if (Auth::user()->username ==
               'HK35' || Auth::user()->username == 'HK42')
               placeholder="XX.XX.XXXX.XXXX"
               @elseif (Auth::user()->username == 'HK46' || Auth::user()->username == 'HK41')
@@ -415,8 +414,8 @@
             </div>
 
             <div class="ml-3 mr-2 -mt-1">
-              <input wire:model.lazy="bc_phone2" id="bc_phone2" name="bc_phone2" type="text" @if (Auth::user()->username
-              == 'HK35' || Auth::user()->username == 'HK42')
+              <input wire:model.lazy="bc_phone2" id="bc_phone2" name="bc_phone2" type="text"
+              @if (Auth::user()->username == 'HK35' || Auth::user()->username == 'HK42')
               placeholder="XX.XX.XXXX.XXXX"
               @elseif (Auth::user()->username == 'HK46' || Auth::user()->username == 'HK41')
               placeholder="44.XX.XXXX.XXXX"
@@ -440,10 +439,11 @@
           <div class="wrapper">
             <div class="mt-1 text-xs text-gray-600 uppercase"> Mobile:</div>
             <div class="ml-3 mr-2 -mt-1">
-              <input wire:model.lazy="bc_cell" id="bc_cell" name="bc_cell" type="text" @if (Auth::user()->username ==
+              <input wire:model.lazy="bc_cell" id="bc_cell" name="bc_cell" type="text"
+                @if (Auth::user()->username ==
               'HK35' || Auth::user()->username == 'HK42')
               placeholder="52.XX.XXXX.XXXX"
-              @elseif (Auth::user()->username == 'HK41' || Auth::user()->username == 'HK46')
+                @elseif (Auth::user()->username == 'HK41' || Auth::user()->username == 'HK46')
               {{-- placeholder="44.XXXX.XXXXXX" --}}
               placeholder="44.XX.XXXX.XXXX"
               @elseif (Auth::user()->username == 'HK34')
@@ -463,8 +463,8 @@
             </div>
 
             <div class="ml-3 mr-2 -mt-1">
-              <input wire:model.lazy="bc_cell2" id="bc_cell2" name="bc_cell2" type="text" @if (Auth::user()->username ==
-              'HK35' || Auth::user()->username == 'HK42')
+              <input wire:model.lazy="bc_cell2" id="bc_cell2" name="bc_cell2" type="text"
+              @if (Auth::user()->username == 'HK35' || Auth::user()->username == 'HK42')
               placeholder="52.XX.XXXX.XXXX"
               @elseif (Auth::user()->username == 'HK41' || Auth::user()->username == 'HK46')
               {{-- placeholder="44.XXXX.XXXXXX" --}}
@@ -489,9 +489,8 @@
           <div class="wrapper">
             <div class="mt-1 text-xs text-gray-600 uppercase"> Fax:</div>
             <div class="ml-3 mr-2 -mt-1">
-              <input wire:model.lazy="bc_fax" id="bc_fax" name="bc_fax" type="text" @if (Auth::user()->username ==
-              'HK35' || Auth::user()->username == 'HK41' || Auth::user()->username == 'HK42' || Auth::user()->username
-              == 'HK46')
+              <input wire:model.lazy="bc_fax" id="bc_fax" name="bc_fax" type="text"
+              @if (Auth::user()->username == 'HK35' || Auth::user()->username == 'HK41' || Auth::user()->username == 'HK42' || Auth::user()->username == 'HK46')
               placeholder="XX.XX.XXXX.XXXX"
               @elseif (Auth::user()->username == 'HK34')
               placeholder="57.XXX.XXX.XXXX"
@@ -510,9 +509,9 @@
             </div>
 
             <div class="ml-3 mr-2 -mt-1">
-              <input wire:model.lazy="bc_fax2" id="bc_fax2" name="bc_fax2" type="text" @if (Auth::user()->username ==
-              'HK35' || Auth::user()->username == 'HK41' || Auth::user()->username == 'HK42' || Auth::user()->username
-              == 'HK46')
+              <input wire:model.lazy="bc_fax2" id="bc_fax2" name="bc_fax2" type="text"
+                @if (Auth::user()->username ==
+              'HK35' || Auth::user()->username == 'HK41' || Auth::user()->username == 'HK42' || Auth::user()->username == 'HK46')
               placeholder="XX.XX.XXXX.XXXX"
               @elseif (Auth::user()->username == 'HK34')
               placeholder="57.XXX.XXX.XXXX"
@@ -682,17 +681,16 @@
               <div class="mt-1 mr-1">
                 <label for="bc_phone" class="block ml-2 text-xs font-medium text-gray-500 uppercase"> Phone </label>
 
-                <input wire:model.lazy="bc_phone" id="bc_phone" name="bc_phone" type="text" @if (Auth::user()->username
-                ==
-                'HK35' || Auth::user()->username == 'HK42')
-                placeholder="XX.XX.XXXX.XXXX"
-                @elseif (Auth::user()->username == 'HK46' || Auth::user()->username == 'HK41')
-                placeholder="XX.XX.XXXX.XXXX"
-                @elseif (Auth::user()->username == 'HK34')
-                placeholder="57.XXX.XXX.XXXX"
-                @else
-                placeholder="123.555.5555"
-                @endif
+                <input wire:model.lazy="bc_phone" id="bc_phone" name="bc_phone" type="text"
+                  @if (Auth::user()->username == 'HK35' || Auth::user()->username == 'HK42')
+                  placeholder="XX.XX.XXXX.XXXX"
+                  @elseif (Auth::user()->username == 'HK46' || Auth::user()->username == 'HK41')
+                  placeholder="XX.XX.XXXX.XXXX"
+                  @elseif (Auth::user()->username == 'HK34')
+                  placeholder="57.XXX.XXX.XXXX"
+                  @else
+                  placeholder="123.555.5555"
+                  @endif
 
                 {{-- placeholder="123.555.5555" --}}
                 class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm
@@ -706,17 +704,17 @@
             <div>
               <div class="mt-1 mr-1">
                 <label for="bc_cell" class="block ml-2 text-xs font-medium text-gray-500 uppercase"> Mobile </label>
-                <input wire:model.lazy="bc_cell" id="bc_cell" name="bc_cell" type="text" @if (Auth::user()->username ==
-                'HK35' || Auth::user()->username == 'HK42')
-                placeholder="52.XX.XXXX.XXXX"
-                @elseif (Auth::user()->username == 'HK41' || Auth::user()->username == 'HK46')
+                <input wire:model.lazy="bc_cell" id="bc_cell" name="bc_cell" type="text"
+                  @if (Auth::user()->username == 'HK35' || Auth::user()->username == 'HK42')
+                  placeholder="52.XX.XXXX.XXXX"
+                  @elseif (Auth::user()->username == 'HK41' || Auth::user()->username == 'HK46')
                 {{-- placeholder="44.XXXX.XXXXXX" --}}
-                placeholder="44.XX.XXXX.XXXX"
-                @elseif (Auth::user()->username == 'HK34')
-                placeholder="57.XXX.XXX.XXXX"
-                @else
-                placeholder="123.555.5555"
-                @endif
+                  placeholder="44.XX.XXXX.XXXX"
+                  @elseif (Auth::user()->username == 'HK34')
+                  placeholder="57.XXX.XXX.XXXX"
+                  @else
+                  placeholder="123.555.5555"
+                  @endif
 
                 {{-- placeholder="123.555.5555" --}}
                 class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm
@@ -730,16 +728,16 @@
             <div>
               <div class="mt-1 mr-1">
                 <label for="bc_fax" class="block ml-2 text-xs font-medium text-gray-500 uppercase"> Fax </label>
-                <input wire:model.lazy="bc_fax" id="bc_fax" name="bc_fax" type="text" @if (Auth::user()->username ==
-                'HK35' || Auth::user()->username == 'HK42')
-                placeholder="XX.XX.XXXX.XXXX"
-                @elseif (Auth::user()->username == 'HK46' || Auth::user()->username == 'HK41')
-                placeholder="XX.XX.XXXX.XXXX"
-                @elseif (Auth::user()->username == 'HK34')
-                placeholder="57.XXX.XXX.XXXX"
-                @else
-                placeholder="123.555.5555"
-                @endif
+                <input wire:model.lazy="bc_fax" id="bc_fax" name="bc_fax" type="text"
+                  @if (Auth::user()->username == 'HK35' || Auth::user()->username == 'HK42')
+                  placeholder="XX.XX.XXXX.XXXX"
+                  @elseif (Auth::user()->username == 'HK46' || Auth::user()->username == 'HK41')
+                  placeholder="XX.XX.XXXX.XXXX"
+                  @elseif (Auth::user()->username == 'HK34')
+                  placeholder="57.XXX.XXX.XXXX"
+                  @else
+                  placeholder="123.555.5555"
+                  @endif
 
                 {{-- placeholder="123.555.5555" --}}
                 class="appearance-none block w-full px-3 py-2 border border-hkcolor bg-white rounded-md shadow-sm
