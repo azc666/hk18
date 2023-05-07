@@ -490,9 +490,9 @@ class EditBusinessCard extends Component
         }
         if ((session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 || session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI') && session('authorized')) {
 
-            $authorized = session('authorized');
+            // $authorized = session('authorized');
             // dd(session('authorized'));
-            Session::put('authorized', $authorized);
+            // Session::put('authorized', $authorized);
             $pdf = PDF::loadview('pdf-view', $data)->setPaper([0, 0, 2000, 2585]);
         }
         if (session('prod_id') === 104 || session('prod_id') === 105 || session('prod_id') === 106 || session('prod_layout') === 'SBCFYI' || session('prod_layout') === 'ABCFYI' || session('prod_layout') === 'PBCFYI') {
