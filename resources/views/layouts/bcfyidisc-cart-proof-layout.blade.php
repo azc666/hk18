@@ -46,7 +46,7 @@
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         letter-spacing: -.1px;
         font-size: 68px;
-        top: 700px;
+        top: 650px;
         left: 309.5px;
     }
 
@@ -187,6 +187,52 @@
         Bottom: 600px;
         right: 162px;
     }
+    .bc-bcfyidisc-disclaimer1 {
+    color: green;
+    /* color: #00478F; */
+    /* color: #142667; */
+    position: absolute;
+    font-size: 53px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -2.1px;
+    /* top: 1242px; */
+    top: 1225px;
+    right: 460.3px;
+    }
+    .fyi-bcfyidisc-disclaimer1 {
+    color: green;
+    /* color: #00478F; */
+    /* color: #142667; */
+    position: absolute;
+    font-size: 53px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -1.55px;
+    bottom: 132.5px;
+    right: 157.75px;
+    }
+    .bc-bcfyidisc-disclaimer2 {
+    color: green;
+    /* color: #00478F; */
+    /* color: #142667; */
+    position: absolute;
+    font-size: 53px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -2.1px;
+    /* top: 1242px; */
+    top: 1285px;
+    right: 460.3px;
+    }
+    .fyi-bcfyidisc-disclaimer2 {
+    color: green;
+    /* color: #00478F; */
+    /* color: #142667; */
+    position: absolute;
+    font-size: 53px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: -1.55px;
+    bottom: 70px;
+    right: 157.75px;
+    }
 </style>
 
 
@@ -267,4 +313,20 @@
 
     <div class="fyi-bcfyidisc-HKName">
         {{ session('bc_address2') ? session('HKName') : '' }}
+    </div>
+
+    <div class="bc-bcfyidisc-disclaimer1">
+        {{ session('bc_disclaimer1') }}
+    </div>
+
+    <div class="fyi-bcfyidisc-disclaimer1">
+        {{ session('bc_disclaimer1') }}
+    </div>
+
+    <div class="bc-bcfyidisc-disclaimer2">
+        {{ session('bc_disclaimer2') }}
+    </div>
+
+    <div class="fyi-bcfyidisc-disclaimer2">
+        {{ session('bc_disclaimer2') }}
     </div>
