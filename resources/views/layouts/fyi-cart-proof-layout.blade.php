@@ -94,19 +94,9 @@
     }
 </style>
 
-{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-    <div class="fyi-name">
-        {{ session('bc_name') }}
-    </div>
-    {{--
-</div> --}}
-
-{{-- <div id="bc_title" name="bc_title" class="absolute">
-    <div class="title">
-        {{ session('bc_title') }}
-    </div>
-</div> --}}
-
+<div class="fyi-name">
+    {{ session('bc_name') }}
+</div>
 
 <div class="email-fyi">
     {{ session('bc_email') }}
