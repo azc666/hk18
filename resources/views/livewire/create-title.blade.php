@@ -15,13 +15,13 @@
                 <span class="mt-1 ml-2 text-hkcolor font-hellt">&nbsp;Staff</span>
             </label>
             <label class="inline-flex items-center ml-6">
-                <input type="radio" class="form-radio text-hkcolor" value="Partner" wire:model="type" name="type"
-                    id="partner">
+                <input type="radio" class="form-radio text-hkcolor" value="Associate" wire:model="type" name="type"
+                    id="associate">
                 <span class="mt-2 ml-2 text-hkcolor font-hellt">&nbsp;Associate</span>
             </label>
             <label class="inline-flex items-center ml-6">
-                <input type="radio" class="form-radio text-hkcolor" value="Associate" wire:model="type" name="type"
-                    id="associate">
+                <input type="radio" class="form-radio text-hkcolor" value="Partner" wire:model="type" name="type"
+                    id="partner">
                 <span class="mt-2 ml-2 text-hkcolor font-hellt">&nbsp;Partner</span>
             </label><br>
             @error('type')
@@ -39,10 +39,10 @@
     </x-slot>
 
     <x-slot name="buttons">
-        <div class="flex justify-end mr-6 space-x-4">
+        <div class="flex justify-around p-6 -ml-6 -mr-6 bg-gray-100 justify-items-center">
             <button wire:click="$emit('closeModal')"
-                class="px-4 py-2 pt-3 bg-gray-300 rounded-md text-hkcolor font-helmd text-md">Cancel</button>
-            <button type="submit" class="px-4 py-2 pt-3 bg-blue-300 rounded-md text-hkcolor font-helmd text-md">Create
+                class="py-2 pt-3 uppercase bg-gray-300 rounded-md px-14 text-hkcolor font-helmd text-md">Cancel</button>
+            <button type="submit" class="px-8 py-2 pt-3 uppercase bg-blue-300 rounded-md text-hkcolor font-helmd text-md">Create
                 Title</button>
         </div>
 

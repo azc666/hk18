@@ -9,5 +9,11 @@ class Title extends Model
 {
     use HasFactory;
 
+    // public $timestamps = false;
+
     protected $guarded = [];
+
+    // protected $casts = [
+    //     $timestamps = false,
+    // ];
 }
