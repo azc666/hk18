@@ -1,11 +1,24 @@
 <style>
+
+    @font-face {
+    font-family: "HelveticaNeueLTStd-LT";
+    src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Lt.woff") format('woff'),
+    url("public/fonts/HelveticaNeueLTStd-Lt.woff2") format('woff2');
+    }
+
+    @font-face {
+    font-family: "HelveticaNeueLTStd-MD";
+    src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'),
+    url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
+    }
     .name-dsbc {
         /* color: red; */
         color: #0b0b0b;
         position: absolute;
         font-size: 90px;
-        font-weight: 700;
-        font-family: Helvetica, sans-serif;
+        /* font-weight: 700; */
+        /* font-family: Helvetica, sans-serif; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: .5px;
         top: 564px;
         left: 321px;
@@ -15,8 +28,9 @@
         color: #0b0b0b;
         position: absolute;
         font-size: 90px;
-        font-weight: 700;
-        font-family: Helvetica, sans-serif;
+        /* font-weight: 700; */
+        /* font-family: Helvetica, sans-serif; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: .5px;
         /* top: 900px; */
         bottom: 1225px;
@@ -26,10 +40,11 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         letter-spacing: -.5px;
         font-size: 68px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         top: 695px;
         left: 321px;
     }
@@ -37,10 +52,11 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         letter-spacing: -.5px;
         font-size: 68px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         /* top: 695px; */
         bottom: 1120px;
         left: 321px;
@@ -50,8 +66,9 @@
         color: #00478F;
         position: absolute;
         font-size: 70px;
-        font-weight: 700;
-        font-family: Helvetica, sans-serif;
+        /* font-weight: 700;
+        font-family: Helvetica, sans-serif; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: -1.5px;
         top: 1239px;
         right: 340px;
@@ -61,8 +78,9 @@
         color: #00478F;
         position: absolute;
         font-size: 70px;
-        font-weight: 700;
-        font-family: Helvetica, sans-serif;
+        /* font-weight: 700;
+        font-family: Helvetica, sans-serif; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
         letter-spacing: -1.5px;
         /* top: 1239px; */
         bottom: 572px;
@@ -72,9 +90,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1px;
         top: 1152px;
         right: 340px;
@@ -83,9 +102,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1px;
         /* top: 1152px; */
         bottom: 493;
@@ -95,9 +115,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1px;
         top: 1066px;
         right: 340px;
@@ -106,9 +127,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1px;
         bottom: 742px;
         right: 340px;
@@ -117,9 +139,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1px;
         top: 981px;
         right: 340px;
@@ -128,9 +151,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1px;
         bottom: 828px;
         right: 340px;
@@ -139,9 +163,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1.75px;
         top: 898px;
         right: 340px;
@@ -150,9 +175,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1.6px;
         bottom: 910.5px;
         right: 340px;
@@ -161,9 +187,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1.75px;
         top: 811px;
         right: 340px;
@@ -172,9 +199,10 @@
         /* color: red; */
         color: #00478F;
         position: absolute;
-        font-family: Helvetica;
+        /* font-family: Helvetica; */
+        font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 71px;
-        font-weight: lighter;
+        /* font-weight: lighter; */
         letter-spacing: -1.6px;
         bottom: 995px;
         right: 340px;
