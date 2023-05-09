@@ -47,7 +47,7 @@
         session('prod_layout') === 'PBCFYI') && session('authorized'))
         {{-- $authorized = session('authorized'); --}}
         {{-- Session::put('authorized', session('authorized')); --}}
-        <img src="assets/mpdf/bcfyi_template.jpg" class="absolute mt-2 ml-2" style="width:100%" />
+        <img src="assets/mpdf/bcfyi_template_withoutCurl.jpg" class="absolute mt-2 ml-2" style="width:100%" />
         {{-- @include('layouts/bcfyidisc-cart-proof-layout') --}}
         @include('/layouts/bcfyidisc-cart-proof-layout')
         @endif
