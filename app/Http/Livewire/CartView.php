@@ -326,8 +326,8 @@ class CartView extends Component
             $city_o = Arr::get($orderArray, $i . '.city_o');
             $state_o = Arr::get($orderArray, $i . '.state_o');
             $zip_o = Arr::get($orderArray, $i . '.zip_o');
-            $disclaimer1 = Arr::get($orderArray, $i . '.disclaimer1');
-            $disclaimer2 = Arr::get($orderArray, $i . '.disclaimer2');
+            $disclaimer1_o = Arr::get($orderArray, $i . '.disclaimer1');
+            $disclaimer2_o = Arr::get($orderArray, $i . '.disclaimer2');
             $name2 = Arr::get($orderArray, $i . '.name2');
             $email2 = Arr::get($orderArray, $i . '.email2');
             $title2 = Arr::get($orderArray, $i . '.title2');
@@ -417,7 +417,6 @@ class CartView extends Component
                 }
             }
 
-            // dd($sp_instr_o);
             $cartItem = Cart::add($row_id, $order_type_o, $quantity, '0', [
                 'prod_layout' => $prod_layout,
                 'prod_descr' => $prod_descr,
@@ -434,6 +433,8 @@ class CartView extends Component
                 'bc_city' => $city_o,
                 'bc_state' => $state_o,
                 'bc_zip' => $zip_o,
+                'bc_disclaimer1' => $bc_disclaimer1_o,
+                'bc_disclaimer2' => $bc_disclaimer2_o,
                 'bc_name2' => $name2,
                 'bc_title2' => $title2,
                 'bc_email2' => $email2,

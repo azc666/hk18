@@ -111,6 +111,8 @@ class PlaceOrder extends Component
                     'city_o'       =>  $item->options->bc_city,
                     'state_o'      =>  $item->options->bc_state,
                     'zip_o'        =>  $item->options->bc_zip,
+                    'disclaimer1_o'=>  $item->options->bc_disclaimer1,
+                    'disclaimer2_o'=>  $item->options->bc_disclaimer2,
                     'name2'        =>  $item->options->bc_name2,
                     'title2'       =>  $bc_title2,
                     'email2'       =>  $item->options->bc_email2,

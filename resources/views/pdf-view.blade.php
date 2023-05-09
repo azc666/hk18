@@ -26,9 +26,9 @@
         session('prod_layout') === 'PBC') && session('authorized'))
         <img src="assets/mpdf/bc_template.jpg" style="width:100%;" class="">
         @include('layouts/bcdisc-cart-proof-layout')
-        @endif
+        {{-- @endif --}}
 
-        @if (session('prod_id') === 101 ||
+        @elseif (session('prod_id') === 101 ||
         session('prod_id') === 102 ||
         session('prod_id') === 103 ||
         session('prod_layout') === 'SBC' ||
@@ -50,9 +50,9 @@
         <img src="assets/mpdf/bcfyi_template_withoutCurl.jpg" class="absolute mt-2 ml-2" style="width:100%" />
         {{-- @include('layouts/bcfyidisc-cart-proof-layout') --}}
         @include('/layouts/bcfyidisc-cart-proof-layout')
-        @endif
+        {{-- @endif --}}
 
-        @if ($product->id === 104 ||
+        @elseif ($product->id === 104 ||
         $product->id === 105 ||
         $product->id === 106 ||
         session('prod_id') === 104 ||
@@ -74,9 +74,9 @@
         session('prod_layout') === 'PFYI') && session('authorized'))
     <img src="assets/mpdf/fyi_template.jpg" class="mt-2 ml-2" style="width:100%" />
     @include('layouts/fyidisc-cart-proof-layout')
-        @endif
+        {{-- @endif --}}
 
-        @if ($product->id === 107 ||
+        @elseif ($product->id === 107 ||
         $product->id === 108 ||
         $product->id === 109 ||
         session('prod_id') === 107 ||
