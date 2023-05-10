@@ -1,15 +1,5 @@
 <style>
-	@import url("https://use.typekit.net/tza8nhy.css");
-	@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
-
-
-	@font-face {
-		font-family: "Start";
-		src: url('/public/fonts/Start.woff') format('woff'), url('/public/fonts/Start.woff2') format('woff2');
-	}
 
 	@font-face {
 		font-family: "HelveticaNeueLTStd-LT";
@@ -19,17 +9,6 @@
 	@font-face {
 		font-family: "HelveticaNeueLTStd-MD";
 		src: url("https://azc666.com/fonts/HelveticaNeueLTStd-Md.woff") format('woff'), url("public/fonts/HelveticaNeueLTStd-Md.woff2") format('woff2');
-	}
-
-	@font-face {
-		font-family: "HelveticaNeueLTStd";
-		src: url('/public/fonts/HelveticaNeueLTStd-Cn.woff') format('woff'), url('/public/fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2');
-	}
-
-	.ball {
-		font-family: ballinger-condensed, sans-serif;
-		font-weight: 500;
-		font-style: normal;
 	}
 
 	.bc-name {
@@ -49,9 +28,6 @@
 		/* color: #142667; */
 		position: absolute;
 		font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
-		/* font-family: 'CustomFont', "Start", 'cursive'; */
-		/* font-family: 'Roboto', sans-serif; */
-		/* font-family: 'Barlow Condensed', sans-serif; */
 		letter-spacing: .3px;
 		font-size: 82.5px;
 		top: 593px;
@@ -157,31 +133,15 @@
 		right: 194px;
 	}
 
-	.testes {
-		color: green;
-		position: absolute;
-		font-size: 55px;
-		font-family: 'Barlow Condensed', sans-serif;
-		top: 800px;
-	}
 </style>
 
-{{-- <div class="relative"> --}}
-	<div class="bc-name">
-		{{-- <div class="testes"> --}}
+		<div class="bc-name">
 			{{ session('bc_name') }}
 		</div>
 
-		{{--
-	</div> --}}
-
-	{{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
 		<div class="bc-title">
 			{{ session('bc_title') }}
 		</div>
-		{{--
-	</div> --}}
-
 
 	<div class="bc-email">
 		{{ session('bc_email') }}

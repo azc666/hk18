@@ -12,8 +12,8 @@
     }
 
     .name-fyi {
-        color: red;
-        /* color: #0b0b0b; */
+        /* color: red; */
+        color: #0b0b0b;
         position: absolute;
         font-size: 106px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -24,8 +24,8 @@
     }
 
     .fyi-email {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-size: 67px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -115,18 +115,9 @@
     }
 </style>
 
-{{-- <div id="bc_name" name="bc_name" class="absolute"> --}}
-    <div class="name-fyi">
-        {{ session('bc_name') }}
-    </div>
-    {{--
-</div> --}}
-
-{{-- <div id="bc_title" name="bc_title" class="absolute">
-    <div class="title">
-        {{ session('bc_title') }}
-    </div>
-</div> --}}
+<div class="name-fyi">
+    {{ session('bc_name') }}
+</div>
 
 
 <div class="fyi-email">
