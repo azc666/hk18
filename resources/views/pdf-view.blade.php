@@ -18,7 +18,7 @@
 
 <body>
     <div class="relative top-4">
-        @if ((session('prod_id') === 101 ||
+    @if ((session('prod_id') === 101 ||
         session('prod_id') === 102 ||
         session('prod_id') === 103 ||
         session('prod_layout') === 'SBC' ||
@@ -28,7 +28,7 @@
         @include('layouts/bcdisc-cart-proof-layout')
         {{-- @endif --}}
 
-        @elseif (session('prod_id') === 101 ||
+    @elseif (session('prod_id') === 101 ||
         session('prod_id') === 102 ||
         session('prod_id') === 103 ||
         session('prod_layout') === 'SBC' ||
@@ -36,9 +36,9 @@
         session('prod_layout') === 'PBC')
         <img src="assets/mpdf/bc_template.jpg" style="width:100%;" class="">
         @include('layouts/bc-cart-proof-layout')
-        @endif
+    @endif
 
-        @if ((
+    @if ((
         session('prod_id') === 104 ||
         session('prod_id') === 105 ||
         session('prod_id') === 106 ||
@@ -52,7 +52,7 @@
         @include('/layouts/bcfyidisc-cart-proof-layout')
         {{-- @endif --}}
 
-        @elseif ($product->id === 104 ||
+    @elseif ($product->id === 104 ||
         $product->id === 105 ||
         $product->id === 106 ||
         session('prod_id') === 104 ||
@@ -61,9 +61,9 @@
         session('prod_layout') === 'SBCFYI' ||
         session('prod_layout') === 'ABCFYI' ||
         session('prod_layout') === 'PBCFYI')
-<img src="assets/mpdf/bcfyi_template.jpg" class="absolute mt-2 ml-2" style="width:100%" />
+        <img src="assets/mpdf/bcfyi_template_withoutCurl.jpg" class="absolute mt-2 ml-2" style="width:100%" />
         @include('layouts/bcfyi-cart-proof-layout')
-        @endif
+    @endif
 
     @if ((
         session('prod_id') === 107 ||
@@ -72,11 +72,11 @@
         session('prod_layout') === 'SFYI' ||
         session('prod_layout') === 'AFYI' ||
         session('prod_layout') === 'PFYI') && session('authorized'))
-    <img src="assets/mpdf/fyi_template.jpg" class="mt-2 ml-2" style="width:100%" />
-    @include('layouts/fyidisc-cart-proof-layout')
+        <img src="assets/mpdf/fyi_template.jpg" class="mt-2 ml-2" style="width:100%" />
+        @include('layouts/fyidisc-cart-proof-layout')
         {{-- @endif --}}
 
-        @elseif ($product->id === 107 ||
+    @elseif ($product->id === 107 ||
         $product->id === 108 ||
         $product->id === 109 ||
         session('prod_id') === 107 ||
@@ -87,9 +87,9 @@
         session('prod_layout') === 'PFYI')
         <img src="assets/mpdf/fyi_template.jpg" class="mt-2 ml-2" style="width:100%" />
         @include('layouts/fyi-cart-proof-layout')
-        @endif
+    @endif
 
-        @if ($product->id === 110 ||
+    @if ($product->id === 110 ||
         $product->id === 111 ||
         session('prod_id') === 110 ||
         session('prod_id') === 111 ||
@@ -97,12 +97,12 @@
         session('prod_layout') === 'PDSBC')
         <img src="assets/mpdf/dsbc_template.jpg" class="mt-2 ml-2" style="width:100%" />
         @include('layouts/dsbc-cart-proof-layout')
-        @endif
+    @endif
 
-        @if ($product->id === 112 || session('prod_id') === 112 || session('prod_layout') === 'NTAG')
+    @if ($product->id === 112 || session('prod_id') === 112 || session('prod_layout') === 'NTAG')
         <img src="assets/mpdf/ntag_template.jpg" class="ml-2" style="width:100%" />
         @include('layouts/ntag-cart-proof-layout')
-        @endif
+    @endif
 
     </div>
 </body>

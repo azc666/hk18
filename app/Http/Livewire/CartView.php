@@ -53,6 +53,8 @@ class CartView extends Component
     public $bc_city;
     public $bc_state;
     public $bc_zip;
+    public $disclaimer1;
+    public $disclaimer2;
     public $bc_name2;
     public $bc_title2;
     public $bc_email2;
@@ -433,8 +435,8 @@ class CartView extends Component
                 'bc_city' => $city_o,
                 'bc_state' => $state_o,
                 'bc_zip' => $zip_o,
-                'bc_disclaimer1' => $bc_disclaimer1_o,
-                'bc_disclaimer2' => $bc_disclaimer2_o,
+                'bc_disclaimer1' => $disclaimer1_o,
+                'bc_disclaimer2' => $disclaimer2_o,
                 'bc_name2' => $name2,
                 'bc_title2' => $title2,
                 'bc_email2' => $email2,

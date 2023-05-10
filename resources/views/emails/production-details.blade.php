@@ -184,6 +184,17 @@
         <td>Zip_o</td>
         <td>{{ $order_array[$i]['zip_o'] }}</td>
       </tr>
+      @if (session('authorized'))
+      <tr class="">
+        <td>Disclaimer1_o</td>
+        <td>{{ $order_array[$i]['disclaimer1_o'] }}</td>
+      </tr>
+      <tr class="">
+        <td>Disclaimer2_o</td>
+        <td>{{ $order_array[$i]['disclaimer2_o'] }}</td>
+      </tr>
+      @endif
+
       @if ($order_array[$i]['prod_layout'] === 'ADSBC' || $order_array[$i]['prod_layout'] === 'PDSBC')
       <tr class="">
         <td style="font-weight: bold;">***** REVERSE SIDE *****</td>
