@@ -55,19 +55,23 @@
       @elseif ($product->id === 104 || $product->id === 105 || $product->id === 106)
       <img src="{{ '/assets/mpdf/bcfyi_template.jpg' }}" class="absolute inset-x-0 max-w-xl shadow-2xl inset-y-14"
         alt="...">
-      <div class="text-hkcolor absolute top-[825px] ml-6">
+      <div class="text-hkcolor absolute top-[830px] ml-6">
 
         {{-- <p>{!! nl2br($product->description) !!}</p> --}}
         <div class="flex space-x-10">
           <div>
-            <p><strong>"Engraved" Business Card </strong></p>
+            @if ($product->id === 106)
+                <p class="font-helmd">"Engraved" Business Card</p>
+            @else
+                <p class="font-helmd">"Standard" Business Card</p>
+            @endif
             <p class="pl-2">• Heavy, Uncoated Cover Stock</p>
             <p class="pl-2">• 3.5" x 2"</p>
             <p class="pl-2">• Engraved Logo and Text</p>
             <p class="pl-2">• Color, 1-sided</p>
           </div>
             <div>
-              <p><strong>Custom FYI Pads</strong></p>
+              <p class="font-helmd">Custom FYI Pads</p>
               <p class="pl-2">• Text Weight Stock</p>
               <p class="pl-2">• 4.25" x 5.5"</p>
               <p class="pl-2">• Full Color, 100 sheets per pad</p>
