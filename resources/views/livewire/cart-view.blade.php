@@ -68,17 +68,72 @@
 </td>
 
 <td>
-  <p class="mb-1 text-lg uppercase font-helmd text-hkcolor">{{ $row->name }}</p>
+  {{-- <p class="mb-1 text-lg uppercase font-helmd text-hkcolor">{{ $row->name }}</p> --}}
 
-  @if (strpos($row->name, '+') && str_contains($row->name, 'Partner'))
+  {{-- @if (strpos($row->name, '+') && str_contains($row->name, 'Partner')) --}}
   {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(103)->description) !!}</p> --}}
-  <p>{!! nl2br(App\Models\Product::find(106)->description) !!}</p>
-  @elseif (strpos($row->name, '+') && (str_contains($row->name, 'Staff') || str_contains($row->name, 'Associate')))
+  {{-- <p>{!! nl2br(App\Models\Product::find(106)->description) !!}</p> --}}
+  {{-- @elseif (strpos($row->name, '+') && (str_contains($row->name, 'Staff') || str_contains($row->name, 'Associate'))) --}}
   {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(101)->description) !!}</p> --}}
-  <p>{!! nl2br(App\Models\Product::find(104)->description) !!}</p>
-  @else
-  <p>{!! $this->restored ? $row->options->prod_descr : $row->options->prod_descr !!}</p>
-  @endif
+  {{-- <p>{!! nl2br(App\Models\Product::find(104)->description) !!}</p> --}}
+  {{-- @else --}}
+  {{-- <p>{!! $this->restored ? $row->options->prod_descr : $row->options->prod_descr !!}</p> --}}
+  {{-- @endif --}}
+  <div class="flex space-x-4">
+    <div>
+    {{-- @dd($row->name) --}}
+      {{-- @if (strpos($row->name, '+') && str_contains($row->name, 'Partner')) --}}
+      @if ($row->name === 'Partner Business Card' || $row->name === 'Partner BC + FYI Pads')
+        <div>
+          <p class="font-helmd text-hkcolor">"Engraved" Business Card</p>
+          <p class="pl-2">• Heavy, Uncoated Cover Stock</p>
+          <p class="pl-2">• 3.5" x 2"</p>
+          <p class="pl-2">• Engraved Logo and Text</p>
+          <p class="pl-2">• Color, 1-sided</p>
+        </div>
+      @elseif ($row->name === 'Associate Business Card' || $row->name === 'Associate BC + FYI Pads' || $row->name === 'Staff Business Card' || $row->name === 'Staff BC + FYI Pads')
+        <div>
+          <p class="font-helmd text-hkcolor">"Standard" Business Card</p>
+          <p class="pl-2">• Heavy, Uncoated Cover Stock</p>
+          <p class="pl-2">• 3.5" x 2"</p>
+          <p class="pl-2">• Engraved Logo and Text</p>
+          <p class="pl-2">• Color, 1-sided</p>
+        </div>
+      @endif
+      @if (str_contains($row->name, 'BC + FYI Pads') || str_contains($row->name, 'FYI Pads'))
+        <div class="mt-4">
+          <p class="font-helmd text-hkcolor">Custom FYI Pads</p>
+          <p class="pl-2">• Text Weight Stock</p>
+          <p class="pl-2">• 4.25" x 5.5"</p>
+          <p class="pl-2">• Full Color, 100 sheets per pad</p>
+          <p class="pl-2">• Heavy Chipboard Backer</p>
+        </div>
+      @endif
+
+    </div>
+
+
+      {{-- @elseif (session('prod_layout') === 'ABCFYI' || $row->id == 105 || session('prod_layout') === 'SBCFYI' || $row->id == 104)
+      <p class="font-helmd text-hkcolor">"Standard" Business Card</p>
+      {{-- @endif --}}
+      {{-- <p class="pl-2">• Heavy, Uncoated Cover Stock</p>
+      <p class="pl-2">• 3.5" x 2"</p>
+      <p class="pl-2">• Engraved Logo and Text</p>
+      <p class="pl-2">• Color, 1-sided</p>
+    </div>
+    @if (session('prod_layout') === 'ABCFYI' || $row->id == 105 || session('prod_layout') === 'SBCFYI'|| $row->id == 104 || session('prod_layout') === 'PBCFYI'|| $row->id == 106)
+      <div>
+        <p class="font-helmd text-hkcolor">Custom FYI Pads</p>
+        <p class="pl-2">• Text Weight Stock</p>
+        <p class="pl-2">• 4.25" x 5.5"</p>
+        <p class="pl-2">• Full Color, 100 sheets per pad</p>
+        <p class="pl-2">• Heavy Chipboard Backer</p>
+      </div>
+      {{-- @elseif (!session('prod_layout') === 'ABCFYI' || !$row->id == 105 || !session('prod_layout') === 'SBCFYI'|| !$row->id == 104 || !session('prod_layout') === 'PBCFYI'|| !$row->id == 106)
+      ''
+    @endif --}}
+
+
 </td>
 
 <td>

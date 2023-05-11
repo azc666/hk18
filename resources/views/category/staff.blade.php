@@ -44,7 +44,7 @@
             FYI Pads</h3>
         </a>
 
-        <a href="/product/105" class="group">
+        <a href="/product/104" class="group">
           <div class="w-full overflow-hidden rounded-lg h-80 bg-gray-50">
             <img src="/assets/staff/sbcfyi_display.jpg" class="mt-6 ml-4 scale-110 group-hover:opacity-75">
           </div>
