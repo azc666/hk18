@@ -15,8 +15,8 @@
     /* .bc-name-bcfyidisc { */
     .bcdisc-name {
         /* color: green; */
-        color: violet;
-        /* color: #0b0b0b; */
+        /* color: violet; */
+        color: #0b0b0b;
         position: absolute;
         font-size: 95px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -28,8 +28,8 @@
     }
 
     .fyi-bcfyidisc-name {
-        color: red;
-        /* color: #0b0b0b; */
+        /* color: red; */
+        color: #0b0b0b;
         position: absolute;
         font-size: 105.5px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -40,8 +40,8 @@
     }
 
     .bc-bcfyidisc-title {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         letter-spacing: -.1px;
@@ -51,8 +51,8 @@
     }
 
     .bc-bcfyidisc-email {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-size: 70px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -62,8 +62,8 @@
     }
 
     .fyi-bcfyidisc-email {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-size: 68px;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-MD"', sans-serif;
@@ -74,8 +74,8 @@
     }
 
     .bc-bcfyidisc-phone {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -85,8 +85,8 @@
     }
 
     .fyi-bcfyidisc-phone {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -97,8 +97,8 @@
     }
 
     .bc-bcfyidisc-citystatezip {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -108,8 +108,8 @@
     }
 
     .fyi-bcfyidisc-citystatezip {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -120,8 +120,8 @@
     }
 
     .bc-bcfyidisc-address2 {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -131,8 +131,8 @@
     }
 
     .fyi-bcfyidisc-address2 {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -143,8 +143,8 @@
     }
 
     .bc-bcfyidisc-address1 {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -154,8 +154,8 @@
     }
 
     .fyi-bcfyidisc-address1 {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -166,8 +166,8 @@
     }
 
     .bc-bcfyidisc-HKName {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -177,8 +177,8 @@
     }
 
     .fyi-bcfyidisc-HKName {
-        color: red;
-        /* color: #00478F; */
+        /* color: red; */
+        color: #00478F;
         position: absolute;
         font-family: 'CustomFont', '"HelveticaNeueLTStd-LT"', sans-serif;
         font-size: 68px;
@@ -188,8 +188,8 @@
         right: 162px;
     }
     .bc-bcfyidisc-disclaimer1 {
-    color: green;
-    /* color: #00478F; */
+    /* color: green; */
+    color: #00478F;
     /* color: #142667; */
     position: absolute;
     font-size: 53px;
@@ -200,8 +200,8 @@
     right: 460.3px;
     }
     .fyi-bcfyidisc-disclaimer1 {
-    color: green;
-    /* color: #00478F; */
+    /* color: green; */
+    color: #00478F;
     /* color: #142667; */
     position: absolute;
     font-size: 53px;
@@ -211,8 +211,8 @@
     right: 157.75px;
     }
     .bc-bcfyidisc-disclaimer2 {
-    color: green;
-    /* color: #00478F; */
+    /* color: green; */
+    color: #00478F;
     /* color: #142667; */
     position: absolute;
     font-size: 53px;
@@ -223,8 +223,8 @@
     right: 460.3px;
     }
     .fyi-bcfyidisc-disclaimer2 {
-    color: green;
-    /* color: #00478F; */
+    /* color: green; */
+    color: #00478F;
     /* color: #142667; */
     position: absolute;
     font-size: 53px;
