@@ -5,13 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    {{-- <link rel="icon" type="image/png" href="{{ asset('assets/HK2.png') }}"> --}}
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon-3.png">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/HKicon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
