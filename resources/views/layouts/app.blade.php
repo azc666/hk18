@@ -7,7 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/HKicon.png">
+    {{-- <link rel="icon" type="image/x-icon" href="/assets/HKicon.png"> --}}
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-3.png">
 
     <title>{{ $title ?? 'HK Order Portal' }}</title>
 
