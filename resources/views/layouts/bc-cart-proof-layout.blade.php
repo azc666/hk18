@@ -123,7 +123,8 @@
 
 {{-- <div id="bc_title" name="bc_title" class="absolute"> --}}
 	<div class="title-bc">
-		{{ session('bc_title') }}
+		{{-- {{ session('bc_title') }} --}}
+		{{ session('bc_title') == 'Staff Attorney (Title will be updated to "Attorney")' ? 'Attorney' : session('bc_title') }}
 	</div>
 	{{--
 </div> --}}
