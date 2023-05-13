@@ -164,7 +164,11 @@ class CartView extends Component
         $prodName = Cart::get($rowId)->name;
         $bcName = Cart::get($rowId)->options->bc_name;
 
-        Mail::to($adminEmail)->send(new PdfProof($imgToEmail, $prodName, $adminEmail, $adminName, $bcName));
+        if (session('authorized')) {
+            Mail::to("sheri.testa@hklaw.com")->send(new PdfProof($imgToEmail, $prodName, $adminEmail, $adminName, $bcName));
+        } else {
+            Mail::to($adminEmail)->send(new PdfProof($imgToEmail, $prodName, $adminEmail, $adminName, $bcName));
+        }
 
         $msg = 'The ' . $prodName . ' proof  for ' . $bcName . ' ';
         // $msg .=  PHP_EOL;
