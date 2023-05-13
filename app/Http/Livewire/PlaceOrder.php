@@ -203,7 +203,11 @@ class PlaceOrder extends Component
                 Mail::to("sheri.testa@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
             }
 
-            Mail::to($adminEmail)->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
+            if (session('authorized')) {
+                Mail::to("sheri.testa@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
+            } else {
+                Mail::to($adminEmail)->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
+            }
 
             // Mail::to('allen@g-d.com')->send(new ProductionMailConf($confirmation, $savedCart, $dt_o, $order_array, $order_array_count, $address_s, $adminEmail, $adminName, $rush));
             Mail::to('output@g-d.com')->send(new ProductionMailConf($confirmation, $savedCart, $dt_o, $order_array, $order_array_count, $address_s, $adminEmail, $adminName, $rush));
