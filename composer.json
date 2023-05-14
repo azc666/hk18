@@ -16,6 +16,7 @@
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^2.11",
         "propaganistas/laravel-phone": "^5.0",
+        "spatie/laravel-backup": "^8.1",
         "spatie/pdf-to-image": "^2.2",
         "wire-elements/modal": "^1.0"
     },
