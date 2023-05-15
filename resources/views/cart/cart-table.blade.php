@@ -38,7 +38,7 @@
         <td>
           @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'ADSBC' ||
           $row->options->prod_layout === 'PDSBC')
-          <div class="w-24 pt-2 mt-1 text-xs text-gray-400 uppercase border-b-2">Engraved Side</div>
+          <div class="w-24 pt-2 mt-1 text-xs text-gray-400 uppercase border-b-2">Front Side</div>
           @endif
 
           @if ($row->options->bc_name)

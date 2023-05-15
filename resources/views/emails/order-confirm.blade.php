@@ -55,8 +55,18 @@
   }
 
   .detail-head {
-    font-size: x-small;
+    font-size: small;
     padding-left: 6px;
+    color: #b6b2b2;
+    text-transform: uppercase;
+  }
+
+  .side {
+    font-size: medium;
+    text-transform: uppercase;
+    padding-left: 6px;
+    padding-bottom: 4px;
+    padding-top: 4px;
     color: #b6b2b2
   }
 
@@ -200,7 +210,7 @@
 
           <td>
             @if ($row->id === 110 || $row->id === 111)
-            <div class="w-24 pt-2 border-b-2 detail-head">Engraved Side</div>
+            <div class="w-24 pt-2 pb-2 border-b-2 side">Front Side</div>
             @endif
 
             @if ($row->options->bc_name)
@@ -226,7 +236,7 @@
   @endif
 
   @if ($row->id === 110 || $row->id === 111)
-  <div class="w-24 pt-2 border-b-2 detail-head">Reverse Side</div>
+  <div class="w-24 pt-2 border-b-2 side">Reverse Side</div>
   @if ($row->options->bc_name2)
   <div class="detail-head">Name</div>
   <div class="description" style="padding-bottom: 6px;">{{ $row->options->bc_name2 }}</div>

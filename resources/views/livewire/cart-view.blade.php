@@ -68,21 +68,8 @@
 </td>
 
 <td>
-  {{-- <p class="mb-1 text-lg uppercase font-helmd text-hkcolor">{{ $row->name }}</p> --}}
-
-  {{-- @if (strpos($row->name, '+') && str_contains($row->name, 'Partner')) --}}
-  {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(103)->description) !!}</p> --}}
-  {{-- <p>{!! nl2br(App\Models\Product::find(106)->description) !!}</p> --}}
-  {{-- @elseif (strpos($row->name, '+') && (str_contains($row->name, 'Staff') || str_contains($row->name, 'Associate'))) --}}
-  {{-- <p class="mb-2">{!! nl2br(App\Models\Product::find(101)->description) !!}</p> --}}
-  {{-- <p>{!! nl2br(App\Models\Product::find(104)->description) !!}</p> --}}
-  {{-- @else --}}
-  {{-- <p>{!! $this->restored ? $row->options->prod_descr : $row->options->prod_descr !!}</p> --}}
-  {{-- @endif --}}
   <div class="flex space-x-4">
     <div>
-    {{-- @dd($row->name) --}}
-      {{-- @if (strpos($row->name, '+') && str_contains($row->name, 'Partner')) --}}
       @if ($row->name === 'Partner Business Card' || $row->name === 'Partner BC + FYI Pads')
         <div>
           <p class="font-helmd text-hkcolor">"Engraved" Business Card</p>
@@ -108,6 +95,23 @@
           <p class="pl-2">• Full Color, 100 sheets per pad</p>
           <p class="pl-2">• Heavy Chipboard Backer</p>
         </div>
+      @endif
+
+      @if ($row->name === 'Associate Double Sided BC' || $row->name === 'Partner Double Sided BC')
+      <div>
+        @if ($row->name === 'Associate Double Sided BC')
+          <p class="font-helmd text-hkcolor">"Standard" Double Sided Business Card</p>
+          <p class="pl-2">• Heavy, Uncoated Cover Stock</p>
+          <p class="pl-2">• 3.5" x 2"</p>
+          <p class="pl-2">• Printed Logo and Text</p>
+          <p class="pl-2">• Color, 1-sided</p>
+        @elseif ($row->name === 'Partner Double Sided BC')
+          <p class="font-helmd text-hkcolor">"Engraved" Double Sided Business Card</p>
+          <p class="pl-2">• Heavy, Uncoated Cover Stock</p>
+          <p class="pl-2">• 3.5" x 2"</p>
+          <p class="pl-2">• Engraved Logo and Text</p>
+          <p class="pb-4 pl-2">• Color, 1-sided</p>
+        @endif
       @endif
 
     </div>
@@ -137,9 +141,12 @@
 </td>
 
 <td>
-  @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'ADSBC' || $row->options->prod_layout ===
+  @if ($row->id === 111 || $row->options->prod_layout ===
   'PDSBC')
-  <div class="w-24 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor">Engraved Side</div>
+    <div class="w-32 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor font-helmd">Engraved Side</div>
+  @elseif ($row->id === 110 || $row->options->prod_layout ===
+  'ADSBC')
+    <div class="w-32 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor font-helmd">Front Side</div>
   @endif
 
   @if ($row->options->bc_name)
@@ -158,7 +165,7 @@
   @endif
 
   @if ($row->id === 110 || $row->id === 111 || $row->options->prod_layout === 'PDSBC')
-  <div class="w-24 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor">Reverse Side</div>
+  <div class="w-32 pt-2 mt-1 text-sm uppercase border-b-2 text-hkcolor font-helmd">Reverse Side</div>
   @if ($row->options->bc_name2)
   <div class="mt-1 text-sm uppercase text-hkcolor">Name</div>
   {{ $row->options->bc_name2 }}<br>
