@@ -113,31 +113,11 @@
           <p class="pb-4 pl-2">• Color, 1-sided</p>
         @endif
       @endif
-
     </div>
 
-
-      {{-- @elseif (session('prod_layout') === 'ABCFYI' || $row->id == 105 || session('prod_layout') === 'SBCFYI' || $row->id == 104)
-      <p class="font-helmd text-hkcolor">"Standard" Business Card</p>
-      {{-- @endif --}}
-      {{-- <p class="pl-2">• Heavy, Uncoated Cover Stock</p>
-      <p class="pl-2">• 3.5" x 2"</p>
-      <p class="pl-2">• Engraved Logo and Text</p>
-      <p class="pl-2">• Color, 1-sided</p>
-    </div>
-    @if (session('prod_layout') === 'ABCFYI' || $row->id == 105 || session('prod_layout') === 'SBCFYI'|| $row->id == 104 || session('prod_layout') === 'PBCFYI'|| $row->id == 106)
-      <div>
-        <p class="font-helmd text-hkcolor">Custom FYI Pads</p>
-        <p class="pl-2">• Text Weight Stock</p>
-        <p class="pl-2">• 4.25" x 5.5"</p>
-        <p class="pl-2">• Full Color, 100 sheets per pad</p>
-        <p class="pl-2">• Heavy Chipboard Backer</p>
-      </div>
-      {{-- @elseif (!session('prod_layout') === 'ABCFYI' || !$row->id == 105 || !session('prod_layout') === 'SBCFYI'|| !$row->id == 104 || !session('prod_layout') === 'PBCFYI'|| !$row->id == 106)
-      ''
-    @endif --}}
-
-
+    @if ($row->name === 'Name Badge')
+        <p class="pl-14 font-helmd text-hkcolor">Name Badge</p>
+    @endif
 </td>
 
 <td>
