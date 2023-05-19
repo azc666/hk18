@@ -17,11 +17,11 @@ class Kernel extends ConsoleKernel
         $schedule
             ->command('backup:run')
             ->daily()
-            ->at('18:00');
+            ->at('18:03');
         $schedule
             ->command('backup:clean')
             ->daily()
-            ->at('18:03');
+            ->at('18:10');
     }
 
     /**
