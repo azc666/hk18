@@ -31,4 +31,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'dropbox' => [
+        'app_key' => env('DROPBOX_APP_KEY'),
+        'app_secret' => env('DROPBOX_APP_SECRET'),
+        'authorization_code' => env('DROPBOX_AUTHORIZATION_CODE'),
+        'refresh_token' => env('DROPBOX_REFRESH_TOKEN'),
+    ],
+
 ];
