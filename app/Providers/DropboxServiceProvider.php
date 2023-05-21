@@ -10,7 +10,7 @@ namespace App\Providers;
 // use Spatie\FlysystemDropbox\DropboxAdapter;
 // use Illuminate\Filesystem\FilesystemAdapter;
 // use Illuminate\Contracts\Foundation\Application;
-// use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
