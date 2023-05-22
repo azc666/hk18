@@ -143,7 +143,7 @@ class Orders extends Component
 					})->where('user_id', Auth::user()->id)
 						->when($this->sortField, function ($query) {
 							$query->orderBy($this->sortField, $this->sortAsc ? 'desc' : 'asc');
-						})
+						})->orderBy('updated_at', 'desc')
 						->paginate($this->pages)
 				],
 				compact('order', 'user')
