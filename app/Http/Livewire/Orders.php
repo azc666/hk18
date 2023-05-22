@@ -40,7 +40,8 @@ class Orders extends Component
 
 	public function mount(Order $order)
 	{
-
+		// $order = Order::orderBy('created_at', 'asc')->get();
+		// Order::select('name')->orderBy('created_at', 'desc')->get();
 	}
 
 	public function updatedPages()
@@ -124,6 +125,8 @@ class Orders extends Component
 		$search = $this->search;
 		// $orders = Order::where('user_id', Auth::user()->id);
 		// $orders = Order::select('*')->where('user_id', Auth::user()->id)->get();
+		// $orders = Order::get();
+				$order = Order::orderBy('created_at', 'asc')->get();
 
 		if (Auth::user()->admin !== 1) {
 			return view(
@@ -158,9 +161,10 @@ class Orders extends Component
 								$query->where('loc_num', 'like', '%' . $this->search . '%');
 							});
 					})
+
 						->when($this->sortField, function ($query) {
 							$query->orderBy($this->sortField, $this->sortAsc ? 'desc' : 'asc');
-						})
+						})->orderBy('updated_at', 'desc')
 						->paginate($this->pages)
 				],
 				compact('order', 'user')

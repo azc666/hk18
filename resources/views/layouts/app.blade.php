@@ -8,7 +8,8 @@
 
     <!-- Favicon -->
     {{-- <link rel="icon" type="image/x-icon" href="/assets/HKicon.png"> --}}
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-3.png">
+    {{-- <link rel="icon" type="image/x-icon" href="/assets/favicon-3.png"> --}}
+    <link rel="icon" type="image/x-icon" href="/assets/HKGavel.jpg">
 
     <title>{{ $title ?? 'HK Order Portal' }}</title>
 
