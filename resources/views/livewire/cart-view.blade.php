@@ -249,6 +249,12 @@
       </a>
     </div>
 
+    @php
+    $x = url()->full() === config("app.url") . '/postDate';
+    $y = url()->full() === config("app.url") . '/placeOrder';
+    @endphp
+
+    @if (!$x && !$y)
     <div class="content-center">
       <a href="{{ route('destroyrow', ['rowId' => $row->rowId]) }}">
         <button class="px-3 py-1 bg-red-700 rounded-md hover:bg-red-400 hover:border-red-600 hover:border-2">
@@ -256,7 +262,7 @@
         </button>
       </a>
     </div>
-
+    @endif
   </div>
 
   </td>
