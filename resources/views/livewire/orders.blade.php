@@ -1,11 +1,11 @@
 <div class="py-4">
-  <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+  <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
     <div class="flex items-center justify-between">
-      <div class="max-w-lg w-full lg:max-w-xs">
+      <div class="w-full max-w-lg lg:max-w-xs">
         <label for="search" class="sr-only">Search</label>
         <div class="relative">
-          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd"
                 d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
                 clip-rule="evenodd"></path>
@@ -13,7 +13,7 @@
           </div>
           {{-- <input wire:model="search" id="search" --}}
           <input wire:model="search" id="search"
-            class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
+            class="block w-full py-2 pl-10 pr-3 leading-5 placeholder-gray-500 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm"
             placeholder="Search" type="search">
         </div>
       </div>
@@ -22,7 +22,7 @@
         <div>
           {{-- <select wire:model="pages" id="pages" --}}
           <select wire:model="pages" id="pages"
-            class="border border-gray-300 rounded-md text-sm text-bluegray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out">
+            class="text-sm transition duration-150 ease-in-out border border-gray-300 rounded-md text-bluegray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm">
             <option value="10">10 per page</option>
             <option value="25">25 per page</option>
             <option value="50">50 per page</option>
@@ -32,8 +32,8 @@
     </div>
   </div>
 
-  <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-    <div class="shadow overflow-hidden border-b border-gray-400 sm:rounded-lg">
+  <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+    <div class="overflow-hidden border-b border-gray-400 shadow sm:rounded-lg">
 
       <table class="min-w-full divide-y divide-gray-200">
         <thead class="bg-white">
@@ -41,7 +41,7 @@
             <th scope="col" class="px-6 py-3 text-left">
               <div class="flex items-center">
                 <button wire:click="sortBy('created_at')"
-                  class="text-xs font-semibold text-hkcolor uppercase tracking-wider focus:outline-none">Date
+                  class="text-xs font-semibold tracking-wider uppercase text-hkcolor focus:outline-none">Date
                   of Order</button>
                 <x-sort-icon field="created_at" :sortField="$sortField" :sortAsc="$sortAsc" />
               </div>
@@ -49,7 +49,7 @@
             <th scope="col" class="px-6 py-3 text-left">
               <div class="flex items-center">
                 <button wire:click="sortBy('confirmation')"
-                  class="text-xs font-semibold text-hkcolor uppercase tracking-wider focus:outline-none">Location</button>
+                  class="text-xs font-semibold tracking-wider uppercase text-hkcolor focus:outline-none">Location</button>
                 <x-sort-icon field="confirmation" :sortField="$sortField" :sortAsc="$sortAsc" />
               </div>
             </th>
@@ -57,14 +57,14 @@
             <th scope="col" class="px-6 py-3 text-left">
               <div class="flex items-center">
                 <button wire:click="sortBy('name')"
-                  class="text-xs font-semibold text-hkcolor uppercase tracking-wider focus:outline-none">
+                  class="text-xs font-semibold tracking-wider uppercase text-hkcolor focus:outline-none">
                   Location Name</button>
                 <x-sort-icon field="location_name" :sortField="$sortField" :sortAsc="$sortAsc" />
               </div>
             </th>
 
-            <th scope="col" class="-px-2 py-3 text-left">
-              <div class="text-xs font-semibold text-hkcolor uppercase tracking-wider focus:outline-none">
+            <th scope="col" class="py-3 text-left -px-2">
+              <div class="text-xs font-semibold tracking-wider uppercase text-hkcolor focus:outline-none">
                 <div class="flex items-center">
                   Detail
                 </div>
@@ -72,9 +72,9 @@
             </th>
 
             <th scope="col" class="px-6 py-3 text-left">
-              <div class="text-left flex items-center">
+              <div class="flex items-center text-left">
                 <button wire:click="sortBy('confirmation')"
-                  class="text-xs font-semibold text-hkcolor uppercase tracking-wider focus:outline-none">
+                  class="text-xs font-semibold tracking-wider uppercase text-hkcolor focus:outline-none">
                   Confirmation</button>
                 <x-sort-icon field="confirmation" :sortField="$sortField" :sortAsc="$sortAsc" />
               </div>
@@ -83,37 +83,20 @@
         </thead>
 
         @if(!$orders->count())
-        <div class="mb-4 mt-2 text-red-500 uppercase">
+        <div class="mt-2 mb-4 text-red-500 uppercase">
           The search has no results
         </div>
         @endif
 
-
-
-        {{-- @php
-        // dd(Auth::user()->admin);
-        if (Auth::user()->admin !== 1) {
-        $orders = app\Models\Order::select('*')->where('user_id', Auth::user()->id);
-        }
-        // dd($this->orders);
-        @endphp --}}
-
         @foreach ($orders as $order)
-        {{-- {{ app\Models\Order::select('*')->where('user_id', Auth::user()->id)->get() }} --}}
-        {{-- @if (Auth::user()->admin !== '1')
-        {{ Auth::user()->admin }}
 
-
-        @endif --}}
-
-        {{-- {{ Auth::user()->admin }} --}}
         @if($loop->iteration % 2 == 0)
         <tbody class="bg-white divide-y divide-gray-200 hover:bg-gray-100">
           @else
-        <tbody class="bg-gray-50 divide-y divide-gray-200 hover:bg-gray-100">
+        <tbody class="divide-y divide-gray-200 bg-gray-50 hover:bg-gray-100">
           @endif
           <tr>
-            <td class="w-2/12 px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+            <td class="w-2/12 px-6 py-4 text-sm text-gray-500 whitespace-nowrap">
               @if ($order->updated_at)
               {{ date("Y-m-d",strtotime($order->updated_at)) }}
               @else
@@ -123,7 +106,7 @@
             <td class="w-2/12 px-6 py-2 whitespace-no-wrap">
               <div class="flex items-center">
                 <div class="ml-4">
-                  <div class="text-sm leading-5 font-medium text-gray-900">
+                  <div class="text-sm font-medium leading-5 text-gray-900">
                     {{-- {{ strtok($order->confirmation, '-') }} --}}
                     {{ $order->user->loc_num }}
                   </div>
@@ -134,9 +117,9 @@
             <td class="w-2/12 px-6 py-2 whitespace-no-wrap">
               <div class="flex items-center">
                 <div class="ml-4">
-                  <div class="text-sm leading-5 font-medium text-gray-900">
+                  <div class="text-sm font-medium leading-5 text-gray-900">
                     {{ $order->name }}
-                    {{-- {{ app\Models\Order::where('user_id', Auth::user()->id)->pluck('name') }} --}}
+
                   </div>
                 </div>
               </div>
@@ -145,7 +128,7 @@
             <td class="w-5/12 px-6 py-2 whitespace-no-wrap">
               <div class="flex items-center">
                 <div class="-ml-5">
-                  <div class="text-sm leading-5 font-medium text-gray-900 overflow-ellipsis overflow-hidden">
+                  <div class="overflow-hidden text-sm font-medium leading-5 text-gray-900 overflow-ellipsis">
 
                     @php
                     $orderArray = $order->order_array;
@@ -170,7 +153,6 @@
                     $prod_layout_4 = Arr::get($orderArray, '4.prod_layout');
                     $name_o4 = Arr::get($orderArray, '4.name_o');
                     $email_o4 = Arr::get($orderArray, '4.email_o');
-
                     @endphp
 
                     {{ $prod_layout }}: {{ $name_o }} {{ $email_o ? ' (' . $email_o . ')' : ''}}
@@ -192,12 +174,12 @@
               </div>
             </td>
 
-            <td class="w-3/12 px-2 py-1 whitespace-nowrap text-center">
+            <td class="w-3/12 px-2 py-1 text-center whitespace-nowrap">
 
               <form wire:submit.prevent="submit({{ $order->id }})">
                 @csrf
                 <button type="submit"
-                  class="inline-flex items-center px-4 py-1 bg-hkcolor border border-transparent rounded-full font-bold text-xs text-white uppercase tracking-widest hover:bg-indigo-400 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150">
+                  class="inline-flex items-center px-4 py-1 text-xs font-bold tracking-widest text-white uppercase transition duration-150 ease-in-out border border-transparent rounded-full bg-hkcolor hover:bg-indigo-400 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25">
                   {{ __($order->confirmation) }} </button>
               </form>
             </td>
@@ -209,11 +191,6 @@
     </div>
 
     <div class="mt-8">
-      {{-- {{ $this->pages }} --}}
       {{ $orders->links() }}
     </div>
   </div>
-  {{-- @endforeach --}}
-
-  {{-- <livewire:orders :orders="$orders"/> --}}
-  {{-- </x-app-layout> --}}

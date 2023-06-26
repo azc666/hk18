@@ -48,6 +48,7 @@ class PlaceOrder extends Component
     {
         return [
             'confirmed' => 'required',
+            'confirmedRestore' => 'required'
         ];
     }
 
@@ -59,10 +60,28 @@ class PlaceOrder extends Component
     public function placeOrder(Request $request, \Gloudemans\Shoppingcart\Facades\Cart $cart, Product $product)
     {
         Session::put('saveCart', false);
-        if ($request->has('confirm')) {
-            // $dt = $this->dt;
 
+        if (session('confirmation')) {
+            $order = Order::where('confirmation', session('confirmation'))->first();
+            $updated = $order->updated_at;
+            $date = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $updated)->format('Y-m-d');
+        }
+// dd(!session('restored'));
+        if (session('restored') && $date < "2023-06-14" && $request->has('confirmRestore') && $request->has('confirm')) {
+            $checked = "restored & old date & all checked";
+            // dd($checked);
+        } elseif (session('restored') && $date > "2023-06-14" && $request->has('confirm')) {
+            $checked = "restored & new date & confirm checked";
+            // dd($checked);
+        } elseif (!session('restored') && $request->has('confirm')) {
+            $checked = "not restored & confim checked";
+            // dd(!session('restored'));
+        } else {
+            $checked = "not checked";
+            // dd($checked);
+        }
 
+        if ( $checked !== "not checked") {
             $dt = Carbon::now();
             $dt = substr($dt->year, -2) . $dt->month . $dt->day . '-' . $dt->hour . $dt->minute .  $dt->second;
 
@@ -214,14 +233,28 @@ class PlaceOrder extends Component
 
             // $username = Auth::user()->username;
             // \Darryldecode\Cart\Facades\CartFacade::destroy($username);
+
+            $request->session()->forget('restored');
+            // unset($_SESSION['restored']);
+            // Session::put(false, session('restored'));
+            // dd(session('restored'));
+
             $username = Auth::user()->username;
             Cart::destroy($username);
 
+
             return view('cart.place-order', compact('confirmation', 'cart', 'dt_o', 'order_array', 'address_s', 'rush'), ['orderArray' => $orderArray, 'orderArrayCount' => $orderArrayCount, 'savedCart' => $savedCart, 'order' => $order, 'dt_o' => $dt_o, 'rush' => $rush]);
         } else {
-            // dd('hola');
+
             $notConfirmed = 'notConfirmed';
             Session::put('notConfirmed', $notConfirmed);
+// dd(session('restored'));
+            if (session('restored')) {
+                $notConfirmedRestore = 'notConfirmedRestore';
+                Session::put('notConfirmedRestore', $notConfirmedRestore);
+            }
+
+
             return view('cart.cart');
         }
     }

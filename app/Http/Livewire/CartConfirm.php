@@ -10,7 +10,8 @@ class CartConfirm extends Component
     protected function rules()
     {
         return [
-            'confirm' => 'accetpted',
+            'confirm' => 'required',
+            'confirmRestore' => 'required'
         ];
     }
 

@@ -20,15 +20,35 @@
   </div>
   @endif
 
-  @if (session('restoreOrder') === true)
+  @php
+    if (session('confirmation')) {
+      $order = App\Models\Order::where('confirmation', session('confirmation'))->first();
+      $updated = $order->updated_at;
+      $date = \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $updated)->format('Y-m-d');
+    }
+  @endphp
+
+  @if (session('restoreOrder') === true && $date < "2023-06-14")
   <div class="w-2/3 mx-auto mt-4 mb-4">
     <x-flash type="success">
-      You have successfully restored your cart.
+      You have successfully restored the order to your cart.<br>
+      <span class="font-bold uppercase">Important: </span>You <span class="font-bold uppercase">must</span>  select "EDIT" and then "Update" your restored item(s) before proceeding to checkout.
+    </x-flash>
       {{ Session::put('saveCart', false) }}
       {{ Session::put('restoreCart', false) }}
       {{ Session::put('restoreOrder', false) }}
-    </x-flash>
   </div>
+  @endif
+
+  @if (session('restoreOrder') === true && $date > "2023-06-14" )
+    <div class="w-2/3 mx-auto mt-4 mb-4">
+      <x-flash type="success">
+        You have successfully restored the order to your cart.<br>
+      </x-flash>
+    {{ Session::put('saveCart', false) }}
+    {{ Session::put('restoreCart', false) }}
+    {{ Session::put('restoreOrder', false) }}
+    </div>
   @endif
 
   @if (session('proofMsg') === true)

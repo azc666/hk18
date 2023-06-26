@@ -71,6 +71,7 @@ class CartView extends Component
     public $bc_specialInstructions;
     public $submitRush;
     public $date;
+    public $restoreOrder;
 
     public function mount()
     {
@@ -141,16 +142,10 @@ class CartView extends Component
 
     public function destroyRow($rowId)
     {
-        // dd($rowId);
-        // \Cart::remove($rowId);
-        // $userId = Auth::user()->id;
-        // \Cart::session($userId)->remove($rowId);
+        if (session('restored')) {
+            Session::put('', session('restored'));
+        }
 
-        // if (Cart::content()->count() > 0) {
-        // session()->flash('message', 'This item has been successfully removed from your cart.');
-        // }
-// dd($rowId);
-        // $userId = auth()->user()->id; // or any string represents user identifier
         Cart::remove($rowId);
 
         return back();
@@ -286,7 +281,7 @@ class CartView extends Component
 
     public function restoreOrder(Product $product, Order $order)
     {
-        Session::put('restoreOrder', true);
+        // Session::put('restoreOrder', true);
 
         $order = Order::where('confirmation', session('confirmation'))->first();
         $username = Auth::user()->username;
@@ -455,7 +450,11 @@ class CartView extends Component
                 // 'bc_specialInstructions' => $specialInstructions,
             ]);
         }
-        // dd(Cart::content());
+        $restored = true;
+        Session::put('restored', $restored);
+        // $restoreOrder = $this->restoreOrder;
+        // dd(session('restored'));
+
         $restoreMsg = 'The order has been successfully restored to your cart';
 
         return redirect()->action([CartView::class, 'viewCart'], compact('product', 'username'))->with('message', $restoreMsg);
