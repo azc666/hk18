@@ -209,8 +209,8 @@ class PlaceOrder extends Component
 
             if ($ntagEmail) {
                 Mail::to("sheri.testa@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
+                Mail::to("nicklas.ford@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
                 Mail::to("kathy.phelps@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
-
                 Mail::to("sarah.caramanica@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
             }
 
