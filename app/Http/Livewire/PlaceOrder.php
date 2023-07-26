@@ -221,6 +221,7 @@ class PlaceOrder extends Component
 
             if ($loc_num === "35" || $loc_num === "46" || $loc_num === "34" || $loc_num === "72" || $loc_num === "41" || $loc_num === "42" || $loc_num === "49" ) {
                 Mail::to("sheri.testa@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
+                Mail::to("nicklas.ford@hklaw.com")->send(new OrderMailConf($confirmation, $savedCart, $dt_o, $rush, $adminEmail, $adminName, $orderArray, $order));
             }
 
             if (session('authorized')) {

@@ -27,16 +27,16 @@
 					<a href="/category/partner" class="group">
 						<div class="w-full overflow-hidden rounded-lg h-80 bg-gray-50">
 							@if (auth()->user()->username === 'HK34')
-							<img src="assets/partner/bogota_pbcfyi_display.jpg"
-								class="object-center w-full h-full ml-4 group-hover:opacity-75">
+								<img src="/assets/partner/bogota_pbcfyi_display.jpg"
+									class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 							@elseif (auth()->user()->username === 'HK35' || auth()->user()->username === 'HK42')
-							<img src="assets/partner/mexico_pbcfyi_display.jpg"
-								class="object-center w-full h-full ml-4 group-hover:opacity-75">
+								<img src="/assets/partner/mexico_pbcfyi_display.jpg"
+									class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 							@elseif (auth()->user()->username === 'HK46')
-							<img src="assets/partner/london_pbcfyi_display.jpg"
-								class="object-center w-full h-full ml-4 group-hover:opacity-75">
+								<img src="/assets/partner/london_pbcfyi_display.jpg"
+									class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 							@else
-							<img src="assets/partner/pbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+								<img src="/assets/partner/pbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 							@endif
 						</div>
 						<h3 class="mt-6 text-2xl text-center text-gray-100 font-helmd hover:opacity-75"><span
@@ -46,7 +46,19 @@
 
 					<a href="/category/associate" class="group">
 						<div class="w-full overflow-hidden rounded-lg h-80 bg-gray-50">
-							<img src="assets/associate/abcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+						@if (auth()->user()->username === 'HK34')
+							<img src="/assets/associate/bogota_abcfyi_display.jpg"
+								class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+						@elseif (auth()->user()->username === 'HK35' || auth()->user()->username === 'HK42')
+							<img src="/assets/associate/mexico_abcfyi_display.jpg"
+								class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+						@elseif (auth()->user()->username === 'HK46')
+							<img src="/assets/associate/london_abcfyi_display.jpg"
+								class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+						@else
+							<img src="/assets/associate/pbcfyi_display.jpg"
+								class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+						@endif
 						</div>
 						<h3 class="mt-6 text-2xl text-center text-gray-100 font-helmd hover:opacity-75"><span
 								class="text-3xl font-helmd">Associate</span> <br>
@@ -56,7 +68,15 @@
 
 					<a href="/category/staff" class="group">
 						<div class="w-full overflow-hidden rounded-lg h-80 bg-gray-50">
-							<img src="assets/staff/sbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+							@if (auth()->user()->username === 'HK34')
+								<img src="/assets/staff/bogota_sbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+							@elseif (auth()->user()->username === 'HK35' || auth()->user()->username === 'HK42')
+								<img src="/assets/staff/mexico_sbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+							@elseif (auth()->user()->username === 'HK46')
+								<img src="/assets/staff/london_sbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+							@else
+								<img src="/assets/staff/sbcfyi_display.jpg" class="mt-6 ml-4 scale-105 group-hover:opacity-75">
+							@endif
 						</div>
 						<h3 class="mt-6 text-2xl text-center text-gray-100 font-helmd hover:opacity-75"><span
 								class="text-3xl font-helmd">Staff</span> <br>
