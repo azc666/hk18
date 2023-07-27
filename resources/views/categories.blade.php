@@ -56,7 +56,7 @@
 							<img src="/assets/associate/london_abcfyi_display.jpg"
 								class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 						@else
-							<img src="/assets/associate/pbcfyi_display.jpg"
+							<img src="/assets/associate/abcfyi_display.jpg"
 								class="mt-6 ml-4 scale-105 group-hover:opacity-75">
 						@endif
 						</div>
