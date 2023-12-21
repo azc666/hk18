@@ -81,7 +81,6 @@
                   src="{{ $row->options->proof_path }}">
             </a>
           </div>
-
 </div>
 
 <div class="mb-4"></div>
