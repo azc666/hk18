@@ -251,13 +251,20 @@
 <td class="">
   <div class="flex-col items-center w-24">
 
+    @php
+      $x = url()->full() === config("app.url") . '/postDate';
+      $y = url()->full() === config("app.url") . '/placeOrder';
+    @endphp
+
     <div class="z-20 content-center pb-2">
+      @if (!$x && !$y)
       <a href="{{ route('emailrow', ['rowId' => $row->rowId]) }}">
         <button class="px-2 py-1 bg-green-500 rounded-md hover:bg-green-400 hover:border-green-600 hover:border-2">
           <span class="text-xs font-bold text-white uppercase">Email
             PDF</span>
         </button>
       </a>
+      @endif
     </div>
 
     <div class="content-center pb-2">
@@ -267,11 +274,6 @@
         </button>
       </a>
     </div>
-
-    @php
-    $x = url()->full() === config("app.url") . '/postDate';
-    $y = url()->full() === config("app.url") . '/placeOrder';
-    @endphp
 
     @if (!$x && !$y)
     <div class="content-center">
