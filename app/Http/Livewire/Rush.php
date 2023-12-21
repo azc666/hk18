@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use Carbon\Carbon;
 use App\Models\Order;
 use Livewire\Request;
 use Livewire\Component;
@@ -36,6 +37,9 @@ class Rush extends Component
     {
         $cal = '';
         $date = $this->date;
+        if ($date && $date <= date('m/d/Y')) {
+            $date = Carbon::now()->addDays(2)->format('m/d/Y');
+        }
         $date = Session::put('date', $date);
         return view('livewire.rush', compact('cal'));
     }
